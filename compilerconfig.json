@@ -1,0 +1,13 @@
+[
+  {
+    "outputFile": "css/min/site.css",
+    "inputFile": "css/site.less",
+    "minify": {
+      "enabled": true
+    },
+    "includeInProject": true,
+    "options": {
+      "sourceMap": false
+    }
+  }
+]

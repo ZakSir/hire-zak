@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hire Zak Fargo | resume.json</title>
+    <meta name="description"
+          content="Hire Zak Fargo. Cloud Expert, Software Engineer, Delivery Manager, Security Innovation Principal." />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" type="text/css" href="/css/min/site.css" />
+</head>
+
+<body>
+    <header>
+        <div id="header-inner-container" class="page-inner-container">
+            <h2>resume.json</h2>
+            <a class="natural-view-button header-button">
+                <span class="icon-code"></span>
+            </a>
+
+            <a class="code-view-button header-button">
+                <span class="icon-newspaper"></span>
+            </a>
+        </div>
+    </header>
+    <article>
+        <div id="article-inner-container" class="page-inner-container">
+            <div class="person" data-bind="with: personalInfo.person">
+                <div class="photo-container">
+                    <img data-bind="attr: {src: picture.uri, alt: picture.altText}" />
+                </div>
+                <div class="text-container">
+                    <h1 class="person-name">
+                        <span class="person-given-name" data-bind="text: givenName"></span><span class="person-name-space">
+                        </span><span class="person-surname" data-bind="text: surname"></span>
+                    </h1>
+
+                    <h3 class="person-tag title-tag">
+                        <span class="label compound-label ">
+                            <span class="label-component">Title</span>
+                            <span class="label-component">:</span>
+                        </span>
+                        <span class="tag-value" data-bind="text: title"></span>
+                    </h3>
+                    <div class="person-tags">
+                        <h3 class="person-tag email-tag">
+                            <span class="label compound-label">
+                                <span class="label-component">Title</span>
+                                <span class="label-component">:</span>
+                            </span>
+                            <span class="tag-value" data-bind="text: email"></span>
+                        </h3>
+                        <h3 class="person-tag location-tag">
+                            <span class="label compound-label">
+                                <span class="label-component">Title</span>
+                                <span class="label-component">:</span>
+                            </span>
+                            <span class="tag-value" data-bind="text: location"></span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="executive-summary" data-bind="with: executiveSummary">
+                <h2 class="section-title" data-bind="text: title"></h2>
+                <div class="inner-container" data-bind="foreach: {data: items, as: 'item'}">
+                    <h3 data-bind="text: item.title"></h3>
+                    <p>
+                        <span data-bind="html: item.body"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <div class="skills-container" data-bind="foreach: { data: proficiencies, as: 'skill' }">
+                    <div class="skill-container">
+                        <div class="title-container">
+                            <div class="complex-title" data-bind="if: skill.skillNames.length !== 1">
+                                <h3>
+                                    <span class="primary-skill-title" data-bind="text: skill.skillNames[0] "></span>
+                                    <span class="all-skills" data-bind="foreach: { data: skill.skillNames, as: 'skillTitle' }">
+                                        <span class="skill-title" data-bind="text: skillTitle"></span>
+                                    </span>
+                                </h3>
+
+                            </div>
+                            <div class="simple-title" data-bind="ifnot: skill.skillNames.length !== 1">
+                                <h3>
+                                    <span class="primary-skill-title" data-bind="text: skill.skillNames[0] "></span>
+                                </h3>
+                            </div>
+                            <h5><span class="skill-experience-level" data-bind="text: skill.level"></span> @ <span><span class="skill-experience-elapsed" data-bind="text: skill.yearsOfExperience"></span><span>&nbsp;</span><span>years</span></h5>
+                            <div class="activities" data-bind="foreach: { data: skill.favoriteActivities, as: 'activity' }">
+                                <div class="activity-container">
+                                    <span data-bind="text: activity"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="experience">
+                <h2>Experience</h2>
+                <div class="experience-items" data-bind="foreach: {data: experience, as: 'item'}">
+                    <div class="company-banner">
+                        <div class="company-container">
+                            <div class="company-logo" data-bind="if: item.company.logo">
+                                <img data-bind="attr: { src: item.company.logo }" />
+                            </div>
+                            <h4 class="company-name" data-bind="text: item.company.displayName"></h4>
+                        </div>
+                        <div class="title-container">
+                            <div class="title">
+                                <h3 data-bind="text:item.title"></h3>
+                                <div class="date-container">
+                                    <span class="start-date" data-bind="template: { name: 't-date-block', data: item.startDate }"></span>
+                                    <span class="date-group-seperator">-</span>
+                                    <span class="end-date" data-bind="template: { name: 't-date-block', data: item.endDate }"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accomplishments-container">
+                        <h3>Accomplishments</h3>
+                        <ul data-bind="foreach: { data: item.dutiesAndAccomplishments, as: 'exp' }">
+                            <li data-bind="html: exp"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div id="footer-inner-container" class="page-inner-container">
+
+        </div>
+    </footer>
+    <script type="text/html" id="t-date-block">
+        <span data-bind="if: $data">
+            <span class="month" data-bind="text: item.startDate.month"></span><span class="date-seperator">/</span><span class="year" data-bind="text: item.startDate.year"></span>
+        </span>
+        <span data-bind="ifnot: $data">
+            <span>current</span>
+        </span>
+    </script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.5.0.js"></script>
+    <script type="text/javascript">
+        fetch("/resume.json")
+            .then(response => response.json())
+            .then(data => {
+                ko.applyBindings(data);
+            });
+    </script>
+</body>
+
+</html>
