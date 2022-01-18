@@ -40,18 +40,9 @@ function CreateBlobProperties {
 		[ValidateSet("Hot", "Cool", "Archive")]
 		[string]$AccessTier = "Hot",
 
-		[Parameter()]
-		[string]$ContentType = $null
-	)
-
-	if($ContentType -eq $null)
-	{
-		$ct = [System.Web.MimeMapping]::GetMimeMapping($SourceContentPath);
-	}
-	else
-	{
-		$ct = $ContentType;
-	}
+		[Parameter(Mandatory = $true)]
+		[string]$ContentType
+	
 
 	$blobSettings = @{
 		"File" = $SourceContentPath;
@@ -60,7 +51,7 @@ function CreateBlobProperties {
 		"Context" = $AccountContext;
 		"StandardBlobTier" = $AccessTier;
 		"Properties" = @{
-			"ContentType" = $ct;
+			"ContentType" = $ContentType;
 		}
 	}
 
@@ -85,8 +76,8 @@ function UploadBlob {
 		[ValidateSet("Hot", "Cool", "Archive")]
 		[string]$AccessTier = "Hot",
 
-		[Parameter()]
-		[string]$ContentType = $null
+		[Parameter(Mandatory = $true)]
+		[string]$ContentType
 	)
 
 	$blobProperties = CreateBlobProperties `
@@ -134,7 +125,8 @@ try
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "index.html")) `
 				-BlobPath "index.html" `
 				-ContainerName $TargetContainerName `
-				-AccountContext $AccountContext;
+				-AccountContext $AccountContext `
+				-ContentType "text/html";
 
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "resume.json")) `
 				-BlobPath "resume.json" `
@@ -152,7 +144,8 @@ try
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "resumeJsonCode.html")) `
 				-BlobPath "resumeJsonCode.html" `
 				-ContainerName $TargetContainerName `
-				-AccountContext $AccountContext;
+				-AccountContext $AccountContext `
+				-ContentType "text/html";
 
 	# Fontello Icon Font
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "font", "icons", "fontello.eot")) `
@@ -202,12 +195,14 @@ try
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "min", "site.css")) `
 				-BlobPath "css/min/site.css" `
 				-ContainerName $TargetContainerName `
-				-AccountContext $AccountContext;
+				-AccountContext $AccountContext `
+				-ContentType "text/css";
 	
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "min", "site.min.css")) `
 				-BlobPath "css/min/site.min.css" `
 				-ContainerName $TargetContainerName `
-				-AccountContext $AccountContext;
+				-AccountContext $AccountContext `
+				-ContentType "text/css";
 }
 finally
 {
