@@ -200,11 +200,12 @@
     </script>
     <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.5.0.js"></script>
     <script type="text/javascript">
-        function createViewModel(data, text) {
+        function createViewModel(data, text, buildInfo) {
             var self = this;
 
             this.model = data;
             this.codeHtml = text;
+            this.buildInfo = buildInfo;
 
             this.viewState = {
                 view: ko.observable(0)
@@ -219,20 +220,23 @@
             }
         }
 
-        fetch("/resume.json")
-            .then(response => response.json())
-            .then(data => {
+        let resumeRequest = fetch("/resume.json")
+            .then(response => response.json());
 
-                fetch('/resumeJsonCode.html')
-                    .then(response => response.text())
-                    .then(text => {
+        let resumeCodeRequest = fetch('/resumeJsonCode.html')
+            .then(response => response.text());
 
-                        var vm = createViewModel(data, text);
+        let buildInfoRequest = fetch('/buildInfo.json')
+            .then(response => response.json());
 
-                        window.debugViewModel = vm;
+        Promise.all([resume.resumeRequest, resumeCodeRequest, buildInfoRequest])
+            .then(result => {
 
-                        ko.applyBindings(vm);
-                    });
+                var vm = createViewModel(result[0], result[1], result[2]);
+
+                window.debugViewModel = vm;
+
+                ko.applyBindings(vm);
             });
     </script>
 </body>
