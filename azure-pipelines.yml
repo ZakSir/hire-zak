@@ -17,10 +17,11 @@ steps:
     arguments: '-OutputPath "$(Build.SourcesDirectory)/buildInfo.json" -RepositoryUri "$(Build.Repository.Uri)" -SourceBranch "$(Build.SourceBranch)" -SourceBranchName "$(Build.SourceBranchName)" -Commit "$(Build.SourceVersion)"'
     workingDirectory: '$(Build.SourcesDirectory)'
 
+
 - task: AzurePowerShell@5
   inputs:
     azureSubscription: 'hirezak-deployment-azure'
     ScriptType: 'FilePath'
     ScriptPath: '$(Build.SourcesDirectory)/deploy.ps1'
     ScriptArguments: '-DeploymentRootDirectory "$(Build.SourcesDirectory)" -StorageAccountName "hirezak" -ResourceGroupName "HireZak" -TargetContainerName "`$web" -TargetSubscriptionId "87d1b094-1972-4745-bbc4-ba64ae51eb63" -Verbose'
-    pwsh: true
+    azurePowerShellVersion: latestVersion
