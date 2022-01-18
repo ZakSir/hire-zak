@@ -1,7 +1,11 @@
 @import './font/microsoft/cascadia-code/cascadia-code.less';
 @import './font/icons/fontello.less';
 
+@grid: 10px;
 @accentColor: #0099FF;
+@profileImageWidth: 180px;
+
+@containerPadding: 10px (10px * 2) 10px (10px + @profileImageWidth);
 
 body {
     font-family: Arial, Arial, Helvetica, sans-serif;
@@ -18,6 +22,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin: unset;
     padding: unset;
     font-weight: unset;
+    font-size: unset;
 }
 
 header, article, footer {
@@ -38,6 +43,15 @@ header {
         }
 
         .header-button {
+            &:hover {
+                color: @accentColor;
+            }
+
+            padding: @grid (@grid/2);
+            cursor: pointer;
+
+            color: white;
+            transition: color ease-in-out 0.25s;
         }
 
         display: flex;
@@ -62,7 +76,7 @@ article {
                 vertical-align: middle;
             }
 
-            max-width: 180px;
+            max-width: @profileImageWidth;
         }
 
         .text-container {
@@ -126,7 +140,7 @@ article {
 
     .executive-summary {
         h2 {
-            padding: 10px 10px 10px (10px + 180px);
+            padding: @containerPadding;
             background-color: @accentColor;
         }
 
@@ -143,23 +157,210 @@ article {
                 padding-bottom: 10px;
             }
 
-            padding: 10px 10px 10px (10px + 180px);
+            padding: @containerPadding;
         }
     }
 
     .skills {
         h2 {
-            padding: 10px 10px 10px (10px + 180px);
+            padding: @containerPadding;
             background-color: @accentColor;
         }
 
+
+
         .skills-container {
             .skill-container {
+                .title-container {
+                    h3 {
+                        font-weight: bold;
+                        margin-left: -15px;
+                        padding-left: 10px;
+                        border-left: 5px solid @accentColor;
+                    }
 
+                    .skill-listing {
+                        .all-skills {
+                            h4 {
+                                &:last-child {
+                                    &:after {
+                                        content: unset;
+                                    }
+                                }
+
+                                &:after {
+                                    content: ", ";
+                                }
+
+                                display: inline;
+                            }
+                        }
+
+                        display: block;
+                        margin-bottom: @grid;
+                    }
+                }
+
+                .activities {
+                    .activities-container {
+                        .activity-container {
+                            &:last-child {
+                                &:after {
+                                    content: unset;
+                                }
+                            }
+
+                            &:after {
+                                content: ", ";
+                            }
+                        }
+                    }
+                }
+
+                .label {
+                    font-style: italic;
+                    color: #555555;
+                }
+
+                padding: @containerPadding;
+                // border-left: 5px solid @accentColor;
             }
         }
     }
 
+    @companyLogoWidth: 80px;
+
     .experience {
+        h2 {
+            padding: @containerPadding;
+            background-color: @accentColor;
+        }
+
+        .experience-items {
+            .experience-item {
+
+                .banner {
+                    &.company-banner-with-image {
+                        .company-logo {
+                            img {
+                                width: @companyLogoWidth;
+                                padding: @grid*2;
+                                vertical-align: middle;
+                            }
+
+                            display: flex;
+                            align-items: start;
+                        }
+
+                        margin-left: (@companyLogoWidth * -1);
+                    }
+
+                    &:last-child {
+                        margin-bottom: unset;
+                    }
+
+                    .text-container {
+                        .company-container {
+
+
+                            .company-name {
+                            }
+
+                            display: flex;
+                            flex-grow: 1;
+                            align-items: center;
+                            font-weight: bold;
+                            font-size: 2em;
+                        }
+
+                        .title-container {
+                            .title {
+                                font-weight: bold;
+                            }
+
+                            .date-container {
+                                display: flex;
+                                flex-direction: row;
+                            }
+
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    display: flex;
+                    flex-direction: row;
+                    margin-botton: @grid;
+                }
+
+                padding: @containerPadding;
+                // border-left: 5px solid @accentColor;
+            }
+        }
     }
+
+    .code-outer-container {
+        @decorationColor: #333;
+
+        @lineNumberColor: @decorationColor;
+        @colorColor: @decorationColor;
+        @commaColor: @decorationColor;
+        @bracketColor: @decorationColor;
+
+        @stringColor: #a31515;
+        @propertyNameColor: #2e75b6;
+        @nullColor: #002dff;
+        @numberColor: #000;
+
+        .line-number-designator {
+            user-select: none;
+            color: @lineNumberColor;
+        }
+
+        .json-decoration-brackets {
+            color: @bracketColor;
+        }
+
+        .json-property-name {
+            color: @propertyNameColor;
+        }
+
+        .json-property-name-decoration {
+            color: darken(@propertyNameColor, 10%);
+        }
+
+        .json-property-value {
+            &.vt-string {
+                color: @stringColor;
+            }
+        }
+
+        .json-property-value-decoration {
+            &.vt-string {
+                color: darken(@stringColor, 10%);
+            }
+        }
+
+        font-family: CascadiaCode;
+        font-size: 10pt;
+        padding: @grid;
+    }
+
+    #article-inner-container-code {
+        &.view-active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+
+        transition: opacity ease-in-out 0.5s;
+    }
+
+    position: relative;
 }

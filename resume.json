@@ -1,292 +1,363 @@
 {
-    "personalInfo": {
-      "person": {
-        "picture": {
-          "uri": "https://hirezak.blob.core.windows.net/public/Zak-Profile-Dramatic-Color.jpg",
-          "altText": "Face Picture of Zak Fargo, Security Innovation Senior Principal"
-        },
-        "givenName": "Zak",
-        "surname": "Fargo",
-        "email": "zak@zak.expert",
-        "location": "Burien, Washington",
-        "title": "Security Innovation Senior Principal",
-        "locationExact": {
-          "lat": 47.461286518019534,
-          "long": -122.3414744595488
-        },
-        "hobbies": [
-          "Welding (GMAW, GTAW)",
-          "Borosilicate Flameworking",
-          "Electrical Engineering",
-          "Home Automation"
+  "personalInfo": {
+    "person": {
+      "picture": {
+        "uri": "https://hirezak.blob.core.windows.net/public/Zak-Profile-Dramatic-Color.jpg",
+        "altText": "Face Picture of Zak Fargo, Security Innovation Senior Principal"
+      },
+      "givenName": "Zak",
+      "surname": "Fargo",
+      "email": "zak@zak.expert",
+      "location": "Burien, Washington",
+      "title": "Security Innovation Senior Principal",
+      "locationExact": {
+        "lat": 47.461286518019534,
+        "long": -122.3414744595488
+      },
+      "hobbies": [
+        "Welding (GMAW, GTAW)",
+        "Borosilicate Flameworking",
+        "Electrical Engineering",
+        "Home Automation"
+      ]
+    },
+    "token": {
+      "header": {
+        "typ": "JWT",
+        "alg": "HS256",
+        "kid": "HIp7w5Er/viSjjk6iSJfdWkhJAjlRsml6FJRasFCwOU="
+      },
+      "payload": {
+        "aud": "https://zak.expert/",
+        "iss": "person://zak/",
+        "idp": "https://identity.zak.expert/core/oauth/2.0",
+        "exp": 1673830242,
+        "name": "Zak Fargo",
+        "scp": [
+          "contact",
+          "interview",
+          "hiring",
+          "work"
         ]
       },
-        "token": {
-            "header": {
-                "typ": "JWT",
-                "alg": "HS256",
-                "kid": "HIp7w5Er/viSjjk6iSJfdWkhJAjlRsml6FJRasFCwOU="
-            },
-            "payload": {
-                "aud": "https://zak.expert/",
-                "iss": "person://zak/",
-                "idp": "https://identity.zak.expert/core/oauth/2.0",
-                "exp": 1673830242,
-                "name": "Zak Fargo",
-                "scp": [
-                    "contact",
-                    "interview",
-                    "hiring",
-                    "work"
-                ]
-            },
-            "signature": "VtVKZF4TlPKV4uz9YlIOSFCF2Dyu9byxYGHX6ebgQ78"
-        }
-    },
-    "executiveSummary": {
-        "title": "Executive Summary",
-        "items": [
-            {
-                "title": "Business Solutioning",
-                "body": "An expert in bringing ideas into reality. Zak is a seasoned Product Owner, with experience across software and industry domains in bringing a product from the idea stage, through business development, and to market. Most recently, launched a <strong>$20mm</strong>usd book of business, with over 10x RoI."
-            },
-            {
-                "title": "Software Engineering",
-                "body": "A Master Software Engineer, Zak is experienced across software delivery domains, from Line-of-Business tooling to Internet Scale Services. With this vast experience delivering scalable, cost-effective, high-impact services, Zak is an expert in bringing ideas to life with software."
-            },
-            {
-                "title": "Security",
-                "body": "The world of security is constantly changing, impossible threats from all directions dominate the internet. Zak utilizes his experience across the business and engineering domains and has cultivated a deep understanding of secure development, secure operations, cloud security, and governance."
-            },
-            {
-                "title": "Operations",
-                "body": "No world-changing product is complete without a support lifecycle. Zak has brought multiple products from birth to market, from design and development, refinement, live-site support via DevOps, marketing, as well as industrialization of product components."
-            }
-        ]
-    },
-    "proficiencies": [
-        {
-            "skillNames": [
-                "csharp"
-            ],
-            "level": "master",
-            "yearsOfExperience": 7,
-            "favoriteActivities": [
-                "library code",
-                "refactoring",
-                "automation",
-                "deployment"
-            ]
-        },
-        {
-            "skillNames": [
-                "Windows",
-                "Windows Server",
-                "PowerShell"
-            ],
-            "level": "journeyman",
-            "yearsOfExperience": 10,
-            "favoriteActivities": [
-                "Environment Design",
-                "Active Directory"
-            ]
-        },
-        {
-            "skillNames": [
-                "UX : XAML / WPF"
-            ],
-            "level": "journeyman",
-            "yearsOfExperience": 3,
-            "favoriteActivities": [
-                "Ergonomic Design",
-                "Delight moments",
-                "Consistency"
-            ]
-        },
-        {
-            "skillNames": [
-                "Html5",
-                "CSS3",
-                "Javascript",
-                "TypeScript"
-            ],
-            "level": "journeyman",
-            "yearsOfExperience": 5,
-            "favoriteActivities": [
-                "Single Page Applications",
-                "Api Design",
-                "Performance"
-            ]
-        },
-        {
-            "skillNames": [
-                "Azure",
-                "Windows Azure"
-            ],
-            "level": "journeyman",
-            "yearsOfExperience": 4,
-            "favoriteActivities": [
-                "ApplicationInsights",
-                "Storage",
-                "HyperScale",
-                "Analytics",
-                "Service Design"
-            ]
-        }
-    ],
-    "experience": [
-        {
-            "company": { "displayName": "Accenture" },
-            "title": "Security Innovation Senior Principal",
-            "team": "Cloud Security",
-            "startDate": {
-                "year": 2021,
-                "month": 6
-            },
-            "endDate": null,
-            "dutiesAndAccomplishments": [
-                "In partnership with Leadership Team, developed new employee relations practices to reduce attrition.",
-                "Managed development of Knowledge Management System, allowing technicans and management to traverse the rich graph of assets, and their relationships, developed internally. Developing a Single Page API-Driven Application using ASP.NET, TypeScript, LESS, Knockout.JS. Leveraged Azure DevOps Pipelines, Azure Web Apps, Azure Function Apps, Azure Service Bus, Azure CosmosDb, and Azure waf to a scalable, performant, cloud-first application.",
-                "Created and Ran 'Code Camp' training program, bringing development and scripting comptency up across the security practice.",
-                "Partnered and oversaw development across company divisions and external partners to enhance security of deployed infrastructure with ARM templates, Ansible Templates, Terraform Templates, and Azure Policy."
-            ]
-        },
-        {
-            "company": { "displayName": "Accenture" },
-            "title": "Security Innovation Principal",
-            "team": "Cloud Security",
-            "startDate": {
-                "year": 2018,
-                "month": 4
-            },
-            "endDate": {
-                "year": 2021,
-                "month": 6
-            },
-            "dutiesAndAccomplishments": [
-                "Cryptographic Posture Delivery. Design, implementation, and operationalization of enterprise wide data encryption policy and strategy. Strategy Leveraged Azure KeyVault, Thales nCipher HSM, Azure Dedicated HSM, Azure Managed HSM, and Thales CCKM.",
-                "Software and Service Development Security Lifecycle and Posture. Developed comprehensive posture of application development and service delivery prioritizing corporate governance and automatic-healing. Partnered enterprise wide across Business Units and IT Teams to integrate security posture via Procedure, Application Code, and Deployment Pipelines, as well as standalone security services.",
-                "Designed, Developed, brought to market, and Sold an Azure Policy based governance solution, complete with deployment scripts to orchestrate the deployment of Azure Policy in complex environments. Accomplished detailed change reporting via automated documentation management. Supervised a team of 8.",
-                "Oversaw the development of new training programs contributing to the dissimenation of cloud knowlege and skills to over 1000 internal employees.",
-                "Designed and Developed custom Big Data reports for Azure utilization and policy compliance using Azure DataFactory, Azure Graph, PowerShell, and Azure DataLake."
-            ]
-        },
-        {
-            "company": { "displayName": "Microsoft" },
-            "title": "Software Engineer II",
-            "team": "Enterprise Cloud / Enterprise Analytics and Tools",
-            "startDate": {
-                "year": 2014,
-                "month": 4
-            },
-            "endDate": {
-                "year": 2018,
-                "month": 4
-            },
-            "dutiesAndAccomplishments": [
-                "Designed end to end business automation solutions.",
-                "Created custom MediaWiki private deployment, with minimal maintenance and high automation, eliminating legacy documentation systems and headcount.",
-                "Reduced headcount with self-service automation engine.",
-                "Drove DevOps culture across organization, increasing resiliency of live site products.",
-                "Created self-service team engagement application, eliminating the need for engineering hours.",
-                "Developed rapid solutions using Azure to enable GTM strategies to be piloted quickly."
-            ]
-        },
-        {
-            "company": { "displayName": "Microsoft" },
-            "title": "Software Engineer I",
-            "team": "Bing Offers",
-            "startDate": {
-                "year": 2013,
-                "month": 4
-            },
-            "endDate": {
-                "year": 2014,
-                "month": 4
-            },
-            "dutiesAndAccomplishments": [
-                "Implemented RSS feed SEO system for massive offers database.",
-                "Created internal API platform to allow Bing Search to deeply learn about offers.",
-                "Implemented design changes to Bing offers site to improve look and feel.",
-                "Implemented custom automated deployment for azure from Team Foundation XAML build system.",
-                "Built MSTest drivable harness for CasperJs. Allowing per-test visibility for rapid development.",
-                "Developed and optimized custom builds reducing build times by 80%."
-            ]
-        },
-        {
-            "company": { "displayName": "Xtreme Consulting Group" },
-            "contractorTo": "Microsoft",
-            "title": "Service Engineer",
-            "team": "Enterprise Cloud / Incident Response",
-            "startDate": {
-                "year": 2011,
-                "month": 7
-            },
-            "endDate": {
-                "year": 2013,
-                "month": 4
-            },
-            "dutiesAndAccomplishments": [
-                "Provided Tier 3 break-fix support for Enterprise Exchange Deployments.",
-                "Researched and provided technical documentation for Exchange troubleshooting.",
-                "Developed database interface software in XAML and C# used by entire operations organization.",
-                "Deployed several database interoperability applications using the WCF framework and Microsoft SQL.",
-                "Created and delivered technical use training to end users of line of business applications.",
-                "Created a multi-database ticket tracking and creation system using XAML, SQL, WCF, C# and ASP.NET.",
-                "Created portals to allow cross team collaboration and tracking with custom database system.",
-                "Worked to reduce headcount per seat resulting in substantial operating cost reductions.",
-                "Deployed several automation engines removing repetitive tasks from end users."
-            ]
-        },
-        {
-            "company": { "displayName": "Insight Global" },
-            "contractorTo": "Microsoft",
-            "title": "Incident Manager",
-            "team": "BPOS Dedicated (Now Office 365 Enterprise Cloud)",
-            "startDate": {
-                "year": 2010,
-                "month": 6
-            },
-            "endDate": {
-                "year": 2011,
-                "month": 7
-            },
-            "dutiesAndAccomplishments": [
-                "Managed Major Incidents across the Microsoft Office 365 Environment.",
-                "Worked to ensure SLA is met for all customers.",
-                "Responsible for communicating incident Details to Microsoft executives.",
-                "Worked with operations teams to restore services during outages.",
-                "Managed major incident progression for all cloud services including Exchange, SharePoint, Lync (now Teams) and Live Meeting.",
-                "Responsible for beginning the problem management process for issues that slowed service restoration."
-            ]
-        },
-        {
-            "company": { "displayName": "VMC Consulting" },
-            "title": "Tier II Support Engineer",
-            "team": "Business Productivity Online Suite (Now Office 365)",
-            "startDate": {
-                "year": 2010,
-                "month": 1
-            },
-            "endDate": {
-                "year": 2010,
-                "month": 6
-            },
-            "dutiesAndAccomplishments": [
-                "Worked with a team of over 70 agents to provide product support for the Microsoft Online Services platform.",
-                "Troubleshot Microsoft Exchange Online, SharePoint Online, LiveMeeting Online and Office Communicator Online (now Teams).",
-                "Created customer facing documentation personalized for each customer.",
-                "Troubleshot and fixed issues with customer configurations of software.",
-                "Delivered outstanding customer service to subscribers.",
-                "Worked with exchange management console and Blackberry Enterprise Manager.",
-                "Ensured issues were handled and met the SLA to customers.",
-                "Worked with customers to support setup and configuration of the Microsoft Online Services.",
-                "Provided support for issues ranging of DNS setup to complex co-existence and email migration issues.",
-                "Created tools for Support Engineers that saved hours of wasted time per week.",
-                "Provided 24/7/365 support to clients.",
-                "Worked with tickets to provide support to incident resolution.",
-                "Worked with second tier support to provide requested changes to the customer."
-            ]
-        }
+      "signature": "VtVKZF4TlPKV4uz9YlIOSFCF2Dyu9byxYGHX6ebgQ78"
+    }
+  },
+  "executiveSummary": {
+    "title": "Executive Summary",
+    "items": [
+      {
+        "title": "Business Solutioning",
+        "body": "An expert in bringing ideas into reality. Zak is a seasoned Product Owner, with experience across software and industry domains in bringing a product from the idea stage, through business development, and to market. Most recently, launched a <strong>$20mm</strong>usd book of business, with over 10x RoI."
+      },
+      {
+        "title": "Software Engineering",
+        "body": "A Master Software Engineer, Zak is experienced across software delivery domains, from Line-of-Business tooling to Internet Scale Services. With this vast experience delivering scalable, cost-effective, high-impact services, Zak is an expert in bringing ideas to life with software."
+      },
+      {
+        "title": "Security",
+        "body": "The world of security is constantly changing, impossible threats from all directions dominate the internet. Zak utilizes his experience across the business and engineering domains and has cultivated a deep understanding of secure development, secure operations, cloud security, and governance."
+      },
+      {
+        "title": "Operations",
+        "body": "No world-changing product is complete without a support lifecycle. Zak has brought multiple products from birth to market, from design and development, refinement, live-site support via DevOps, marketing, as well as industrialization of product components."
+      }
     ]
+  },
+  "proficiencies": [
+    {
+      "skillCategoryName": "Software Engineering",
+      "skillNames": [
+        "csharp",
+        "javascript",
+        "html5",
+        "css",
+        "less",
+        "typescript",
+        "asp.net",
+        "powershell",
+        "yaml",
+        "json"
+      ],
+      "level": "master",
+      "yearsOfExperience": 10,
+      "favoriteActivities": [
+        "framework development",
+        "refactoring",
+        "automation",
+        "deployment",
+        "open source"
+      ]
+    },
+    {
+      "skillCategoryName": "Modern Application Infrastructure",
+      "skillNames": [
+        "CI/CD Deployment",
+        "Kubernetes",
+        "Docker",
+        "Containerization"
+      ],
+      "level": "journeyman",
+      "yearsOfExperience": 4,
+      "favoriteActivities": [
+        "Automated Deployments"
+      ]
+    },
+    {
+      "skillCategoryName": "Microsoft Administration",
+      "skillNames": [
+        "Windows",
+        "Windows Server",
+        "PowerShell",
+        "Windows Network Administration",
+        "Active Directory",
+        "Exchange"
+      ],
+      "level": "journeyman",
+      "yearsOfExperience": 10,
+      "favoriteActivities": [
+        "Environment Design",
+        "Active Directory"
+      ]
+    },
+    {
+      "skillNames": [
+        "UX : XAML / WPF"
+      ],
+      "level": "journeyman",
+      "yearsOfExperience": 3,
+      "favoriteActivities": [
+        "Ergonomic Design",
+        "Delight moments",
+        "Consistency"
+      ]
+    },
+    {
+      "skillNames": [
+        "Html5",
+        "CSS3",
+        "Javascript",
+        "TypeScript"
+      ],
+      "level": "journeyman",
+      "yearsOfExperience": 5,
+      "favoriteActivities": [
+        "Single Page Applications",
+        "Api Design",
+        "Performance"
+      ]
+    },
+    {
+      "skillNames": [
+        "Azure",
+        "Windows Azure"
+      ],
+      "level": "journeyman",
+      "yearsOfExperience": 4,
+      "favoriteActivities": [
+        "ApplicationInsights",
+        "Storage",
+        "HyperScale",
+        "Analytics",
+        "Service Design"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": {
+        "displayName": "Accenture",
+        "logo": {
+          "uri": "https://hirezak.blob.core.windows.net/public/Acc_GT_Dimensional_RGB.png",
+          "alt": "Accenture Plc Corporate Logo."
+        }
+      },
+      "title": "Security Innovation Senior Principal",
+      "team": "Cloud Security",
+      "startDate": {
+        "year": 2021,
+        "month": 6
+      },
+      "endDate": null,
+      "dutiesAndAccomplishments": [
+        "In partnership with Leadership Team, developed new employee relations practices to reduce attrition.",
+        "Managed development of Knowledge Management System, allowing technicans and management to traverse the rich graph of assets, and their relationships, developed internally. Developing a Single Page API-Driven Application using ASP.NET, TypeScript, LESS, Knockout.JS. Leveraged Azure DevOps Pipelines, Azure Web Apps, Azure Function Apps, Azure Service Bus, Azure CosmosDb, and Azure waf to a scalable, performant, cloud-first application.",
+        "Created and Ran 'Code Camp' training program, bringing development and scripting comptency up across the security practice.",
+        "Partnered and oversaw development across company divisions and external partners to enhance security of deployed infrastructure with ARM templates, Ansible Templates, Terraform Templates, and Azure Policy."
+      ]
+    },
+    {
+      "company": {
+        "displayName": "Accenture",
+        "logo": {
+          "uri": "https://hirezak.blob.core.windows.net/public/Acc_GT_Dimensional_RGB.png",
+          "alt": "Accenture Plc Corporate Logo."
+        }
+      },
+      "title": "Security Innovation Principal",
+      "team": "Cloud Security",
+      "startDate": {
+        "year": 2018,
+        "month": 4
+      },
+      "endDate": {
+        "year": 2021,
+        "month": 6
+      },
+      "dutiesAndAccomplishments": [
+        "Cryptographic Posture Delivery. Design, implementation, and operationalization of enterprise wide data encryption policy and strategy. Strategy Leveraged Azure KeyVault, Thales nCipher HSM, Azure Dedicated HSM, Azure Managed HSM, and Thales CCKM.",
+        "Software and Service Development Security Lifecycle and Posture. Developed comprehensive posture of application development and service delivery prioritizing corporate governance and automatic-healing. Partnered enterprise wide across Business Units and IT Teams to integrate security posture via Procedure, Application Code, and Deployment Pipelines, as well as standalone security services.",
+        "Designed, Developed, brought to market, and Sold an Azure Policy based governance solution, complete with deployment scripts to orchestrate the deployment of Azure Policy in complex environments. Accomplished detailed change reporting via automated documentation management. Supervised a team of 8.",
+        "Oversaw the development of new training programs contributing to the dissimenation of cloud knowlege and skills to over 1000 internal employees.",
+        "Designed and Developed custom Big Data reports for Azure utilization and policy compliance using Azure DataFactory, Azure Graph, PowerShell, and Azure DataLake."
+      ]
+    },
+    {
+      "company": {
+        "displayName": "Microsoft",
+        "logo": {
+          "uri": "https://hirezak.blob.core.windows.net/public/microsoft-logo.png",
+          "alt": "Microsoft Corporate Logo, no text."
+        }
+      },
+      "title": "Software Engineer II",
+      "team": "Enterprise Cloud / Enterprise Analytics and Tools",
+      "startDate": { 
+        "year": 2014,
+        "month": 4
+      },
+      "endDate": {
+        "year": 2018,
+        "month": 4
+      },
+      "dutiesAndAccomplishments": [
+        "Designed end to end business automation solutions.",
+        "Created custom MediaWiki private deployment, with minimal maintenance and high automation, eliminating legacy documentation systems and headcount.",
+        "Reduced headcount with self-service automation engine.",
+        "Drove DevOps culture across organization, increasing resiliency of live site products.",
+        "Created self-service team engagement application, eliminating the need for engineering hours.",
+        "Developed rapid solutions using Azure to enable GTM strategies to be piloted quickly."
+      ]
+    },
+    {
+      "company": {
+        "displayName": "Microsoft",
+        "logo": {
+          "uri": "https://hirezak.blob.core.windows.net/public/microsoft-logo.png",
+          "alt": "Microsoft Corporate Logo, no text."
+        }
+      },
+      "title": "Software Engineer I",
+      "team": "Bing Offers",
+      "startDate": {
+        "year": 2013,
+        "month": 4
+      },
+      "endDate": {
+        "year": 2014,
+        "month": 4
+      },
+      "dutiesAndAccomplishments": [
+        "Implemented RSS feed SEO system for massive offers database.",
+        "Created internal API platform to allow Bing Search to deeply learn about offers.",
+        "Implemented design changes to Bing offers site to improve look and feel.",
+        "Implemented custom automated deployment for azure from Team Foundation XAML build system.",
+        "Built MSTest drivable harness for CasperJs. Allowing per-test visibility for rapid development.",
+        "Developed and optimized custom builds reducing build times by 80%."
+      ]
+    },
+    {
+      "company": {
+        "displayName": "Xtreme Consulting Group",
+        "logo": {
+          "uri": "https://hirezak.blob.core.windows.net/public/xtreme-consulting-group-logo-notransparent.jpg",
+          "alt": "Xtreme (pronounced extreme) consulting group logo, no text."
+        }
+      },
+      "contractorTo": "Microsoft",
+      "title": "Service Engineer",
+      "team": "Enterprise Cloud / Incident Response",
+      "startDate": {
+        "year": 2011,
+        "month": 7
+      },
+      "endDate": {
+        "year": 2013,
+        "month": 4
+      },
+      "dutiesAndAccomplishments": [
+        "Provided Tier 3 break-fix support for Enterprise Exchange Deployments.",
+        "Researched and provided technical documentation for Exchange troubleshooting.",
+        "Developed database interface software in XAML and C# used by entire operations organization.",
+        "Deployed several database interoperability applications using the WCF framework and Microsoft SQL.",
+        "Created and delivered technical use training to end users of line of business applications.",
+        "Created a multi-database ticket tracking and creation system using XAML, SQL, WCF, C# and ASP.NET.",
+        "Created portals to allow cross team collaboration and tracking with custom database system.",
+        "Worked to reduce headcount per seat resulting in substantial operating cost reductions.",
+        "Deployed several automation engines removing repetitive tasks from end users."
+      ]
+    },
+    {
+      "company": {
+        "displayName": "Insight Global",
+        "logo": {
+          "uri": "https://hirezak.blob.core.windows.net/public/insight-global-logo-source-nontransparent.jpg",
+          "alt": "Insight Global Logo, no text."
+        }
+      },
+      "contractorTo": "Microsoft",
+      "title": "Critical Incident Manager",
+      "team": "BPOS Dedicated (Now Office 365 Enterprise Cloud)",
+      "startDate": {
+        "year": 2010,
+        "month": 6
+      },
+      "endDate": {
+        "year": 2011,
+        "month": 7
+      },
+      "dutiesAndAccomplishments": [
+        "Managed Major Incidents across the Microsoft Office 365 Environment.",
+        "Worked to ensure SLA is met for all customers.",
+        "Responsible for communicating incident Details to Microsoft executives.",
+        "Worked with operations teams to restore services during outages.",
+        "Managed major incident progression for all cloud services including Exchange, SharePoint, Lync (now Teams) and Live Meeting.",
+        "Responsible for beginning the problem management process for issues that slowed service restoration."
+      ]
+    },
+    {
+      "company": {
+        "displayName": "VMC Consulting",
+        "logo": {
+          "uri": "https://hirezak.blob.core.windows.net/public/vmc-logo.jpg",
+          "alt": "VMC Corporate Logo, no text."
+        }
+      },
+      "title": "Tier II Support Engineer",
+      "team": "Business Productivity Online Suite (Now Office 365)",
+      "startDate": {
+        "year": 2010,
+        "month": 1
+      },
+      "endDate": {
+        "year": 2010,
+        "month": 6
+      },
+      "dutiesAndAccomplishments": [
+        "Worked with a team of over 70 agents to provide product support for the Microsoft Online Services platform.",
+        "Troubleshot Microsoft Exchange Online, SharePoint Online, LiveMeeting Online and Office Communicator Online (now Teams).",
+        "Created customer facing documentation personalized for each customer.",
+        "Troubleshot and fixed issues with customer configurations of software.",
+        "Delivered outstanding customer service to subscribers.",
+        "Worked with exchange management console and Blackberry Enterprise Manager.",
+        "Ensured issues were handled and met the SLA to customers.",
+        "Worked with customers to support setup and configuration of the Microsoft Online Services.",
+        "Provided support for issues ranging of DNS setup to complex co-existence and email migration issues.",
+        "Created tools for Support Engineers that saved hours of wasted time per week.",
+        "Provided 24/7/365 support to clients.",
+        "Worked with tickets to provide support to incident resolution.",
+        "Worked with second tier support to provide requested changes to the customer."
+      ]
+    }
+  ]
 }

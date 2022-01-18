@@ -13,17 +13,60 @@
     <header>
         <div id="header-inner-container" class="page-inner-container">
             <h2>resume.json</h2>
-            <a class="natural-view-button header-button">
+            <a class="natural-view-button header-button button" data-bind="click: onClickCodeView, css: {'button-active': viewState.view() === 1 }">
                 <span class="icon-code"></span>
             </a>
 
-            <a class="code-view-button header-button">
+            <a class="code-view-button header-button button" data-bind="click: onClickFormattedView, css: {'button-active': viewState.view() === 0 }">
                 <span class="icon-newspaper"></span>
             </a>
         </div>
     </header>
     <article>
-        <div id="article-inner-container" class="page-inner-container">
+
+        <div id="article-inner-container-code" class="page-inner-container" data-bind="css: {'view-active': viewState.view() === 1 }">
+            <div class="person" data-bind="with: model.personalInfo.person">
+                <div class="photo-container">
+                    <img data-bind="attr: {src: picture.uri, alt: picture.altText}" />
+                </div>
+                <div class="text-container">
+                    <h1 class="person-name">
+                        <span class="person-given-name" data-bind="text: givenName"></span><span class="person-name-space">
+                        </span><span class="person-surname" data-bind="text: surname"></span>
+                    </h1>
+
+                    <h3 class="person-tag title-tag">
+                        <span class="label compound-label ">
+                            <span class="label-component">Title</span>
+                            <span class="label-component">:</span>
+                        </span>
+                        <span class="tag-value" data-bind="text: title"></span>
+                    </h3>
+                    <div class="person-tags">
+                        <h3 class="person-tag email-tag">
+                            <span class="label compound-label">
+                                <span class="label-component">Title</span>
+                                <span class="label-component">:</span>
+                            </span>
+                            <span class="tag-value" data-bind="text: email"></span>
+                        </h3>
+                        <h3 class="person-tag location-tag">
+                            <span class="label compound-label">
+                                <span class="label-component">Title</span>
+                                <span class="label-component">:</span>
+                            </span>
+                            <span class="tag-value" data-bind="text: location"></span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="code-outer-container" data-bind="html: codeHtml">
+
+            </div>
+        </div>
+
+
+        <div id="article-inner-container-formatted" class="page-inner-container" data-bind="with: model">
             <div class="person" data-bind="with: personalInfo.person">
                 <div class="photo-container">
                     <img data-bind="attr: {src: picture.uri, alt: picture.altText}" />
@@ -68,61 +111,75 @@
                     </p>
                 </div>
             </div>
+            <div class="experience">
+                <h2>Experience</h2>
+                <div class="experience-items" data-bind="foreach: {data: experience, as: 'item'}">
+                    <div class="experience-item">
+                        <div class="banner" data-bind="css: item.company.logo != null ? 'company-banner-with-image' : 'company-banner-without-image'">
+                            <div class="company-logo" data-bind="if: item.company.logo">
+                                <img data-bind="attr: { src: item.company.logo.uri, alt: item.company.logo.alt }" />
+                            </div>
+                            <div class="text-container">
+                                <div class="company-container">
+                                    <h4 class="company-name" data-bind="text: item.company.displayName"></h4>
+                                </div>
+                                <div class="title-container">
+
+                                    <h3 class="title" data-bind="text:item.title"></h3>
+                                    <div class="date-container">
+                                        <span class="start-date" data-bind="template: { name: 't-date-block', data: item.startDate }"></span>
+                                        <span class="date-group-seperator">-</span>
+                                        <span class="end-date" data-bind="template: { name: 't-date-block', data: item.endDate }"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accomplishments-container">
+                            <h3>Accomplishments</h3>
+                            <ul data-bind="foreach: { data: item.dutiesAndAccomplishments, as: 'exp' }">
+                                <li data-bind="html: exp"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="skills">
                 <h2>Skills</h2>
                 <div class="skills-container" data-bind="foreach: { data: proficiencies, as: 'skill' }">
                     <div class="skill-container">
                         <div class="title-container">
-                            <div class="complex-title" data-bind="if: skill.skillNames.length !== 1">
+                            <div class="title-container complex-title" data-bind="if: skill.skillCategoryName">
                                 <h3>
-                                    <span class="primary-skill-title" data-bind="text: skill.skillNames[0] "></span>
-                                    <span class="all-skills" data-bind="foreach: { data: skill.skillNames, as: 'skillTitle' }">
-                                        <span class="skill-title" data-bind="text: skillTitle"></span>
-                                    </span>
+                                    <span class="primary-skill-title" data-bind="text: skill.skillCategoryName "></span>
+
                                 </h3>
+                                <div class="skill-listing">
+                                    <span class="label skill-listing-label"><span class="label-text">Skills</span><span class="label-decorator">:</span></span>
+                                    <span class="all-skills" data-bind="foreach: { data: skill.skillNames, as: 'skillTitle' }">
+                                        <h4 class="skill-title" data-bind="text: skillTitle"></h4>
+                                    </span>
+                                </div>
 
                             </div>
-                            <div class="simple-title" data-bind="ifnot: skill.skillNames.length !== 1">
+                            <div class="title-container simple-title" data-bind="ifnot: skill.skillCategoryName">
                                 <h3>
                                     <span class="primary-skill-title" data-bind="text: skill.skillNames[0] "></span>
                                 </h3>
                             </div>
-                            <h5><span class="skill-experience-level" data-bind="text: skill.level"></span> @ <span><span class="skill-experience-elapsed" data-bind="text: skill.yearsOfExperience"></span><span>&nbsp;</span><span>years</span></h5>
-                            <div class="activities" data-bind="foreach: { data: skill.favoriteActivities, as: 'activity' }">
-                                <div class="activity-container">
-                                    <span data-bind="text: activity"></span>
-                                </div>
+                            <h5 class="experience-level">
+                                <span class="label experience-level-label"><span class="label-text">Level</span><span class="label-decorator">:</span></span>
+                                <span class="skill-experience-level" data-bind="text: skill.level"></span> @ <span><span class="skill-experience-elapsed" data-bind="text: skill.yearsOfExperience"></span><span>&nbsp;</span><span>years</span>
+                            </h5>
+                            <div class="activities">
+                                <span class="label activites-label"><span class="label-text">Activites</span><span class="label-decorator">:</span></span>
+                                <span class="activities-container" data-bind="foreach: { data: skill.favoriteActivities, as: 'activity' }">
+                                    <span class="activity-container">
+                                        <span data-bind="text: activity"></span>
+                                    </span>
+                                </span>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="experience">
-                <h2>Experience</h2>
-                <div class="experience-items" data-bind="foreach: {data: experience, as: 'item'}">
-                    <div class="company-banner">
-                        <div class="company-container">
-                            <div class="company-logo" data-bind="if: item.company.logo">
-                                <img data-bind="attr: { src: item.company.logo }" />
-                            </div>
-                            <h4 class="company-name" data-bind="text: item.company.displayName"></h4>
-                        </div>
-                        <div class="title-container">
-                            <div class="title">
-                                <h3 data-bind="text:item.title"></h3>
-                                <div class="date-container">
-                                    <span class="start-date" data-bind="template: { name: 't-date-block', data: item.startDate }"></span>
-                                    <span class="date-group-seperator">-</span>
-                                    <span class="end-date" data-bind="template: { name: 't-date-block', data: item.endDate }"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accomplishments-container">
-                        <h3>Accomplishments</h3>
-                        <ul data-bind="foreach: { data: item.dutiesAndAccomplishments, as: 'exp' }">
-                            <li data-bind="html: exp"></li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -135,7 +192,7 @@
     </footer>
     <script type="text/html" id="t-date-block">
         <span data-bind="if: $data">
-            <span class="month" data-bind="text: item.startDate.month"></span><span class="date-seperator">/</span><span class="year" data-bind="text: item.startDate.year"></span>
+            <span class="month" data-bind="text: $data.month"></span><span class="date-seperator">/</span><span class="year" data-bind="text: $data.year"></span>
         </span>
         <span data-bind="ifnot: $data">
             <span>current</span>
@@ -143,10 +200,39 @@
     </script>
     <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.5.0.js"></script>
     <script type="text/javascript">
+        function createViewModel(data, text) {
+            var self = this;
+
+            this.model = data;
+            this.codeHtml = text;
+
+            this.viewState = {
+                view: ko.observable(0)
+            }
+
+            this.onClickFormattedView = function (item) {
+                self.viewState.view(0);
+            }
+
+            this.onClickCodeView = function (item) {
+                self.viewState.view(1);
+            }
+        }
+
         fetch("/resume.json")
             .then(response => response.json())
             .then(data => {
-                ko.applyBindings(data);
+
+                fetch('/resumeJsonCode.html')
+                    .then(response => response.text())
+                    .then(text => {
+
+                        var vm = createViewModel(data, text);
+
+                        window.debugViewModel = vm;
+
+                        ko.applyBindings(vm);
+                    });
             });
     </script>
 </body>
