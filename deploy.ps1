@@ -83,7 +83,10 @@ function UploadBlob {
 
 		[Parameter()]
 		[ValidateSet("Hot", "Cool", "Archive")]
-		[string]$AccessTier = "Hot"
+		[string]$AccessTier = "Hot",
+
+		[Parameter()]
+		[string]$ContentType = $null
 	)
 
 	$blobProperties = CreateBlobProperties `
@@ -91,7 +94,8 @@ function UploadBlob {
 					-BlobPath $BlobPath `
 					-ContainerName $ContainerName `
 					-AccountContext $AccountContext `
-					-AccessTier $AccessTier;
+					-AccessTier $AccessTier `
+					-ContentType $ContentType;
 
 	try
 	{
