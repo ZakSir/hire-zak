@@ -154,38 +154,45 @@ try
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "font", "icons", "fontello.eot")) `
 				-BlobPath "css/font/icons/fontello.eot" `
 				-ContainerName $TargetContainerName `
-				-AccountContext $AccountContext;
+				-AccountContext $AccountContext `
+				-ContentType "application/vnd.ms-fontobject";
 
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "font", "icons", "fontello.svg")) `
 				-BlobPath "css/font/icons/fontello.svg" `
 				-ContainerName $TargetContainerName `
-				-AccountContext $AccountContext;
+				-AccountContext $AccountContext `
+				-ContentType "image/svg+xml";
 
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "font", "icons", "fontello.ttf")) `
 				-BlobPath "css/font/icons/fontello.ttf" `
 				-ContainerName $TargetContainerName `
-				-AccountContext $AccountContext;
+				-AccountContext $AccountContext `
+				-ContentType "font/ttf";
 
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "font", "icons", "fontello.woff")) `
 				-BlobPath "css/font/icons/fontello.woff" `
 				-ContainerName $TargetContainerName `
-				-AccountContext $AccountContext;
+				-AccountContext $AccountContext `
+				-ContentType "font/woff";
 
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "font", "icons", "fontello.woff2")) `
 				-BlobPath "css/font/icons/fontello.woff2" `
 				-ContainerName $TargetContainerName `
-				-AccountContext $AccountContext;
+				-AccountContext $AccountContext `
+				-ContentType "font/woff2";
 
 	# Microsoft Cascadia Code
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "font", "microsoft", "cascadia-code", "CascadiaCode.ttf")) `
 				-BlobPath "css/font/microsoft/cascadia-code/CascadiaCode.ttf" `
 				-ContainerName $TargetContainerName `
-				-AccountContext $AccountContext;
+				-AccountContext $AccountContext `
+				-ContentType "font/ttf";
 
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "font", "microsoft", "cascadia-code", "CascadiaCode.woff2")) `
 				-BlobPath "css/font/microsoft/cascadia-code/CascadiaCode.woff2" `
 				-ContainerName $TargetContainerName `
-				-AccountContext $AccountContext;
+				-AccountContext $AccountContext `
+				-ContentType "font/woff2";;
 	
 	# Rendered LESS 
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "min", "site.css")) `
