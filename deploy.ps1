@@ -38,8 +38,20 @@ function CreateBlobProperties {
 
 		[Parameter()]
 		[ValidateSet("Hot", "Cool", "Archive")]
-		[string]$AccessTier = "Hot"
+		[string]$AccessTier = "Hot",
+
+		[Parameter()]
+		[string]$ContentType = $null
 	)
+
+	if($ContentType -eq $null)
+	{
+		$ct = [System.Web.MimeMapping]::GetMimeMapping($SourceContentPath);
+	}
+	else
+	{
+		$ct = $ContentType;
+	}
 
 	$blobSettings = @{
 		"File" = $SourceContentPath;
@@ -48,7 +60,7 @@ function CreateBlobProperties {
 		"Context" = $AccountContext;
 		"StandardBlobTier" = $AccessTier;
 		"Properties" = @{
-			"ContentType" = [System.Web.MimeMapping]::GetMimeMapping($SourceContentPath);
+			"ContentType" = $ct;
 		}
 	}
 
@@ -123,13 +135,15 @@ try
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "resume.json")) `
 				-BlobPath "resume.json" `
 				-ContainerName $TargetContainerName `
-				-AccountContext $AccountContext;
+				-AccountContext $AccountContext `
+				-ContentType "application/json";
 
 				
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "buildInfo.json")) `
 				-BlobPath "buildInfo.json" `
 				-ContainerName $TargetContainerName `
-				-AccountContext $AccountContext;
+				-AccountContext $AccountContext `
+				-ContentType "application/json";
 
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "resumeJsonCode.html")) `
 				-BlobPath "resumeJsonCode.html" `
