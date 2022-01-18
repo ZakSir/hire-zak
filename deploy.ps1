@@ -125,6 +125,12 @@ try
 				-ContainerName $TargetContainerName `
 				-AccountContext $AccountContext;
 
+				
+	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "buildInfo.json")) `
+				-BlobPath "buildInfo.json" `
+				-ContainerName $TargetContainerName `
+				-AccountContext $AccountContext;
+
 	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "resumeJsonCode.html")) `
 				-BlobPath "resumeJsonCode.html" `
 				-ContainerName $TargetContainerName `
