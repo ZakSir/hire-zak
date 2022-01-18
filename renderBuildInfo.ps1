@@ -24,5 +24,5 @@ $properties = @{
 	"branchName" = $SourceBranchName;
 }
 
-$properties | ConvertTo-Json -Depth 100 | Out-File -Path $OutputPath;
+$properties | ConvertTo-Json -Depth 100 | Out-File -FilePath $OutputPath;
 
