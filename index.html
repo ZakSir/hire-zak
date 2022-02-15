@@ -222,13 +222,33 @@
         }
 
         let resumeRequest = fetch("/resume.json")
-            .then(response => response.json());
+            .then(response => 
+            {
+                try
+                {
+                    return response.json()
+                }
+                catch(error)
+                {
+                    console.error(error);
+                }
+            });
 
         let resumeCodeRequest = fetch('/resumeJsonCode.html')
             .then(response => response.text());
 
         let buildInfoRequest = fetch('/buildInfo.json')
-            .then(response => response.json());
+            .then(response =>
+            {
+                try
+                {
+                    return response.json()
+                }
+                catch(error)
+                {
+                    console.error(error);
+                }
+            });
 
         Promise.all([resumeRequest, resumeCodeRequest, buildInfoRequest])
             .then(result => {
