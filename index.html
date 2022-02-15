@@ -174,8 +174,7 @@
                             <div class="activities">
                                 <span class="label activites-label"><span class="label-text">Activites</span><span class="label-decorator">:</span></span>
                                 <span class="activities-container" data-bind="foreach: { data: skill.favoriteActivities, as: 'activity' }">
-                                    <span class="activity-container">
-                                        <span data-bind="text: activity"></span>
+                                    <span class="activity-container" data-bind="text: activity">
                                     </span>
                                 </span>
                             </div>
@@ -187,7 +186,7 @@
     </article>
     <footer>
         <div id="footer-inner-container" class="page-inner-container">
-
+            <div
         </div>
     </footer>
     <script type="text/html" id="t-date-block">
@@ -218,6 +217,8 @@
             this.onClickCodeView = function (item) {
                 self.viewState.view(1);
             }
+
+            return this;
         }
 
         let resumeRequest = fetch("/resume.json")
@@ -229,7 +230,7 @@
         let buildInfoRequest = fetch('/buildInfo.json')
             .then(response => response.json());
 
-        Promise.all([resume.resumeRequest, resumeCodeRequest, buildInfoRequest])
+        Promise.all([resumeRequest, resumeCodeRequest, buildInfoRequest])
             .then(result => {
 
                 var vm = createViewModel(result[0], result[1], result[2]);

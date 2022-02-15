@@ -42,7 +42,7 @@ function CreateBlobProperties {
 
 		[Parameter(Mandatory = $true)]
 		[string]$ContentType
-	)
+		)
 	
 
 	$blobSettings = @{
