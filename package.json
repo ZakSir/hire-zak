@@ -1,0 +1,19 @@
+{
+  "name": "hire-zak",
+  "version": "1.0.0",
+  "description": "A static website of Zak Fargos Resume.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZakSir/hire-zak.git"
+  },
+  "author": "Zak Fargo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZakSir/hire-zak/issues"
+  },
+  "homepage": "https://github.com/ZakSir/hire-zak#readme"
+}
