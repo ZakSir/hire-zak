@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
   font-family: 'CascadiaCode';
   src: url('/css/font/microsoft/cascadia-code/CascadiaCode.ttf') format('truetype'), url('/css/font/microsoft/cascadia-code/CascadiaCode.woff2') format('woff');
   font-weight: normal;
@@ -175,6 +175,7 @@ article .person .person-tag .label {
 article .executive-summary h2 {
   padding: 10px 20px 10px 190px;
   background-color: #0099FF;
+  color: white;
 }
 article .executive-summary .inner-container {
   padding: 10px 20px 10px 190px;
@@ -191,6 +192,7 @@ article .executive-summary .inner-container p:last-child {
 article .skills h2 {
   padding: 10px 20px 10px 190px;
   background-color: #0099FF;
+  color: white;
 }
 article .skills .skills-container .skill-container {
   padding: 10px 20px 10px 190px;
@@ -227,6 +229,7 @@ article .skills .skills-container .skill-container .label {
 article .experience h2 {
   padding: 10px 20px 10px 190px;
   background-color: #0099FF;
+  color: white;
 }
 article .experience .experience-items .experience-item {
   padding: 10px 20px 10px 190px;
