@@ -193,14 +193,14 @@ try
 				-ContentType "font/woff2";;
 	
 	# Rendered LESS 
-	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "min", "site.css")) `
-				-BlobPath "css/min/site.css" `
+	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "site.css")) `
+				-BlobPath "css/site.css" `
 				-ContainerName $TargetContainerName `
 				-AccountContext $AccountContext `
 				-ContentType "text/css";
 	
-	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "min", "site.min.css")) `
-				-BlobPath "css/min/site.min.css" `
+	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "site.min.css")) `
+				-BlobPath "css/site.min.css" `
 				-ContainerName $TargetContainerName `
 				-AccountContext $AccountContext `
 				-ContentType "text/css";

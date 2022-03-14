@@ -367,6 +367,162 @@ article {
     position: relative;
 }
 
+article {
+    .experience{
+        .experience-items {
+            .experience-item{
+                .banner.company-banner-with-image{
+                    .company-logo-narrow {
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px)  {
+    header, article, footer {
+        .page-inner-container {
+            max-width: unset;
+        }
+    }
+
+    header {
+        .page-inner-container {
+            a {
+                display:none;
+            }
+
+            h2 {
+                padding: unset;
+            }
+
+            padding: 10px 20px;
+        }
+    }
+
+    article {
+        #article-inner-container-code {
+            display:none;
+        }
+
+        .person {
+            .photo-container {
+                display:none;
+            }
+
+            .text-container {
+                .person-name {
+                    font-size: 2em;
+                }
+                
+                .title-tag {
+                    font-size: 1.3em;
+                }
+                
+                padding: 10px 20px;
+            }
+        }
+
+        .executive-summary {
+            .section-title, .inner-container {
+                padding: 10px 20px;
+            }
+        }
+
+        .experience{
+            .section-title {
+                padding: 10px 20px;
+            }
+
+            .experience-items {
+                .experience-item{
+                    .banner.company-banner-with-image{
+                        .company-logo-wide {
+                            display:none;
+                        }
+
+                        .company-logo-narrow {
+                            display:flex;
+                        }
+
+                        margin-left: unset;
+                    }
+
+                    padding: 10px 20px;
+                }
+            }
+        }
+
+        .skills {
+            .section-title {
+                padding: 10px 20px;
+            }
+
+            .skills-container {
+                .skill-container {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
+
 @media print {
-    color: red;
+    @page {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    body {
+        padding-top: 72px;
+        padding-bottom: 72px ;
+        background-color:unset;
+    }
+    header { 
+        display:none;
+    }
+
+    article {
+        .person {
+            .photo-container {
+                img {
+                    margin-bottom: -1px;
+                }
+            }
+            background-color: unset;
+            color: unset;
+            border-bottom: 3px solid black;
+        }
+
+        .page-inner-container {
+            
+            max-width: unset;
+        }
+
+        h2.section-title {
+            background-color: unset;
+            color: unset;
+            font-size: 1.4em;
+            font-weight: bold;
+            border-bottom: 1px solid black;
+        }
+
+        .experience, .skills {
+            margin-top: 20px;
+            break-inside: avoid-page;
+        }
+
+        .experience {
+            .experience-items {
+                .experience-item {
+                    break-inside: avoid-page;
+                }
+            }
+        }
+    }
+
+    #article-inner-container-code {
+        display: none;
+    }
 }

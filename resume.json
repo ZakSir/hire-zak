@@ -2,13 +2,13 @@
   "personalInfo": {
     "person": {
       "picture": {
-        "uri": "https://hirezak.blob.core.windows.net/public/Zak-Profile-Dramatic-Color.jpg",
+        "uri": "https://hirezak.blob.core.windows.net/public/Zak-Resume-Shot.png",
         "altText": "Face Picture of Zak Fargo, Security Innovation Senior Principal"
       },
       "givenName": "Zak",
       "surname": "Fargo",
-      "email": "zak@zak.expert",
-      "location": "Burien, Washington",
+      "email": "zak@hirezak.com",
+      "location": "Seattle, Washington",
       "title": "Security Innovation Senior Principal",
       "locationExact": {
         "lat": 47.461286518019534,
@@ -48,7 +48,7 @@
     "items": [
       {
         "title": "Business Solutioning",
-        "body": "An expert in bringing ideas into reality. Zak is a seasoned Product Owner, with experience across software and industry domains in bringing a product from the idea stage, through business development, and to market. Most recently, launched a <strong>$20mm</strong>usd book of business, with over 10x RoI."
+        "body": "An expert in bringing ideas into reality. Zak is a seasoned Product Owner, with experience across software and industry domains in bringing a product from the idea stage, through business development, and to market. Ranging from commercial ventures to internal corporate governance tools, Zaks experience covers the entire domain of Information Technology."
       },
       {
         "title": "Software Engineering",
