@@ -199,11 +199,11 @@ try
 				-AccountContext $AccountContext `
 				-ContentType "text/css";
 	
-	UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "site.min.css")) `
-				-BlobPath "css/site.min.css" `
-				-ContainerName $TargetContainerName `
-				-AccountContext $AccountContext `
-				-ContentType "text/css";
+	# UploadBlob -SourceContentPath $([System.IO.Path]::Combine($DeploymentRootDirectory, "css", "site.min.css")) `
+	# 			-BlobPath "css/site.min.css" `
+	# 			-ContainerName $TargetContainerName `
+	# 			-AccountContext $AccountContext `
+	# 			-ContentType "text/css";
 }
 finally
 {
