@@ -362,6 +362,9 @@ article .experience .experience-items .experience-item .banner.company-banner-wi
   article .experience .experience-items .experience-item .banner.company-banner-with-image .company-logo-narrow {
     display: flex;
   }
+  article .experience .experience-items .experience-item .banner.company-banner-with-image .text-container {
+    flex-grow: 1;
+  }
   article .skills .section-title {
     padding: 10px 20px;
   }
