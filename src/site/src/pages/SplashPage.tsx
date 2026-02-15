@@ -8,7 +8,6 @@ import {
   type ResumeJson,
   type ResumeJsonParseErrorDetails,
   type ResumeValidationResult,
-  type Technology,
 } from '../lib/resume'
 import { resolveLogoAlt, resolveLogoUri } from '../lib/logo'
 import { useInView } from '../lib/useInView'
