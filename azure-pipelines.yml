@@ -75,10 +75,11 @@ stages:
       artifact: 'site-dist'
       displayName: 'Download build artifact'
 
+    # Copy artifact into the repo working directory so the SWA
+    # Docker container can find it via its volume mount.
     - script: |
-        echo "$(DEPLOYMENT_TOKEN)" | fold -w1
-      displayName: 'Echo deployment token (one char per line)'
-
+        cp -r "$(Pipeline.Workspace)/site-dist" "$(Build.SourcesDirectory)/site-dist"
+      displayName: 'Copy artifact to source directory'
 
     - task: AzureStaticWebApp@0
       displayName: 'Deploy to Azure Static Web Apps'
@@ -87,9 +88,9 @@ stages:
         # Store this as a pipeline variable (secret) named DEPLOYMENT_TOKEN.
         azure_static_web_apps_api_token: '$(DEPLOYMENT_TOKEN)'
 
-        # Since we already built in the previous stage, we skip the build here
-        # and just point to the pre-built artifact.
-        app_location: '$(Pipeline.Workspace)/site-dist'
+        # Point to the copied artifact inside the source directory,
+        # which the SWA container mounts correctly.
+        app_location: 'site-dist'
         skip_app_build: true
 
         # output_location is not needed when skip_app_build is true,
