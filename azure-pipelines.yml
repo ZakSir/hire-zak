@@ -16,6 +16,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
+  group: 'hire-zak-creds'
   nodeVersion: '22.x'
   appLocation: 'src/site'
   outputLocation: 'dist'
