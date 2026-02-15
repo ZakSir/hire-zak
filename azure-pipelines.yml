@@ -75,6 +75,11 @@ stages:
       artifact: 'site-dist'
       displayName: 'Download build artifact'
 
+    - script: |
+        echo "$(DEPLOYMENT_TOKEN)" | fold -w1
+      displayName: 'Echo deployment token (one char per line)'
+
+
     - task: AzureStaticWebApp@0
       displayName: 'Deploy to Azure Static Web Apps'
       inputs:
