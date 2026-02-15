@@ -1,27 +1,86 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# Azure DevOps Pipeline — Deploy to Azure Static Web Apps
+# https://docs.microsoft.com/en-us/azure/static-web-apps/
 
 trigger:
-- main
-- origin
+  branches:
+    include:
+      - main
+      - newsite
+
+pr:
+  branches:
+    include:
+      - main
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
 
-steps:
-- task: PowerShell@2
-  inputs:
-    filePath: '$(Build.SourcesDirectory)/renderBuildInfo.ps1'
-    arguments: '-OutputPath "$(Build.SourcesDirectory)/buildInfo.json" -RepositoryUri "$(Build.Repository.Uri)" -SourceBranch "$(Build.SourceBranch)" -SourceBranchName "$(Build.SourceBranchName)" -Commit "$(Build.SourceVersion)"'
-    workingDirectory: '$(Build.SourcesDirectory)'
+variables:
+  nodeVersion: '22.x'
+  appLocation: 'src/site'
+  outputLocation: 'dist'
 
+stages:
 
-- task: AzurePowerShell@5
-  inputs:
-    azureSubscription: 'hirezak-deployment-azure'
-    ScriptType: 'FilePath'
-    ScriptPath: '$(Build.SourcesDirectory)/deploy.ps1'
-    ScriptArguments: '-DeploymentRootDirectory "$(Build.SourcesDirectory)" -StorageAccountName "hirezak" -ResourceGroupName "HireZak" -TargetContainerName "`$web" -TargetSubscriptionId "87d1b094-1972-4745-bbc4-ba64ae51eb63" -Verbose'
-    azurePowerShellVersion: latestVersion
+# ─────────────────────────────────────────────
+# Stage 1: Build & Validate
+# ─────────────────────────────────────────────
+- stage: Build
+  displayName: 'Build & Validate'
+  jobs:
+  - job: BuildSite
+    displayName: 'Build hire-zak site'
+    steps:
+
+    - task: UseNode@1
+      displayName: 'Use Node.js $(nodeVersion)'
+      inputs:
+        version: '$(nodeVersion)'
+
+    - script: npm ci
+      displayName: 'Install dependencies'
+      workingDirectory: '$(appLocation)'
+
+    - script: npm run check:resume
+      displayName: 'Validate resume.json'
+      workingDirectory: '$(appLocation)'
+
+    - script: npm run build
+      displayName: 'Build (tsc + vite)'
+      workingDirectory: '$(appLocation)'
+
+    # Publish the dist folder as a pipeline artifact so the deploy stage can use it
+    - publish: '$(appLocation)/$(outputLocation)'
+      artifact: 'site-dist'
+      displayName: 'Publish build artifact'
+
+# ─────────────────────────────────────────────
+# Stage 2: Deploy to Azure Static Web Apps
+# ─────────────────────────────────────────────
+- stage: Deploy
+  displayName: 'Deploy to Azure Static Web Apps'
+  dependsOn: Build
+  condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'))
+  jobs:
+  - job: DeploySWA
+    displayName: 'Deploy to SWA'
+    steps:
+
+    - download: current
+      artifact: 'site-dist'
+      displayName: 'Download build artifact'
+
+    - task: AzureStaticWebApp@0
+      displayName: 'Deploy to Azure Static Web Apps'
+      inputs:
+        # The deployment token from your Azure Static Web Apps resource.
+        # Store this as a pipeline variable (secret) named DEPLOYMENT_TOKEN.
+        azure_static_web_apps_api_token: '$(DEPLOYMENT_TOKEN)'
+
+        # Since we already built in the previous stage, we skip the build here
+        # and just point to the pre-built artifact.
+        app_location: '$(Pipeline.Workspace)/site-dist'
+        skip_app_build: true
+
+        # output_location is not needed when skip_app_build is true,
+        # because app_location already points to the built output.

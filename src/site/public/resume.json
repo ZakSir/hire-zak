@@ -1,0 +1,1091 @@
+{
+  "personalInfo": {
+    "person": {
+      "picture": {
+        "uri": "/assets/photos/zak1.jpg",
+        "altText": "Headshot of Zak Fargo"
+      },
+      "givenName": "Zak",
+      "surname": "Fargo",
+      "email": "zak@hirezak.com",
+      "location": "Seattle, WA / Honolulu, HI (Hybrid / Remote)",
+      "title": "Artificial Intelligence Executive — Hands-on AI Engineering (LLMs • Agents • MCP)",
+      "locationExact": {
+        "lat": 47.461286518019534,
+        "long": -122.3414744595488
+      },
+      "hobbies": [
+        "Welding (GMAW, GTAW)",
+        "Borosilicate Flameworking",
+        "Electrical Engineering",
+        "Home Automation"
+      ]
+    },
+    "token": {
+      "header": {
+        "typ": "JWT",
+        "alg": "HS256",
+        "kid": "HIp7w5Er/viSjjk6iSJfdWkhJAjlRsml6FJRasFCwOU="
+      },
+      "payload": {
+        "aud": "https://zak.expert/",
+        "iss": "person://zak/",
+        "idp": "https://identity.zak.expert/core/oauth/2.0",
+        "exp": 1673830242,
+        "name": "Zak Fargo",
+        "scp": [
+          "contact",
+          "interview",
+          "hiring",
+          "work"
+        ]
+      },
+      "signature": "VtVKZF4TlPKV4uz9YlIOSFCF2Dyu9byxYGHX6ebgQ78"
+    }
+  },
+  "executiveSummary": {
+    "title": "Executive Summary",
+    "items": [
+      {
+        "title": "AI Strategy → Delivery",
+        "body": "Hands-on AI engineering executive who owns strategy-to-delivery: set roadmaps, design platforms, and ship production LLM/agent systems that move measurable outcomes (cost, cycle time, quality, and adoption)."
+      },
+      {
+        "title": "Agentic Systems at Scale",
+        "body": "Builds agentic automation across complex workflows (triage, investigation, orchestration, reporting). Deep in the stack: retrieval (RAG), evaluation, guardrails, observability, and enterprise integration (APIs, CI/CD, data)."
+      },
+      {
+        "title": "Enterprise Governance & Trust",
+        "body": "Leads enterprise adoption with trust: governance aligned to NIST AI RMF, privacy-by-design, model risk management, and compliance mappings (e.g., NIST CSF, ISO 27001) so AI can ship safely without slowing delivery."
+      },
+      {
+        "title": "Engineering Leadership",
+        "body": "Leads globally distributed engineering teams (100+) delivering AI-first solutions. Partners with executives and clients, sets delivery standards, and drives human-first adoption that upgrades work from repetitive tasks to higher-leverage engineering." 
+      }
+    ]
+  },
+  "proficiencies": [
+    {
+      "skillCategoryName": "Software Engineering",
+      "skillNames": [
+        "csharp",
+        "javascript",
+        "html5",
+        "css",
+        "less",
+        "typescript",
+        "asp.net",
+        "powershell",
+        "yaml",
+        "json"
+      ],
+      "level": "master",
+      "yearsOfExperience": 10,
+      "favoriteActivities": [
+        "framework development",
+        "refactoring",
+        "automation",
+        "deployment",
+        "open source"
+      ]
+    },
+    {
+      "skillCategoryName": "Modern Application Infrastructure",
+      "skillNames": [
+        "CI/CD Deployment",
+        "Kubernetes",
+        "Docker",
+        "Containerization"
+      ],
+      "level": "journeyman",
+      "yearsOfExperience": 4,
+      "favoriteActivities": [
+        "Automated Deployments"
+      ]
+    },
+    {
+      "skillCategoryName": "Microsoft Administration",
+      "skillNames": [
+        "Windows",
+        "Windows Server",
+        "PowerShell",
+        "Windows Network Administration",
+        "Active Directory",
+        "Exchange"
+      ],
+      "level": "journeyman",
+      "yearsOfExperience": 10,
+      "favoriteActivities": [
+        "Environment Design",
+        "Active Directory"
+      ]
+    },
+    {
+      "skillNames": [
+        "UX : XAML / WPF"
+      ],
+      "level": "journeyman",
+      "yearsOfExperience": 3,
+      "favoriteActivities": [
+        "Ergonomic Design",
+        "Delight moments",
+        "Consistency"
+      ]
+    },
+    {
+      "skillNames": [
+        "Html5",
+        "CSS3",
+        "Javascript",
+        "TypeScript"
+      ],
+      "level": "journeyman",
+      "yearsOfExperience": 5,
+      "favoriteActivities": [
+        "Single Page Applications",
+        "Api Design",
+        "Performance"
+      ]
+    },
+    {
+      "skillNames": [
+        "Azure",
+        "Windows Azure"
+      ],
+      "level": "journeyman",
+      "yearsOfExperience": 4,
+      "favoriteActivities": [
+        "ApplicationInsights",
+        "Storage",
+        "HyperScale",
+        "Analytics",
+        "Service Design"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": {
+        "displayName": "EY",
+        "logo": {
+          "light": "/assets/light-mode/ey-logo.svg",
+          "dark": "/assets/dark-mode/ey-logo.svg",
+          "alt": "EY corporate logo."
+        }
+      },
+      "title": "Cybersecurity AI Engineering Lead (Senior Manager)",
+      "team": "Cybersecurity (US) AI Engineering",
+      "startDate": {
+        "year": 2025,
+        "month": 3
+      },
+      "endDate": null,
+      "tagline": "Own strategy-to-delivery for production AI that automates security operations and accelerates enterprise response.",
+      "themes": [
+        "Agentic AI",
+        "AI Governance",
+        "Engineering Leadership"
+      ],
+      "signals": {
+        "cost": 0.95,
+        "speed": 0.9,
+        "adoption": 0.75,
+        "trust": 0.85,
+        "engineering": 0.95
+      },
+      "impactMetrics": [
+        {
+          "label": "Production agents shipped",
+          "value": "100+",
+          "unit": "",
+          "context": "Across 4 solutions, 5 clients",
+          "viz": "sparkline",
+          "sparkData": [1, 3, 5, 8, 14, 25, 45, 70, 100]
+        },
+        {
+          "label": "Internal agents in development",
+          "value": "100s",
+          "unit": "",
+          "context": "Hundreds of internal agents in active development",
+          "viz": "text"
+        },
+        {
+          "label": "Engineering team (fully staffed)",
+          "value": "300",
+          "unit": " engineers",
+          "context": "Globally distributed across 13+ squads",
+          "viz": "text"
+        },
+        {
+          "label": "Cost reduction range",
+          "value": "40-95",
+          "unit": "%",
+          "context": "Client outcomes in real engagements",
+          "viz": "range-gauge"
+        }
+      ],
+      "highlights": [
+        "Own strategy-to-delivery for client-facing production AI; shipped 100 agents across 4 solutions for 5 clients, with hundreds more internal agents in active development.",
+        "Deliver SOC automation (LLM-powered triage, investigation, orchestration) integrated with SOAR/case management; achieving 40-95% cost reduction depending on the task.",
+        "Build reusable accelerators adopted across offerings; standardize RAG, evaluation, guardrails, and observability as an engineering operating model.",
+        "Co-lead deployment governance aligned to NIST AI RMF (model risk, privacy-by-design, and compliance mappings) enabling safe, fast adoption.",
+        "Lead 300 engineers (fully staffed) across 13+ AI-first squads delivering solutions across identity, TVM, compliance, appsec, policy, and governance."
+      ],
+      "initiatives": [
+        {
+          "name": "SOC Agentic Automation",
+          "problem": "Manual L1/L2 triage and investigation slows response and increases cost.",
+          "approach": "Agentic workflows for triage, investigation, and orchestration; deeply integrated with enterprise tooling.",
+          "outcome": "Reduced targeted operational costs (70-95%) and accelerated response in client engagements."
+        },
+        {
+          "name": "Reusable AI Accelerator Library",
+          "problem": "Teams reinvent prompting, retrieval, and safety patterns across solutions.",
+          "approach": "Standardize RAG, evaluation, guardrails, and observability; publish reusable components.",
+          "outcome": "Accelerated delivery across squads and improved quality/consistency of AI solutions."
+        },
+        {
+          "name": "Dynamic Reporting",
+          "problem": "Static reporting pipelines struggle to produce context-aware narratives from arbitrary data sources.",
+          "approach": "LLM-driven report generation over governed data with contextual accuracy.",
+          "outcome": "Enabled high-signal reporting workflows that adapt to the questions stakeholders ask."
+        }
+      ],
+      "stack": {
+        "methods": ["Agentic AI", "LLMs", "RAG"],
+        "libraries": ["LangChain", "LangGraph"],
+        "cloud": ["Azure OpenAI", "Azure AI Foundry"],
+        "data": [],
+        "integrations": ["Microsoft Sentinel", "ServiceNow"]
+      },
+      "technologies": [
+        { "name": "OpenAI", "icon": { "dark": "/assets/icons/dark-mode/openai.svg", "light": "/assets/icons/light-mode/openai.svg" } },
+        { "name": "Microsoft Copilot", "icon": { "agnostic": "/assets/icons/agnostic/copilot.png" } },
+        { "name": "GitHub Copilot", "icon": { "dark": "/assets/icons/dark-mode/Copilot_Icon_White.svg", "light": "/assets/icons/light-mode/Copilot_Icon_Black.svg" } },
+        { "name": "Python", "icon": { "agnostic": "/assets/icons/agnostic/python.svg" } },
+        { "name": "TypeScript", "icon": { "agnostic": "/assets/icons/agnostic/typescript.svg" } },
+        { "name": "JavaScript", "icon": { "agnostic": "/assets/icons/agnostic/javascript.svg" } },
+        { "name": "React", "icon": { "agnostic": "/assets/icons/agnostic/react.svg" } },
+        { "name": "Angular", "icon": { "agnostic": "/assets/icons/agnostic/angular_gradient.png" } },
+        { "name": "Node.js", "icon": { "dark": "/assets/icons/dark-mode/nodejs.svg", "light": "/assets/icons/light-mode/nodejs.svg" } },
+        { "name": "FastAPI", "icon": { "dark": "/assets/icons/dark-mode/fastapi.svg", "light": "/assets/icons/light-mode/fastapi.svg" } },
+        { "name": "Flask", "icon": { "dark": "/assets/icons/dark-mode/Flask.svg", "light": "/assets/icons/light-mode/Flask.svg" } },
+        { "name": "Pydantic", "icon": { "agnostic": "/assets/icons/agnostic/pydantic.svg" } },
+        { "name": "GraphQL", "icon": { "agnostic": "/assets/icons/agnostic/graphql.svg" } },
+        { "name": "KnockoutJS", "icon": { "dark": "/assets/icons/dark-mode/KnockoutJS.svg", "light": "/assets/icons/light-mode/KnockoutJS.svg" } },
+        { "name": "D3.js", "icon": { "agnostic": "/assets/icons/agnostic/Logo_D3.svg" } },
+        { "name": "HTML5", "icon": { "agnostic": "/assets/icons/agnostic/html5.svg" } },
+        { "name": "CSS3", "icon": { "agnostic": "/assets/icons/agnostic/css3.svg" } },
+        { "name": "Webpack", "icon": { "agnostic": "/assets/icons/agnostic/webpack.svg" } },
+        { "name": "npm", "icon": { "agnostic": "/assets/icons/agnostic/npm.svg" } },
+        { "name": "Azure", "icon": { "agnostic": "/assets/icons/agnostic/azure.svg" } },
+        { "name": "Azure OpenAI", "icon": { "agnostic": "/assets/icons/agnostic/03438-icon-service-Azure-OpenAI.svg" } },
+        { "name": "Azure AI Foundry", "icon": { "agnostic": "/assets/icons/agnostic/03513-icon-service-AI-Studio.svg" } },
+        { "name": "Azure AI Search", "icon": { "agnostic": "/assets/icons/agnostic/10044-icon-service-Cognitive-Search.svg" } },
+        { "name": "Azure Cosmos DB", "icon": { "agnostic": "/assets/icons/agnostic/10121-icon-service-Azure-Cosmos-DB.svg" } },
+        { "name": "PostgreSQL", "icon": { "agnostic": "/assets/icons/agnostic/postgresql.svg" } },
+        { "name": "Neo4j", "icon": { "agnostic": "/assets/icons/agnostic/neo4j.svg" } },
+        { "name": "MySQL", "icon": { "agnostic": "/assets/icons/agnostic/mysql.svg" } },
+        { "name": "Redis", "icon": { "agnostic": "/assets/icons/agnostic/redis.svg" } },
+        { "name": "Elasticsearch", "icon": { "agnostic": "/assets/icons/agnostic/elasticsearch.svg" } },
+        { "name": "Azure Storage", "icon": { "agnostic": "/assets/icons/agnostic/10086-icon-service-Storage-Accounts.svg" } },
+        { "name": "Azure Event Hubs", "icon": { "agnostic": "/assets/icons/agnostic/00039-icon-service-Event-Hubs.svg" } },
+        { "name": "Azure Event Grid", "icon": { "agnostic": "/assets/icons/agnostic/10206-icon-service-Event-Grid-Topics.svg" } },
+        { "name": "Azure Key Vault", "icon": { "agnostic": "/assets/icons/agnostic/10245-icon-service-Key-Vaults.svg" } },
+        { "name": "Azure APIM", "icon": { "agnostic": "/assets/icons/agnostic/10042-icon-service-API-Management-Services.svg" } },
+        { "name": "Azure Container Apps", "icon": { "agnostic": "/assets/icons/agnostic/02884-icon-service-Worker-Container-App.svg" } },
+        { "name": "Azure Container Registry", "icon": { "agnostic": "/assets/icons/agnostic/10105-icon-service-Container-Registries.svg" } },
+        { "name": "Azure Functions", "icon": { "agnostic": "/assets/icons/agnostic/10029-icon-service-Function-Apps.svg" } },
+        { "name": "Azure Resource Graph", "icon": { "agnostic": "/assets/icons/agnostic/10318-icon-service-Resource-Graph-Explorer.svg" } },
+        { "name": "Application Insights", "icon": { "agnostic": "/assets/icons/agnostic/00012-icon-service-Application-Insights.svg" } },
+        { "name": "Bicep", "icon": { "agnostic": "/assets/icons/agnostic/bicep.svg" } },
+        { "name": "Microsoft Purview", "icon": { "agnostic": "/assets/icons/agnostic/icon-purview.webp" } },
+        { "name": "Microsoft Sentinel", "icon": { "agnostic": "/assets/icons/agnostic/10248-icon-service-Azure-Sentinel.svg" } },
+        { "name": "Microsoft Teams", "icon": { "agnostic": "/assets/icons/agnostic/microsoft-teams.svg" } },
+        { "name": "Microsoft 365", "icon": { "agnostic": "/assets/icons/agnostic/microsoft365.svg" } },
+        { "name": "Entra ID Protection", "icon": { "agnostic": "/assets/icons/agnostic/10231-icon-service-Entra-ID-Protection.svg" } },
+        { "name": "Entra Managed Identities", "icon": { "agnostic": "/assets/icons/agnostic/10227-icon-service-Entra-Managed-Identities.svg" } },
+        { "name": "Entra PIM", "icon": { "agnostic": "/assets/icons/agnostic/02251-icon-service-Entra-Privleged-Identity-Management.svg" } },
+        { "name": "Entra Global Secure Access", "icon": { "agnostic": "/assets/icons/agnostic/03309-icon-service-Entra-Global-Secure-Access.svg" } },
+        { "name": "Entra Verified ID", "icon": { "agnostic": "/assets/icons/agnostic/03143-icon-service-Entra-Verified-ID.svg" } },
+        { "name": "Entra Domain Services", "icon": { "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg" } },
+        { "name": "Azure DevOps", "icon": { "agnostic": "/assets/icons/agnostic/azure-devops.svg" } },
+        { "name": "Jira", "icon": { "agnostic": "/assets/icons/agnostic/jira.svg" } },
+        { "name": "GitHub", "icon": { "dark": "/assets/icons/dark-mode/GitHub_Invertocat_White.svg", "light": "/assets/icons/light-mode/GitHub_Invertocat_Black.svg" } },
+        { "name": "Git", "icon": { "agnostic": "/assets/icons/agnostic/git.svg" } },
+        { "name": "Docker", "icon": { "agnostic": "/assets/icons/agnostic/docker.svg" } },
+        { "name": "Kubernetes", "icon": { "agnostic": "/assets/icons/agnostic/kubernetes.svg" } },
+        { "name": "Linux", "icon": { "dark": "/assets/icons/dark-mode/linux-logo-light-mode.svg", "light": "/assets/icons/light-mode/linux-logo-light-mode.svg" } },
+        { "name": "NVIDIA", "icon": { "dark": "/assets/icons/dark-mode/nvidia.svg", "light": "/assets/icons/light-mode/nvidia.svg" } },
+        { "name": "Figma", "icon": { "agnostic": "/assets/icons/agnostic/figma.svg" } },
+        { "name": "VS Code", "icon": { "agnostic": "/assets/icons/agnostic/vscode.svg" } },
+        { "name": "Grafana", "icon": { "agnostic": "/assets/icons/agnostic/grafana.svg" } },
+        { "name": "LangChain", "icon": { "dark": "/assets/icons/dark-mode/LangChain_Logo.svg", "light": "/assets/icons/light-mode/LangChain_Logo.svg" } },
+        { "name": "LangGraph", "icon": { "dark": "/assets/icons/dark-mode/langgraph-color.svg", "light": "/assets/icons/light-mode/langgraph-color.svg" } },
+        { "name": "MCP", "icon": { "dark": "/assets/icons/dark-mode/mcp.svg", "light": "/assets/icons/light-mode/mcp.svg" } },
+        { "name": "A2A", "icon": { "dark": "/assets/icons/dark-mode/a2a-logo-white.svg", "light": "/assets/icons/light-mode/a2a-logo-black.svg" } },
+        { "name": "ServiceNow", "icon": { "dark": "/assets/icons/dark-mode/ServiceNow_logo.svg", "light": "/assets/icons/light-mode/ServiceNow_logo.svg" } },
+        { "name": "CrowdStrike", "icon": { "agnostic": "/assets/icons/agnostic/CrowdStrike_logo.svg" } },
+        { "name": "Palo Alto Networks", "icon": { "agnostic": "/assets/icons/agnostic/palo-alto-panw.svg" } },
+        { "name": "Splunk", "icon": { "dark": "/assets/icons/dark-mode/splunk.svg", "light": "/assets/icons/light-mode/splunk.svg" } },
+        { "name": "Qualys", "icon": { "agnostic": "/assets/icons/agnostic/qualys.svg" } },
+        { "name": "Okta", "icon": { "agnostic": "/assets/icons/agnostic/okta.svg" } },
+        { "name": "Saviynt", "icon": { "dark": "/assets/icons/dark-mode/saviynt.svg", "light": "/assets/icons/light-mode/saviynt.svg" } },
+        { "name": "n8n", "icon": { "agnostic": "/assets/icons/agnostic/n8n.svg" } },
+        { "name": "Azure Artifacts", "icon": { "agnostic": "/assets/icons/agnostic/azure-artifacts.svg" } },
+        { "name": "NIST", "icon": { "dark": "/assets/icons/dark-mode/nist.svg", "light": "/assets/icons/light-mode/nist.svg" } },
+        { "name": "ISO 27001", "icon": { "agnostic": "/assets/icons/agnostic/iso.svg" } }
+      ],
+      "dutiesAndAccomplishments": [
+        "Own strategy-to-delivery for AI in the Cybersecurity portfolio: roadmap, architecture, delivery standards, and production execution across 5 client engagements.",
+        "Shipped 100 production agents across 4 solutions; hundreds more internal agents in active development.",
+        "Drive SOC automation (LLM-powered triage, investigation, and orchestration) integrated with SOAR/case management; achieving 40-95% cost reduction depending on task complexity.",
+        "Build reusable accelerators adopted across offerings; standardize RAG, evaluation, guardrails, and observability to increase delivery speed and consistency.",
+        "Co-lead governance for deployments aligned to NIST AI RMF (model risk, privacy, compliance mapping) to enable scaled adoption.",
+        "Lead 300 engineers (fully staffed) across 13+ squads; teams build AI systems end-to-end (with supporting API, integration, and CI/CD work).",
+        "Implemented identity automation workflows using n8n for orchestration across identity governance platforms (Saviynt, Okta), reducing manual provisioning and access review cycles."
+      ]
+    },
+    {
+      "company": {
+        "displayName": "Accenture",
+        "logo": {
+          "invariant": "/assets/invariant/accenture-logo-bare.svg",
+          "alt": "Accenture Plc Corporate Logo."
+        }
+      },
+      "title": "Security Innovation Senior Principal",
+      "team": "Cloud Security",
+      "startDate": {
+        "year": 2021,
+        "month": 6
+      },
+      "endDate": {
+        "year": 2025,
+        "month": 3
+      },
+      "tagline": "Scaled engineering delivery and internal platforms that reduced cycle time and upgraded teams’ automation maturity.",
+      "themes": [
+        "Engineering Leadership",
+        "Platform Engineering",
+        "Cloud Governance"
+      ],
+      "signals": {
+        "cost": 0.75,
+        "speed": 0.8,
+        "adoption": 0.8,
+        "trust": 0.7,
+        "engineering": 0.85
+      },
+      "impactMetrics": [
+        {
+          "label": "Major solutions delivered",
+          "value": "5",
+          "unit": "",
+          "context": "Across AI, governance, platform engineering",
+          "viz": "text"
+        },
+        {
+          "label": "Production agents built",
+          "value": "40",
+          "unit": "",
+          "context": "AI agents in production workflows",
+          "viz": "text"
+        },
+        {
+          "label": "Generative AI early adopter",
+          "value": "Early Adopter",
+          "unit": "",
+          "context": "Pioneered AI adoption before mainstream enterprise readiness",
+          "viz": "text"
+        },
+        {
+          "label": "Cost reduction range",
+          "value": "20-60",
+          "unit": "%",
+          "context": "Platform and automation outcomes",
+          "viz": "range-gauge"
+        },
+        {
+          "label": "Upskilling reach (Code Camp)",
+          "value": "1000s",
+          "unit": "",
+          "context": "Weekly sessions touching thousands of employees",
+          "viz": "text"
+        },
+        {
+          "label": "Knowledge graph relationships",
+          "value": "Millions",
+          "unit": "",
+          "context": "Large graph linked to policies, engagements, opportunities",
+          "viz": "text-icon",
+          "icon": "graph"
+        }
+      ],
+      "initiatives": [
+        {
+          "name": "Knowledge Management System (Graph)",
+          "problem": "Critical knowledge was fragmented across tools and tribal memory, slowing delivery and increasing rework.",
+          "approach": "Built a graph of assets and relationships plus automation for discovery and consistency; integrated into delivery workflows.",
+          "outcome": "Reduced time spent on discovery by ~40% and improved delivery throughput."
+        },
+        {
+          "name": "Engineering Upskilling (Code Camp)",
+          "problem": "Inconsistent scripting/automation skills created bottlenecks and avoidable operational toil.",
+          "approach": "Designed and ran an internal upskilling program focused on practical automation, repeatable patterns, and operational rigor.",
+          "outcome": "Raised baseline competency and enabled broader self-service automation across the practice."
+        }
+      ],
+      "stack": {
+        "methods": ["Platform Engineering", "Governance-as-Code"],
+        "cloud": ["Azure"],
+        "data": [],
+        "integrations": ["Azure DevOps"]
+      },
+      "technologies": [
+        { "name": "OpenAI", "icon": { "dark": "/assets/icons/dark-mode/openai.svg", "light": "/assets/icons/light-mode/openai.svg" } },
+        { "name": "Google Gemini", "icon": { "dark": "/assets/icons/dark-mode/gemini.svg", "light": "/assets/icons/light-mode/gemini.svg" } },
+        { "name": "Semantic Kernel", "icon": { "agnostic": "/assets/icons/agnostic/semantic-kernel.png" } },
+        { "name": "LangChain", "icon": { "dark": "/assets/icons/dark-mode/LangChain_Logo.svg", "light": "/assets/icons/light-mode/LangChain_Logo.svg" } },
+        { "name": "LangGraph", "icon": { "dark": "/assets/icons/dark-mode/langgraph-color.svg", "light": "/assets/icons/light-mode/langgraph-color.svg" } },
+        { "name": "MCP", "icon": { "dark": "/assets/icons/dark-mode/mcp.svg", "light": "/assets/icons/light-mode/mcp.svg" } },
+        { "name": "Google Cloud", "icon": { "agnostic": "/assets/icons/agnostic/gcp.svg" } },
+        { "name": "AWS", "icon": { "dark": "/assets/icons/dark-mode/aws.svg", "light": "/assets/icons/light-mode/aws.svg" } },
+        { "name": "C#", "icon": { "agnostic": "/assets/icons/agnostic/c-sharp.svg" } },
+        { "name": "Python", "icon": { "agnostic": "/assets/icons/agnostic/python.svg" } },
+        { "name": ".NET", "icon": { "agnostic": "/assets/icons/agnostic/dotnet.svg" } },
+        { "name": "TypeScript", "icon": { "agnostic": "/assets/icons/agnostic/typescript.svg" } },
+        { "name": "JavaScript", "icon": { "agnostic": "/assets/icons/agnostic/javascript.svg" } },
+        { "name": "React", "icon": { "agnostic": "/assets/icons/agnostic/react.svg" } },
+        { "name": "Node.js", "icon": { "dark": "/assets/icons/dark-mode/nodejs.svg", "light": "/assets/icons/light-mode/nodejs.svg" } },
+        { "name": "FastAPI", "icon": { "dark": "/assets/icons/dark-mode/fastapi.svg", "light": "/assets/icons/light-mode/fastapi.svg" } },
+        { "name": "Flask", "icon": { "dark": "/assets/icons/dark-mode/Flask.svg", "light": "/assets/icons/light-mode/Flask.svg" } },
+        { "name": "Pydantic", "icon": { "agnostic": "/assets/icons/agnostic/pydantic.svg" } },
+        { "name": "ASP.NET", "icon": { "dark": "/assets/icons/dark-mode/asp-dot-net.svg", "light": "/assets/icons/light-mode/asp-dot-net.svg" } },
+        { "name": "LESS", "icon": { "agnostic": "/assets/icons/agnostic/LESS_Logo.svg" } },
+        { "name": "KnockoutJS", "icon": { "dark": "/assets/icons/dark-mode/KnockoutJS.svg", "light": "/assets/icons/light-mode/KnockoutJS.svg" } },
+        { "name": "HTML5", "icon": { "agnostic": "/assets/icons/agnostic/html5.svg" } },
+        { "name": "CSS3", "icon": { "agnostic": "/assets/icons/agnostic/css3.svg" } },
+        { "name": "Webpack", "icon": { "agnostic": "/assets/icons/agnostic/webpack.svg" } },
+        { "name": "Windows", "icon": { "agnostic": "/assets/icons/agnostic/windows.svg" } },
+        { "name": "Thales", "icon": { "dark": "/assets/icons/dark-mode/thales.svg", "light": "/assets/icons/light-mode/thales.svg" } },
+        { "name": "Azure", "icon": { "agnostic": "/assets/icons/agnostic/azure.svg" } },
+        { "name": "Azure OpenAI", "icon": { "agnostic": "/assets/icons/agnostic/03438-icon-service-Azure-OpenAI.svg" } },
+        { "name": "Azure AI Search", "icon": { "agnostic": "/assets/icons/agnostic/10044-icon-service-Cognitive-Search.svg" } },
+        { "name": "Azure Policy", "icon": { "agnostic": "/assets/icons/agnostic/10316-icon-service-Policy.svg" } },
+        { "name": "Azure Log Analytics", "icon": { "agnostic": "/assets/icons/agnostic/00009-icon-service-Log-Analytics-Workspaces.svg" } },
+        { "name": "Application Insights", "icon": { "agnostic": "/assets/icons/agnostic/00012-icon-service-Application-Insights.svg" } },
+        { "name": "Azure Sentinel", "icon": { "agnostic": "/assets/icons/agnostic/10248-icon-service-Azure-Sentinel.svg" } },
+        { "name": "Azure Logic Apps", "icon": { "agnostic": "/assets/icons/agnostic/02631-icon-service-Logic-Apps.svg" } },
+        { "name": "Azure Functions", "icon": { "agnostic": "/assets/icons/agnostic/10029-icon-service-Function-Apps.svg" } },
+        { "name": "Azure APIM", "icon": { "agnostic": "/assets/icons/agnostic/10042-icon-service-API-Management-Services.svg" } },
+        { "name": "Azure Container Apps", "icon": { "agnostic": "/assets/icons/agnostic/02884-icon-service-Worker-Container-App.svg" } },
+        { "name": "Azure Container Registry", "icon": { "agnostic": "/assets/icons/agnostic/10105-icon-service-Container-Registries.svg" } },
+        { "name": "Azure Cosmos DB", "icon": { "agnostic": "/assets/icons/agnostic/10121-icon-service-Azure-Cosmos-DB.svg" } },
+        { "name": "PostgreSQL", "icon": { "agnostic": "/assets/icons/agnostic/postgresql.svg" } },
+        { "name": "MySQL", "icon": { "agnostic": "/assets/icons/agnostic/mysql.svg" } },
+        { "name": "Redis", "icon": { "agnostic": "/assets/icons/agnostic/redis.svg" } },
+        { "name": "Elasticsearch", "icon": { "agnostic": "/assets/icons/agnostic/elasticsearch.svg" } },
+        { "name": "Azure Service Bus", "icon": { "agnostic": "/assets/icons/agnostic/10836-icon-service-Azure-Service-Bus.svg" } },
+        { "name": "Azure Event Hubs", "icon": { "agnostic": "/assets/icons/agnostic/00039-icon-service-Event-Hubs.svg" } },
+        { "name": "Azure Event Grid", "icon": { "agnostic": "/assets/icons/agnostic/10206-icon-service-Event-Grid-Topics.svg" } },
+        { "name": "Kafka", "icon": { "dark": "/assets/icons/dark-mode/kafka.svg", "light": "/assets/icons/light-mode/kafka.svg" } },
+        { "name": "Azure Resource Graph", "icon": { "agnostic": "/assets/icons/agnostic/10318-icon-service-Resource-Graph-Explorer.svg" } },
+        { "name": "Bicep", "icon": { "agnostic": "/assets/icons/agnostic/bicep.svg" } },
+        { "name": "Azure DevOps", "icon": { "agnostic": "/assets/icons/agnostic/azure-devops.svg" } },
+        { "name": "Jira", "icon": { "agnostic": "/assets/icons/agnostic/jira.svg" } },
+        { "name": "GitHub", "icon": { "dark": "/assets/icons/dark-mode/GitHub_Invertocat_White.svg", "light": "/assets/icons/light-mode/GitHub_Invertocat_Black.svg" } },
+        { "name": "Git", "icon": { "agnostic": "/assets/icons/agnostic/git.svg" } },
+        { "name": "Docker", "icon": { "agnostic": "/assets/icons/agnostic/docker.svg" } },
+        { "name": "Kubernetes", "icon": { "agnostic": "/assets/icons/agnostic/kubernetes.svg" } },
+        { "name": "Azure Local", "icon": { "agnostic": "/assets/icons/agnostic/033745116-icon-service-Azure-Local.svg" } },
+        { "name": "Entra Connect", "icon": { "agnostic": "/assets/icons/agnostic/02854-icon-service-Entra-Connect.svg" } },
+        { "name": "Entra Domain Services", "icon": { "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg" } },
+        { "name": "Terraform", "icon": { "agnostic": "/assets/icons/agnostic/Terraform_Logo.svg" } },
+        { "name": "Ansible", "icon": { "dark": "/assets/icons/dark-mode/ansible.svg", "light": "/assets/icons/light-mode/ansible.svg" } },
+        { "name": "NIST", "icon": { "dark": "/assets/icons/dark-mode/nist.svg", "light": "/assets/icons/light-mode/nist.svg" } },
+        { "name": "ISO 27001", "icon": { "agnostic": "/assets/icons/agnostic/iso.svg" } }
+      ],
+      "dutiesAndAccomplishments": [
+        "Partnered with leadership to define operating practices and reduce attrition while scaling delivery.",
+        "Led development of a Knowledge Management System: a large graph of 1,000 assets with countless relationships linked to policies, engagements, opportunities, and other entities; reduced discovery time by ~40%.",
+        "Built an API-driven single-page application (ASP.NET + TypeScript) and cloud services (Azure DevOps pipelines, App Services/Functions, Service Bus, Cosmos DB) with hardened governance.",
+        "Created and ran an internal engineering upskilling program ('Code Camp') — weekly sessions touching thousands of employees, raising scripting and automation competency across the practice.",
+        "Drove infrastructure governance using ARM/Terraform/Ansible patterns and Azure Policy to improve compliance and reduce manual effort."
+      ]
+    },
+    {
+      "company": {
+        "displayName": "Accenture",
+        "logo": {
+          "invariant": "/assets/invariant/accenture-logo-bare.svg",
+          "alt": "Accenture Plc Corporate Logo."
+        }
+      },
+      "title": "Security Innovation Principal",
+      "team": "Cloud Security",
+      "startDate": {
+        "year": 2018,
+        "month": 4
+      },
+      "endDate": {
+        "year": 2021,
+        "month": 6
+      },
+      "tagline": "Built governance-as-code and cloud security delivery systems that scaled adoption and reduced manual effort.",
+      "themes": [
+        "Cloud Security",
+        "Governance",
+        "Platform Engineering"
+      ],
+      "signals": {
+        "cost": 0.7,
+        "speed": 0.75,
+        "adoption": 0.8,
+        "trust": 0.85,
+        "engineering": 0.8
+      },
+      "impactMetrics": [
+        {
+          "label": "Azure resources governed",
+          "value": "100M+",
+          "unit": "",
+          "context": "Two overlapping scales: 100M (world's largest bank) + 10M",
+          "viz": "dual-sparkline",
+          "sparkData": [0, 5, 12, 25, 40, 55, 70, 85, 100],
+          "sparkData2": [0, 0, 1, 2, 3, 5, 7, 9, 10]
+        },
+        {
+          "label": "HSM-managed applications",
+          "value": "5,000",
+          "unit": "",
+          "context": "Enterprise cryptographic posture",
+          "viz": "text-icon",
+          "icon": "key"
+        },
+        {
+          "label": "Solutions brought to market",
+          "value": "2",
+          "unit": "",
+          "context": "Azure Policy governance solution + cryptographic posture",
+          "viz": "text"
+        },
+        {
+          "label": "Training reach",
+          "value": "1,000+",
+          "unit": "",
+          "context": "Cloud skills dissemination to internal employees",
+          "viz": "text"
+        }
+      ],
+      "initiatives": [
+        {
+          "name": "Azure Policy Governance Solution",
+          "problem": "Large Azure environments needed consistent governance and auditability without manual enforcement.",
+          "approach": "Designed, built, and delivered an Azure Policy-based governance solution with orchestration scripts and automated change reporting.",
+          "outcome": "Accelerated governance rollout and improved compliance visibility at scale."
+        }
+      ],
+      "stack": {
+        "methods": ["Governance-as-Code", "Secure SDLC", "Automation"],
+        "cloud": ["Azure"],
+        "integrations": ["Azure Policy", "Azure Key Vault", "Thales nCipher HSM"]
+      },
+      "technologies": [
+        { "name": "C#", "icon": { "agnostic": "/assets/icons/agnostic/c-sharp.svg" } },
+        { "name": ".NET", "icon": { "agnostic": "/assets/icons/agnostic/dotnet.svg" } },
+        { "name": "PowerShell", "icon": { "agnostic": "/assets/icons/agnostic/powershell.svg" } },
+        { "name": "JavaScript", "icon": { "agnostic": "/assets/icons/agnostic/javascript.svg" } },
+        { "name": "TypeScript", "icon": { "agnostic": "/assets/icons/agnostic/typescript.svg" } },
+        { "name": "HTML5", "icon": { "agnostic": "/assets/icons/agnostic/html5.svg" } },
+        { "name": "CSS3", "icon": { "agnostic": "/assets/icons/agnostic/css3.svg" } },
+        { "name": "Webpack", "icon": { "agnostic": "/assets/icons/agnostic/webpack.svg" } },
+        { "name": "Azure", "icon": { "agnostic": "/assets/icons/agnostic/azure.svg" } },
+        { "name": "Azure Policy", "icon": { "agnostic": "/assets/icons/agnostic/10316-icon-service-Policy.svg" } },
+        { "name": "Azure Key Vault", "icon": { "agnostic": "/assets/icons/agnostic/10245-icon-service-Key-Vaults.svg" } },
+        { "name": "Azure Dedicated HSM", "icon": { "agnostic": "/assets/icons/agnostic/02322-icon-service-Dedicated-HSM.svg" } },
+        { "name": "Azure Functions", "icon": { "agnostic": "/assets/icons/agnostic/10029-icon-service-Function-Apps.svg" } },
+        { "name": "Azure APIM", "icon": { "agnostic": "/assets/icons/agnostic/10042-icon-service-API-Management-Services.svg" } },
+        { "name": "Azure Container Registry", "icon": { "agnostic": "/assets/icons/agnostic/10105-icon-service-Container-Registries.svg" } },
+        { "name": "Azure Data Factory", "icon": { "agnostic": "/assets/icons/agnostic/10126-icon-service-Data-Factories.svg" } },
+        { "name": "Azure Data Lake", "icon": { "agnostic": "/assets/icons/agnostic/10086-icon-service-Storage-Accounts.svg" } },
+        { "name": "Azure Resource Graph", "icon": { "agnostic": "/assets/icons/agnostic/10318-icon-service-Resource-Graph-Explorer.svg" } },
+        { "name": "Azure Event Hubs", "icon": { "agnostic": "/assets/icons/agnostic/00039-icon-service-Event-Hubs.svg" } },
+        { "name": "Azure Event Grid", "icon": { "agnostic": "/assets/icons/agnostic/10206-icon-service-Event-Grid-Topics.svg" } },
+        { "name": "Kafka", "icon": { "dark": "/assets/icons/dark-mode/kafka.svg", "light": "/assets/icons/light-mode/kafka.svg" } },
+        { "name": "Application Insights", "icon": { "agnostic": "/assets/icons/agnostic/00012-icon-service-Application-Insights.svg" } },
+        { "name": "PostgreSQL", "icon": { "agnostic": "/assets/icons/agnostic/postgresql.svg" } },
+        { "name": "MySQL", "icon": { "agnostic": "/assets/icons/agnostic/mysql.svg" } },
+        { "name": "Redis", "icon": { "agnostic": "/assets/icons/agnostic/redis.svg" } },
+        { "name": "Elasticsearch", "icon": { "agnostic": "/assets/icons/agnostic/elasticsearch.svg" } },
+        { "name": "Thales", "icon": { "dark": "/assets/icons/dark-mode/thales.svg", "light": "/assets/icons/light-mode/thales.svg" } },
+        { "name": "Bicep", "icon": { "agnostic": "/assets/icons/agnostic/bicep.svg" } },
+        { "name": "ARM Templates", "icon": { "agnostic": "/assets/icons/agnostic/10007-icon-service-Resource-Groups.svg" } },
+        { "name": "Terraform", "icon": { "agnostic": "/assets/icons/agnostic/Terraform_Logo.svg" } },
+        { "name": "Ansible", "icon": { "dark": "/assets/icons/dark-mode/ansible.svg", "light": "/assets/icons/light-mode/ansible.svg" } },
+        { "name": "Azure DevOps", "icon": { "agnostic": "/assets/icons/agnostic/azure-devops.svg" } },
+        { "name": "Jira", "icon": { "agnostic": "/assets/icons/agnostic/jira.svg" } },
+        { "name": "Git", "icon": { "agnostic": "/assets/icons/agnostic/git.svg" } },
+        { "name": "Entra Connect", "icon": { "agnostic": "/assets/icons/agnostic/02854-icon-service-Entra-Connect.svg" } },
+        { "name": "Entra Domain Services", "icon": { "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg" } },
+        { "name": "Windows", "icon": { "agnostic": "/assets/icons/agnostic/windows.svg" } },
+        { "name": "NIST", "icon": { "dark": "/assets/icons/dark-mode/nist.svg", "light": "/assets/icons/light-mode/nist.svg" } },
+        { "name": "ISO 27001", "icon": { "agnostic": "/assets/icons/agnostic/iso.svg" } }
+      ],
+      "dutiesAndAccomplishments": [
+        "Cryptographic Posture Delivery. Design, implementation, and operationalization of enterprise-wide data encryption across 5,000 applications and 100,000 keys. Strategy leveraged Azure KeyVault, Thales nCipher HSM, Azure Dedicated HSM, Azure Managed HSM, and Thales CCKM.",
+        "Software and Service Development Security Lifecycle and Posture. Developed comprehensive posture of application development and service delivery prioritizing corporate governance and automatic-healing. Partnered enterprise wide across Business Units and IT Teams to integrate security posture via Procedure, Application Code, and Deployment Pipelines, as well as standalone security services.",
+        "Designed, Developed, brought to market, and Sold an Azure Policy based governance solution managing up to 100M Azure resources (world’s largest bank) across all sub-tenants; second-largest client at 10M resources. Accomplished detailed change reporting via automated documentation management. Supervised a team of 8.",
+        "Oversaw the development of new training programs contributing to the dissimenation of cloud knowlege and skills to over 1000 internal employees.",
+        "Designed and Developed custom Big Data reports for Azure utilization and policy compliance using Azure DataFactory, Azure Graph, PowerShell, and Azure DataLake."
+      ]
+    },
+    {
+      "company": {
+        "displayName": "Microsoft",
+        "logo": {
+          "invariant": "/assets/invariant/microsoft.svg",
+          "alt": "Microsoft Corporate Logo, no text."
+        }
+      },
+      "title": "Software Engineer II",
+      "team": "Enterprise Cloud / Enterprise Analytics and Tools",
+      "startDate": { 
+        "year": 2014,
+        "month": 4
+      },
+      "endDate": {
+        "year": 2018,
+        "month": 4
+      },
+      "tagline": "Built business automation platforms that eliminated manual work, consolidated 10,000+ documents, and drove a 56% headcount reduction.",
+      "themes": [
+        "Automation",
+        "DevOps",
+        "Platform Engineering"
+      ],
+      "signals": {
+        "cost": 0.85,
+        "speed": 0.8,
+        "adoption": 0.75,
+        "trust": 0.65,
+        "engineering": 0.85
+      },
+      "impactMetrics": [
+        {
+          "label": "Team size transformation",
+          "value": "125→40",
+          "unit": "",
+          "context": "85 FTEs reassigned to higher-value work",
+          "viz": "before-after",
+          "before": "125",
+          "after": "40"
+        },
+        {
+          "label": "Headcount reduction",
+          "value": "56",
+          "unit": "%",
+          "context": "85 of 125 FTEs reassigned via automation",
+          "viz": "tacho"
+        },
+        {
+          "label": "Deployments per day",
+          "value": "100s",
+          "unit": "/day",
+          "context": "Hundreds of automated deployments daily",
+          "viz": "speedo"
+        },
+        {
+          "label": "Documents consolidated",
+          "value": "10,000+",
+          "unit": "",
+          "context": "Legacy MediaWiki system migration",
+          "viz": "text-icon",
+          "icon": "docs"
+        }
+      ],
+      "initiatives": [
+        {
+          "name": "MediaWiki Knowledge Platform",
+          "problem": "Legacy documentation scattered across systems, difficult to maintain and search.",
+          "approach": "Custom MediaWiki deployment with high automation and minimal maintenance overhead.",
+          "outcome": "Consolidated 10,000+ documents; supported 2,000+ people; eliminated legacy systems and associated headcount."
+        },
+        {
+          "name": "Self-Service Automation Engine",
+          "problem": "Repetitive engineering tasks consumed FTE capacity that could be redirected.",
+          "approach": "Built self-service automation engine and team engagement application.",
+          "outcome": "56% headcount reduction; 85 FTEs reassigned to higher-value work."
+        }
+      ],
+      "stack": {
+        "methods": ["DevOps", "Automation", "Self-Service"],
+        "cloud": ["Azure"],
+        "integrations": ["MediaWiki", "Azure Web Apps"]
+      },
+      "technologies": [
+        { "name": "C#", "icon": { "agnostic": "/assets/icons/agnostic/c-sharp.svg" } },
+        { "name": ".NET", "icon": { "agnostic": "/assets/icons/agnostic/dotnet.svg" } },
+        { "name": "JavaScript", "icon": { "agnostic": "/assets/icons/agnostic/javascript.svg" } },
+        { "name": "TypeScript", "icon": { "agnostic": "/assets/icons/agnostic/typescript.svg" } },
+        { "name": "Node.js", "icon": { "dark": "/assets/icons/dark-mode/nodejs.svg", "light": "/assets/icons/light-mode/nodejs.svg" } },
+        { "name": "HTML5", "icon": { "agnostic": "/assets/icons/agnostic/html5.svg" } },
+        { "name": "CSS3", "icon": { "agnostic": "/assets/icons/agnostic/css3.svg" } },
+        { "name": "PowerShell", "icon": { "agnostic": "/assets/icons/agnostic/powershell.svg" } },
+        { "name": "ASP.NET", "icon": { "dark": "/assets/icons/dark-mode/asp-dot-net.svg", "light": "/assets/icons/light-mode/asp-dot-net.svg" } },
+        { "name": "Webpack", "icon": { "agnostic": "/assets/icons/agnostic/webpack.svg" } },
+        { "name": "Azure", "icon": { "agnostic": "/assets/icons/agnostic/azure.svg" } },
+        { "name": "Azure Web Apps", "icon": { "agnostic": "/assets/icons/agnostic/10035-icon-service-App-Services.svg" } },
+        { "name": "Azure Functions", "icon": { "agnostic": "/assets/icons/agnostic/10029-icon-service-Function-Apps.svg" } },
+        { "name": "Azure Event Hubs", "icon": { "agnostic": "/assets/icons/agnostic/00039-icon-service-Event-Hubs.svg" } },
+        { "name": "Kafka", "icon": { "dark": "/assets/icons/dark-mode/kafka.svg", "light": "/assets/icons/light-mode/kafka.svg" } },
+        { "name": "Azure Resource Graph", "icon": { "agnostic": "/assets/icons/agnostic/10318-icon-service-Resource-Graph-Explorer.svg" } },
+        { "name": "Application Insights", "icon": { "agnostic": "/assets/icons/agnostic/00012-icon-service-Application-Insights.svg" } },
+        { "name": "Redis", "icon": { "agnostic": "/assets/icons/agnostic/redis.svg" } },
+        { "name": "Elasticsearch", "icon": { "agnostic": "/assets/icons/agnostic/elasticsearch.svg" } },
+        { "name": "Docker", "icon": { "agnostic": "/assets/icons/agnostic/docker.svg" } },
+        { "name": "Git", "icon": { "agnostic": "/assets/icons/agnostic/git.svg" } },
+        { "name": "SharePoint", "icon": { "agnostic": "/assets/icons/agnostic/sharepoint.svg" } },
+        { "name": "MediaWiki", "icon": { "agnostic": "/assets/icons/agnostic/mediawiki.svg" } },
+        { "name": "Entra Domain Services", "icon": { "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg" } },
+        { "name": "Exchange", "icon": { "agnostic": "/assets/icons/agnostic/exchange.svg" } },
+        { "name": "Windows", "icon": { "agnostic": "/assets/icons/agnostic/windows.svg" } }
+      ],
+      "dutiesAndAccomplishments": [
+        "Designed end to end business automation solutions.",
+        "Created custom MediaWiki private deployment consolidating 10,000+ documents and supporting 2,000+ people, eliminating legacy documentation systems.",
+        "Drove 56% headcount reduction (85 of original 125-person team) with self-service automation engine, enabling FTEs to be reassigned to higher-value work.",
+        "Drove DevOps culture across organization; hundreds of automated deployments per day, reducing incident response time by 80% and time to resolution by 13%.",
+        "Created self-service team engagement application, eliminating the need for engineering hours.",
+        "Developed rapid solutions using Azure to enable GTM strategies to be piloted quickly."
+      ]
+    },
+    {
+      "company": {
+        "displayName": "Microsoft",
+        "logo": {
+          "invariant": "/assets/invariant/microsoft.svg",
+          "alt": "Microsoft Corporate Logo, no text."
+        }
+      },
+      "title": "Software Engineer I",
+      "team": "Bing Offers",
+      "startDate": {
+        "year": 2013,
+        "month": 4
+      },
+      "endDate": {
+        "year": 2014,
+        "month": 4
+      },
+      "tagline": "Shipped Bing-scale data systems that surfaced offers as first-party search entities and cut build times from 40 minutes to 8.",
+      "themes": [
+        "Search",
+        "Performance Engineering",
+        "CI/CD"
+      ],
+      "signals": {
+        "cost": 0.6,
+        "speed": 0.85,
+        "adoption": 0.7,
+        "trust": 0.6,
+        "engineering": 0.8
+      },
+      "impactMetrics": [
+        {
+          "label": "Build time reduction",
+          "value": "40→8",
+          "unit": "min",
+          "context": "80% build time reduction",
+          "viz": "before-after",
+          "before": "40 min",
+          "after": "8 min"
+        },
+        {
+          "label": "Deal objects published",
+          "value": "Billions",
+          "unit": "",
+          "context": "Massive offers database via RSS feed SEO system",
+          "viz": "text-icon",
+          "icon": "rss"
+        }
+      ],
+      "initiatives": [
+        {
+          "name": "Bing First-Party Entity Integration",
+          "problem": "Offers data was siloed and not deeply integrated into core Bing search results.",
+          "approach": "Created internal API platform feeding offers data directly into core Bing, surfaced as first-party entity results.",
+          "outcome": "Offers appeared as native Bing entities, improving discoverability and search relevance."
+        },
+        {
+          "name": "Build Pipeline Optimization",
+          "problem": "Build times of 40 minutes slowed development iteration.",
+          "approach": "Developed and optimized custom builds with automated Azure deployment from TF XAML build system.",
+          "outcome": "80% build time reduction (40 min → 8 min), dramatically accelerating dev cycles."
+        }
+      ],
+      "stack": {
+        "methods": ["CI/CD", "SEO", "Test Automation"],
+        "cloud": ["Azure"],
+        "integrations": ["Bing Search", "Team Foundation Server"]
+      },
+      "technologies": [
+        { "name": "Bing", "icon": { "agnostic": "/assets/icons/agnostic/bing.svg" } },
+        { "name": "C#", "icon": { "agnostic": "/assets/icons/agnostic/c-sharp.svg" } },
+        { "name": ".NET", "icon": { "agnostic": "/assets/icons/agnostic/dotnet.svg" } },
+        { "name": "JavaScript", "icon": { "agnostic": "/assets/icons/agnostic/javascript.svg" } },
+        { "name": "HTML5", "icon": { "agnostic": "/assets/icons/agnostic/html5.svg" } },
+        { "name": "CSS3", "icon": { "agnostic": "/assets/icons/agnostic/css3.svg" } },
+        { "name": "ASP.NET", "icon": { "dark": "/assets/icons/dark-mode/asp-dot-net.svg", "light": "/assets/icons/light-mode/asp-dot-net.svg" } },
+        { "name": "Webpack", "icon": { "agnostic": "/assets/icons/agnostic/webpack.svg" } },
+        { "name": "Azure", "icon": { "agnostic": "/assets/icons/agnostic/azure.svg" } },
+        { "name": "Redis", "icon": { "agnostic": "/assets/icons/agnostic/redis.svg" } },
+        { "name": "Elasticsearch", "icon": { "agnostic": "/assets/icons/agnostic/elasticsearch.svg" } },
+        { "name": "Entra Domain Services", "icon": { "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg" } },
+        { "name": "Windows", "icon": { "agnostic": "/assets/icons/agnostic/windows.svg" } }
+      ],
+      "dutiesAndAccomplishments": [
+        "Implemented RSS feed SEO system for massive offers database.",
+        "Created internal API platform feeding offers data into core Bing, surfaced as first-party entity results.",
+        "Implemented design changes to Bing offers site to improve look and feel.",
+        "Implemented custom automated deployment for Azure from Team Foundation XAML build system.",
+        "Built MSTest drivable harness for CasperJs, enabling per-test visibility for rapid development.",
+        "Developed and optimized custom builds reducing build times by 80% (40 min → 8 min)."
+      ]
+    },
+    {
+      "company": {
+        "displayName": "Xtreme Consulting Group",
+        "logo": {
+          "light": "/assets/light-mode/dexian-light-mode.webp",
+          "dark": "/assets/dark-mode/dexian-dark-mode.webp",
+          "alt": "Dexian (formerly Xtreme Consulting Group) logo."
+        }
+      },
+      "contractorTo": "Microsoft",
+      "title": "Service Engineer",
+      "team": "Enterprise Cloud / Incident Response",
+      "startDate": {
+        "year": 2011,
+        "month": 7
+      },
+      "endDate": {
+        "year": 2013,
+        "month": 4
+      },
+      "tagline": "Built internal tooling used by 400+ people and processing tens of thousands of tickets, driving operational efficiency across Enterprise Cloud.",
+      "themes": [
+        "Internal Tooling",
+        "Automation",
+        "Operations"
+      ],
+      "signals": {
+        "cost": 0.7,
+        "speed": 0.7,
+        "adoption": 0.75,
+        "trust": 0.65,
+        "engineering": 0.7
+      },
+      "impactMetrics": [
+        {
+          "label": "Operations users (tooling)",
+          "value": "400+",
+          "unit": "",
+          "context": "Org-wide adoption",
+          "viz": "text"
+        },
+        {
+          "label": "Tickets processed monthly",
+          "value": "10,000+",
+          "unit": "",
+          "context": "Multi-database tracking system",
+          "viz": "text"
+        }
+      ],
+      "initiatives": [
+        {
+          "name": "Operations Database Platform",
+          "problem": "Operations organization lacked unified tooling for tracking, collaboration, and ticket management.",
+          "approach": "Built XAML/C#/WCF database interfaces, ticket tracking system, and cross-team collaboration portals.",
+          "outcome": "Adopted by 400+ people; processed tens of thousands of tickets monthly; reduced headcount per seat."
+        }
+      ],
+      "stack": {
+        "methods": ["Automation", "Tier 3 Support"],
+        "libraries": ["WCF", "XAML/WPF"],
+        "data": ["SQL Server"],
+        "integrations": ["Exchange", "ASP.NET"]
+      },
+      "technologies": [
+        { "name": "C#", "icon": { "agnostic": "/assets/icons/agnostic/c-sharp.svg" } },
+        { "name": ".NET", "icon": { "agnostic": "/assets/icons/agnostic/dotnet.svg" } },
+        { "name": "ASP.NET", "icon": { "dark": "/assets/icons/dark-mode/asp-dot-net.svg", "light": "/assets/icons/light-mode/asp-dot-net.svg" } },
+        { "name": "SQL Server", "icon": { "agnostic": "/assets/icons/agnostic/10132-icon-service-SQL-Server.svg" } },
+        { "name": "PowerShell", "icon": { "agnostic": "/assets/icons/agnostic/powershell.svg" } },
+        { "name": "Exchange", "icon": { "agnostic": "/assets/icons/agnostic/exchange.svg" } },
+        { "name": "SharePoint", "icon": { "agnostic": "/assets/icons/agnostic/sharepoint.svg" } },
+        { "name": "Entra Domain Services", "icon": { "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg" } },
+        { "name": "Windows", "icon": { "agnostic": "/assets/icons/agnostic/windows.svg" } }
+      ],
+      "dutiesAndAccomplishments": [
+        "Provided Tier 3 break-fix support for Enterprise Exchange Deployments.",
+        "Developed database interface software in XAML and C# adopted by entire 400+ person operations organization.",
+        "Created multi-database ticket tracking system (XAML, SQL, WCF, C#, ASP.NET) processing tens of thousands of tickets monthly.",
+        "Created portals to allow cross team collaboration and tracking with custom database system.",
+        "Deployed several automation engines removing repetitive tasks from end users, contributing to headcount-per-seat reductions.",
+        "Created and delivered technical use training to end users of line of business applications."
+      ]
+    },
+    {
+      "company": {
+        "displayName": "Insight Global",
+        "logo": {
+          "light": "/assets/light-mode/insight-global.svg",
+          "dark": "/assets/dark-mode/insight-global.svg",
+          "alt": "Insight Global Logo, no text."
+        }
+      },
+      "contractorTo": "Microsoft",
+      "title": "Critical Incident Manager",
+      "team": "BPOS Dedicated (Now Office 365 Enterprise Cloud)",
+      "startDate": {
+        "year": 2010,
+        "month": 6
+      },
+      "endDate": {
+        "year": 2011,
+        "month": 7
+      },
+      "tagline": "Managed critical incidents for 10M+ seat O365 environment, achieving 100% SLA within team's control.",
+      "themes": [
+        "Incident Management",
+        "SLA Management",
+        "Executive Communication"
+      ],
+      "signals": {
+        "cost": 0.6,
+        "speed": 0.75,
+        "adoption": 0.65,
+        "trust": 0.8,
+        "engineering": 0.55
+      },
+      "impactMetrics": [
+        {
+          "label": "Customer seats in scope",
+          "value": "10M+",
+          "unit": "",
+          "context": "O365 Enterprise Cloud platform",
+          "viz": "text"
+        },
+        {
+          "label": "SLA achievement",
+          "value": "100",
+          "unit": "%",
+          "context": "All factors within team's control",
+          "viz": "tacho"
+        }
+      ],
+      "initiatives": [
+        {
+          "name": "O365 Major Incident Management",
+          "problem": "Critical incidents across Exchange, SharePoint, Lync, and Live Meeting required rapid coordinated response at enterprise scale.",
+          "approach": "Managed incident progression, coordinated operations teams, and communicated status to Microsoft executives.",
+          "outcome": "100% SLA achievement on all factors within team's control across 10M+ seats."
+        }
+      ],
+      "stack": {
+        "methods": ["Incident Management", "Problem Management"],
+        "integrations": ["Exchange", "SharePoint", "Lync (Teams)", "Live Meeting"]
+      },
+      "technologies": [
+        { "name": "Exchange", "icon": { "agnostic": "/assets/icons/agnostic/exchange.svg" } },
+        { "name": "SharePoint", "icon": { "agnostic": "/assets/icons/agnostic/sharepoint.svg" } },
+        { "name": "Microsoft Teams", "icon": { "agnostic": "/assets/icons/agnostic/microsoft-teams.svg" } },
+        { "name": "Entra Domain Services", "icon": { "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg" } },
+        { "name": "Windows", "icon": { "agnostic": "/assets/icons/agnostic/windows.svg" } }
+      ],
+      "dutiesAndAccomplishments": [
+        "Managed Major Incidents across the Microsoft Office 365 Environment serving 10M+ customer seats.",
+        "Achieved 100% SLA compliance on all factors within team's control (42 weighted database minutes/month target).",
+        "Communicated incident details and status to Microsoft executives during critical outages.",
+        "Coordinated operations teams to restore services across Exchange, SharePoint, Lync (now Teams), and Live Meeting.",
+        "Drove problem management process for issues impacting service restoration."
+      ]
+    },
+    {
+      "company": {
+        "displayName": "VMC Consulting",
+        "logo": {
+          "light": "/assets/light-mode/volt-logo.svg",
+          "dark": "/assets/dark-mode/volt-logo.svg",
+          "alt": "VMC Corporate Logo, no text."
+        }
+      },
+      "title": "Tier II Support Engineer",
+      "team": "Business Productivity Online Suite (Now Office 365)",
+      "startDate": {
+        "year": 2010,
+        "month": 1
+      },
+      "endDate": {
+        "year": 2010,
+        "month": 6
+      },
+      "tagline": "Built tools that saved 3,000+ engineering hours per week across a 300-person support organization.",
+      "themes": [
+        "Tooling",
+        "Support Engineering",
+        "Efficiency"
+      ],
+      "signals": {
+        "cost": 0.7,
+        "speed": 0.65,
+        "adoption": 0.7,
+        "trust": 0.6,
+        "engineering": 0.55
+      },
+      "impactMetrics": [
+        {
+          "label": "Engineers benefiting from tools",
+          "value": "300",
+          "unit": "",
+          "context": "Support engineering org",
+          "viz": "text"
+        },
+        {
+          "label": "Engineering hours saved per week",
+          "value": "3,000+",
+          "unit": " hrs/wk",
+          "context": "~10 hrs/engineer × 300 engineers",
+          "viz": "sparkline",
+          "sparkData": [100, 400, 900, 1400, 1800, 2200, 2600, 2900, 3000]
+        }
+      ],
+      "initiatives": [
+        {
+          "name": "Support Engineering Tooling",
+          "problem": "Support engineers wasted significant time on repetitive manual tasks.",
+          "approach": "Created custom tools to automate common support workflows and reduce manual effort.",
+          "outcome": "Saved approximately 10 hours per week per engineer across 300 engineers (~3,000+ hours/week recovered)."
+        }
+      ],
+      "stack": {
+        "methods": ["Support Engineering", "Automation"],
+        "integrations": ["Exchange Online", "SharePoint Online", "Blackberry Enterprise"]
+      },
+      "technologies": [
+        { "name": "Exchange", "icon": { "agnostic": "/assets/icons/agnostic/exchange.svg" } },
+        { "name": "SharePoint", "icon": { "agnostic": "/assets/icons/agnostic/sharepoint.svg" } },
+        { "name": "PowerShell", "icon": { "agnostic": "/assets/icons/agnostic/powershell.svg" } },
+        { "name": "BlackBerry", "icon": { "dark": "/assets/icons/dark-mode/blackberry.svg", "light": "/assets/icons/light-mode/blackberry.svg" } }
+      ],
+      "dutiesAndAccomplishments": [
+        "Collaborated with a team of 70+ agents providing product support for Microsoft Online Services.",
+        "Created tools for 300 Support Engineers saving approximately 10 hours of wasted time per week per engineer (~3,000+ hrs/wk total).",
+        "Troubleshot Microsoft Exchange Online, SharePoint Online, LiveMeeting Online and Office Communicator Online (now Teams).",
+        "Provided 24/7/365 support covering DNS setup through complex co-existence and email migration issues.",
+        "Created customer-facing documentation personalized for each customer."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" version="1.1" viewBox="0 0 1024 1117.7">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #1c78c0;
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        fill: #8ed6fb;
+      }
+    </style>
+  </defs>
+  <g id="svg56" inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)" sodipodi:docname="Webpack.svg">
+    <sodipodi:namedview id="namedview58" bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" inkscape:current-layer="svg56" inkscape:cx="2328.4012" inkscape:cy="431.22766" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="745" inkscape:window-maximized="1" inkscape:window-width="1366" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:zoom="0.18815252" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+    <path id="path48" class="st1" d="M510,0l493.9,279.4v558.9l-493.9,279.4L16.1,838.3V279.4L510,0Z"/>
+    <path id="path50" class="st2" d="M915.8,819l-389.4,220.3v-171.5l242.6-133.5,146.8,84.7ZM942.4,794.9v-460.6l-142.4,82.3v296.1l142.4,82.2ZM102.7,819l389.4,220.3v-171.5l-242.8-133.5-146.6,84.7ZM76.1,794.9v-460.6l142.4,82.3v296.1l-142.4,82.2ZM92.8,304.4L492.1,78.5v165.8l-255.9,140.8-2,1.1-141.4-81.8ZM925.7,304.4l-399.4-225.9v165.8l255.9,140.6,2,1.1,141.4-81.7Z"/>
+    <path id="path52" class="st0" d="M492.1,828.7l-239.4-131.7v-260.7l239.4,138.2v254.2ZM526.4,828.7l239.4-131.6v-260.9l-239.4,138.2v254.2ZM268.9,406.1l240.3-132.1,240.3,132.1-240.3,138.7-240.3-138.7Z"/>
+  </g>
+</svg>

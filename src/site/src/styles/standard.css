@@ -1,0 +1,213 @@
+.standardRoot {
+  padding: 32px 0 56px;
+}
+
+.standardPage {
+  max-width: 920px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.96);
+  color: rgba(8, 10, 18, 0.92);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 18px 75px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.standardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.standardName {
+  margin: 0;
+  font-size: 2.1rem;
+  letter-spacing: -0.02em;
+}
+
+.standardTitle {
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.standardMeta {
+  margin-top: 6px;
+  color: rgba(8, 10, 18, 0.67);
+  font-size: 0.95rem;
+}
+
+.standardPhoto {
+  width: 96px;
+  height: 96px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.standardSection {
+  margin-top: 18px;
+}
+
+.standardSection h2 {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: rgba(8, 10, 18, 0.7);
+}
+
+.standardSummaryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.standardSummaryItem {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.standardSummaryTitle {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.standardSummaryBody {
+  color: rgba(8, 10, 18, 0.75);
+  line-height: 1.45;
+}
+
+.standardRole {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.16);
+}
+
+.standardRoleTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.standardCompanyLogo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.standardRoleTitle {
+  font-weight: 800;
+}
+
+.standardRoleTeam {
+  color: rgba(8, 10, 18, 0.62);
+  margin-top: 2px;
+  font-size: 0.95rem;
+}
+
+.standardRoleDates {
+  white-space: nowrap;
+  color: rgba(8, 10, 18, 0.65);
+  font-size: 0.92rem;
+}
+
+.standardBullets {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.standardBullets li {
+  margin: 6px 0;
+  line-height: 1.35;
+}
+
+.standardSkillGroups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.standardSkillGroup {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.standardSkillGroupTitle {
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.standardSkillsList {
+  color: rgba(8, 10, 18, 0.75);
+  line-height: 1.45;
+}
+
+.standardHobbies {
+  color: rgba(8, 10, 18, 0.75);
+}
+
+@media (max-width: 720px) {
+  .standardPage {
+    border-radius: 0;
+    padding: 18px;
+  }
+  .standardSummaryGrid,
+  .standardSkillGroups {
+    grid-template-columns: 1fr;
+  }
+  .standardRoleTop {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
+@media print {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    background: white !important;
+  }
+
+  .standardNoPrint {
+    display: none !important;
+  }
+
+  .standardRoot {
+    padding: 0;
+  }
+
+  .standardPage {
+    max-width: none;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .standardRole {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .standardCompanyLogo {
+    filter: none;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+}
