@@ -247,11 +247,15 @@ function RangeGauge({ metric, index }: { metric: MetricInput; index: number }) {
       .attr('fill', isDark ? 'rgba(255,255,255,0.9)' : 'rgba(0,0,0,0.85)').attr('font-size', '13px').attr('font-weight', 900)
       .text(`${parsed.lo}–${parsed.hi}%`)
 
-    // Subtle revving oscillation at low framerate (~15fps)
-    const jitterAmp = totalSweep * 0.018
+    // Randomized revving — noise seeds for organic feel
+    const seedA = 250 + index * 73 + (parsed.lo * 7) % 150
+    const seedB = 160 + index * 47 + (parsed.hi * 11) % 120
+    const jitterAmp = totalSweep * (0.014 + (index % 3) * 0.003)
     let revInterval: ReturnType<typeof setInterval>
     function revTick() {
-      const jitter = Math.sin(Date.now() / 320) * jitterAmp * (0.5 + 0.5 * Math.sin(Date.now() / 210))
+      const t = Date.now()
+      const jitter = Math.sin(t / seedA) * jitterAmp * (0.5 + 0.5 * Math.sin(t / seedB))
+        + Math.sin(t / 173) * jitterAmp * 0.25
       rangePath.attr('d', rangeArc({ startAngle: loAngle + jitter * 0.3, endAngle: hiAngle + jitter }) as string)
     }
     const revTimer = setTimeout(() => { revInterval = setInterval(revTick, 66) }, index * 120 + 200 + 1200)
@@ -346,13 +350,17 @@ function TachoGauge({ metric, index }: { metric: MetricInput; index: number }) {
     svg.append('text').attr('x', cx).attr('y', cy + 2).attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
       .attr('fill', isDark ? 'rgba(255,255,255,0.9)' : 'rgba(0,0,0,0.85)').attr('font-size', '16px').attr('font-weight', 900).text(`${value}%`)
 
-    // Subtle revving oscillation at low framerate — skip for 100% (perfect scores shouldn't jitter)
+    // Randomized revving — skip for 100% (perfect scores shouldn't jitter)
     if (value >= 100) return
     const dot = svg.select<SVGCircleElement>('circle')
-    const jitterAmp = totalSweep * 0.02
+    const seedA = 220 + index * 61 + (value * 3) % 130
+    const seedB = 150 + index * 43 + (value * 7) % 110
+    const jitterAmp = totalSweep * (0.016 + (index % 4) * 0.003)
     let revInterval: ReturnType<typeof setInterval>
     function revTick() {
-      const jitter = Math.sin(Date.now() / 280) * jitterAmp * (0.5 + 0.5 * Math.sin(Date.now() / 190))
+      const t = Date.now()
+      const jitter = Math.sin(t / seedA) * jitterAmp * (0.5 + 0.5 * Math.sin(t / seedB))
+        + Math.sin(t / 149) * jitterAmp * 0.3
       const curEnd = targetEnd + jitter
       const curDotAngle = curEnd - Math.PI / 2
       path.attr('d', fgArc({ endAngle: curEnd }) as string)
@@ -462,11 +470,15 @@ function SpeedoGauge({ metric, index }: { metric: MetricInput; index: number }) 
       .attr('fill', isDark ? 'rgba(255,255,255,0.85)' : 'rgba(0,0,0,0.85)').attr('font-size', '10px').attr('font-weight', 800)
       .text(metric.value + (metric.unit || ''))
 
-    // Subtle revving oscillation at low framerate
-    const jitterAmp = totalSweep * 0.025
+    // Randomized revving — noise seeds for organic feel
+    const seedA = 240 + index * 67
+    const seedB = 135 + index * 53
+    const jitterAmp = totalSweep * (0.020 + (index % 3) * 0.004)
     let revInterval: ReturnType<typeof setInterval>
     function revTick() {
-      const jitter = Math.sin(Date.now() / 300) * jitterAmp * (0.6 + 0.4 * Math.sin(Date.now() / 170))
+      const t = Date.now()
+      const jitter = Math.sin(t / seedA) * jitterAmp * (0.6 + 0.4 * Math.sin(t / seedB))
+        + Math.sin(t / 191) * jitterAmp * 0.2
       const curEnd = targetEnd + jitter
       const curAngle = curEnd - Math.PI / 2
       fillPath.attr('d', fillArc({ endAngle: curEnd }) as string)

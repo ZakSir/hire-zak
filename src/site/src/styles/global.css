@@ -37,6 +37,7 @@
 html,
 body {
   height: 100%;
+  overflow-x: clip;
 }
 
 body {
@@ -45,6 +46,7 @@ body {
   background-size: cover;
   min-height: 100vh;
   color: var(--text);
+  overflow-x: hidden;
 }
 
 /* Shared parallax blobs (avoid per-section repeated gradients) */
@@ -560,7 +562,7 @@ a:hover {
 /* Experience intro section */
 .experience-intro {
   padding: 100px 0 60px;
-  text-align: center;
+  text-align: left;
 }
 
 /* Full-width immersive wrapper - NO constraints */
@@ -609,7 +611,7 @@ a:hover {
 }
 
 .immersive-job.job-right .jmv-grid {
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .immersive-job.job-right .jmv-card {
@@ -1443,7 +1445,7 @@ html[data-theme='light'] .metric-bar-track {
   border-radius: 24px;
   padding: 32px;
   text-align: center;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .skill-viz-title {
@@ -1465,7 +1467,7 @@ html[data-theme='light'] .metric-bar-track {
 /* Skill Bars */
 .skill-bars-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 32px;
   text-align: left;
 }
@@ -1534,7 +1536,7 @@ html[data-theme='light'] .metric-bar-track {
 .skill-intro-wrapper {
   position: relative;
   perspective: 1200px;
-  overflow: visible;
+  overflow: clip;
 }
 
 /* Floating particles burst effect */
@@ -1992,6 +1994,36 @@ html[data-theme='light'] .metric-bar-track {
   animation: orbPulse 6s ease-in-out infinite;
 }
 
+/* ── Let's Talk — centered layout with orb as background ─────────────── */
+.lets-talk-layout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.lets-talk-orb-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.lets-talk-orb-bg .gradient-orb {
+  width: 360px;
+  height: 360px;
+  opacity: 0.35;
+  filter: blur(40px);
+}
+
+.lets-talk-content {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+  width: 100%;
+}
+
 @keyframes orbPulse {
   0%, 100% { transform: scale(1); opacity: 0.5; }
   50% { transform: scale(1.1); opacity: 0.7; }
@@ -2010,6 +2042,26 @@ html[data-theme='light'] .metric-bar-track {
 .floaty-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* Let's Talk button grid */
+.lets-talk-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.lets-talk-actions .btn {
+  text-align: center;
+  justify-content: center;
+}
+
+.lets-talk-chatgpt {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
 }
 
 /* Terminal container - narrower */
@@ -2050,21 +2102,33 @@ html[data-theme='light'] .metric-bar-track {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+  width: 100%;
 }
 
 .hero-stat-tile {
   position: relative;
+  width: 100%;
+  min-height: 160px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 18px 12px 16px;
+  padding: 18px 12px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   backdrop-filter: blur(8px);
   overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-stat-tile-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2px;
 }
 
 .hero-stat-tile:hover {
@@ -2102,11 +2166,6 @@ html[data-theme='light'] .metric-bar-track {
 
 /* ── Hero tachometer tile ──────────────────────────────────────────────────── */
 
-.hero-stat-tile--tacho {
-  padding-top: 10px;
-  padding-bottom: 14px;
-}
-
 .hero-tacho-svg {
   display: block;
   margin: 0 auto 2px;
@@ -2123,11 +2182,6 @@ html[data-theme='light'] .metric-bar-track {
 }
 
 /* ── Hero icon tile ────────────────────────────────────────────────────────── */
-
-.hero-stat-tile--icon {
-  padding: 16px 14px;
-  justify-content: center;
-}
 
 .hero-icon-row {
   display: flex;
@@ -2159,10 +2213,6 @@ html[data-theme='light'] .metric-bar-track {
 }
 
 /* ── Hero before-after (cross-out) tile ───────────────────────────────────── */
-
-.hero-stat-tile--before-after {
-  justify-content: center;
-}
 
 .hero-ba-row {
   display: flex;
@@ -2469,7 +2519,8 @@ html[data-theme='light'] .career-metrics-visual-card {
   }
 
   .hero-stat-tile {
-    padding: 14px 8px 12px;
+    padding: 14px 8px;
+    min-height: 130px;
   }
 
   .hero-stat-number {
@@ -2526,7 +2577,7 @@ html[data-theme='light'] .career-metrics-visual-card {
   opacity: 0;
   transform: translateY(12px);
   transition: opacity 0.6s ease, transform 0.6s ease;
-  overflow: visible;
+  overflow: clip;
 }
 
 .jmv-container.visible {
@@ -2936,6 +2987,10 @@ html[data-theme='light'] .job-metric-bar-track {
     box-shadow: none;
   }
 
+  .exec-viz-slot {
+    display: none;
+  }
+
   /* ── Immersive job sections — flat on mobile, no card chrome ─────────── */
   .immersive-job {
     padding: 24px 16px !important;
@@ -3155,7 +3210,8 @@ html[data-theme='light'] .job-metric-bar-track {
   }
 
   .hero-stat-tile {
-    padding: 12px 8px 10px;
+    padding: 12px 8px;
+    min-height: 110px;
     border-radius: 10px;
     border: none;
     background: transparent;
@@ -3190,12 +3246,21 @@ html[data-theme='light'] .job-metric-bar-track {
     gap: 28px !important;
   }
 
+  /* Let's Talk buttons — stack on mobile */
+  .lets-talk-actions {
+    grid-template-columns: 1fr;
+  }
+
   /* Hide the decorative gradient orb on mobile */
   .gradient-orb {
     display: none;
   }
 
   .marketing-visual {
+    display: none;
+  }
+
+  .lets-talk-orb-bg {
     display: none;
   }
 
@@ -3218,10 +3283,26 @@ html[data-theme='light'] .job-metric-bar-track {
   }
 }
 
-/* Hide nav when printing from any page */
+/* Hide nav and all decorative chrome when printing from any page */
 @media print {
-  .splashNoPrint {
+  .splashNoPrint,
+  .topNav,
+  .blobField,
+  .swooshField,
+  .sparkleDust,
+  .nav-rail,
+  .stickyNavRail,
+  .chatgpt-cta,
+  .gradient-orb,
+  footer {
     display: none !important;
+  }
+
+  html,
+  body {
+    overflow: visible !important;
+    height: auto !important;
+    background: white !important;
   }
 }
 

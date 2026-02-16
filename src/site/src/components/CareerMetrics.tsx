@@ -448,11 +448,15 @@ function HeroTacho({ value, suffix, label, color, index }: {
     svg.append('circle').attr('cx', cx).attr('cy', cy).attr('r', 4)
       .attr('fill', 'rgba(255,255,255,0.8)')
 
-    // Revving oscillation at low framerate
-    const jitterAmp = totalSweep * 0.025
+    // Randomized revving — noise seeds for organic feel
+    const seedA = 230 + index * 71 + (value % 50) * 3
+    const seedB = 140 + index * 59 + (value % 30) * 5
+    const jitterAmp = totalSweep * (0.020 + (index % 4) * 0.004)
     let revInterval: ReturnType<typeof setInterval>
     function revTick() {
-      const jitter = Math.sin(Date.now() / 300) * jitterAmp * (0.6 + 0.4 * Math.sin(Date.now() / 170))
+      const t = Date.now()
+      const jitter = Math.sin(t / seedA) * jitterAmp * (0.6 + 0.4 * Math.sin(t / seedB))
+        + Math.sin(t / 181) * jitterAmp * 0.2
       const curEnd = targetEnd + jitter
       const curAngle = curEnd - Math.PI / 2
       fillPath.attr('d', fillArc({ endAngle: curEnd }) as string)
@@ -464,11 +468,13 @@ function HeroTacho({ value, suffix, label, color, index }: {
 
   return (
     <div ref={tileRef} className="hero-stat-tile hero-stat-tile--tacho">
-      <svg ref={svgRef} className="hero-tacho-svg" width="100" height="100" />
-      <div className="hero-stat-number">
-        {value.toLocaleString()}{suffix}
+      <div className="hero-stat-tile-inner">
+        <svg ref={svgRef} className="hero-tacho-svg" width="100" height="100" />
+        <div className="hero-stat-number">
+          {value.toLocaleString()}{suffix}
+        </div>
+        <div className="hero-stat-label">{label}</div>
       </div>
-      <div className="hero-stat-label">{label}</div>
     </div>
   )
 }
@@ -514,15 +520,17 @@ function HeroIconTile({ value, suffix, label, icon, color, delay }: {
 
   return (
     <div ref={ref} className="hero-stat-tile hero-stat-tile--icon">
-      <div className="hero-icon-row">
-        <svg viewBox="0 0 24 24" className="hero-tile-icon" style={{ color }}>
-          <path d={iconPath} fill="currentColor" />
-        </svg>
-        <div className="hero-icon-text">
-          <div className="hero-stat-number">
-            {displayVal.toLocaleString()}{suffix}
+      <div className="hero-stat-tile-inner">
+        <div className="hero-icon-row">
+          <svg viewBox="0 0 24 24" className="hero-tile-icon" style={{ color }}>
+            <path d={iconPath} fill="currentColor" />
+          </svg>
+          <div className="hero-icon-text">
+            <div className="hero-stat-number">
+              {displayVal.toLocaleString()}{suffix}
+            </div>
+            <div className="hero-stat-label">{label}</div>
           </div>
-          <div className="hero-stat-label">{label}</div>
         </div>
       </div>
     </div>
@@ -546,12 +554,14 @@ function HeroBeforeAfterTile({ beforeText, afterText, label, color, delay }: {
 
   return (
     <div ref={ref} className={`hero-stat-tile hero-stat-tile--before-after ${started ? 'hero-stat-tile--revealed' : ''}`}>
-      <div className="hero-ba-row" style={{ transitionDelay: `${delay}ms` }}>
-        <span className="hero-ba-before" style={{ textDecorationColor: color }}>{beforeText}</span>
-        <span className="hero-ba-arrow">→</span>
-        <span className="hero-ba-after">{afterText}</span>
+      <div className="hero-stat-tile-inner">
+        <div className="hero-ba-row" style={{ transitionDelay: `${delay}ms` }}>
+          <span className="hero-ba-before" style={{ textDecorationColor: color }}>{beforeText}</span>
+          <span className="hero-ba-arrow">→</span>
+          <span className="hero-ba-after">{afterText}</span>
+        </div>
+        <div className="hero-stat-label">{label}</div>
       </div>
-      <div className="hero-stat-label">{label}</div>
     </div>
   )
 }
@@ -629,11 +639,15 @@ function HeroRangeGaugeTile({ rangeStr, label, color, index }: {
       .attr('fill', 'rgba(255,255,255,0.9)').attr('font-size', '12px').attr('font-weight', 900)
       .text(`${lo}–${hi}%`)
 
-    // Revving oscillation at low framerate
-    const jitterAmp = totalSweep * 0.015
+    // Randomized revving — noise seeds for organic feel
+    const seedA = 260 + index * 79 + (lo * 3) % 100
+    const seedB = 170 + index * 47 + (hi * 5) % 90
+    const jitterAmp = totalSweep * (0.012 + (index % 3) * 0.003)
     let revInterval: ReturnType<typeof setInterval>
     function revTick() {
-      const jitter = Math.sin(Date.now() / 320) * jitterAmp * (0.5 + 0.5 * Math.sin(Date.now() / 210))
+      const t = Date.now()
+      const jitter = Math.sin(t / seedA) * jitterAmp * (0.5 + 0.5 * Math.sin(t / seedB))
+        + Math.sin(t / 157) * jitterAmp * 0.3
       rangePath.attr('d', rangeArc({ startAngle: loAngle + jitter * 0.3, endAngle: hiAngle + jitter }) as string)
     }
     const revTimer = setTimeout(() => { revInterval = setInterval(revTick, 66) }, index * 150 + 300 + 1200)
@@ -642,8 +656,10 @@ function HeroRangeGaugeTile({ rangeStr, label, color, index }: {
 
   return (
     <div ref={tileRef} className="hero-stat-tile hero-stat-tile--tacho">
-      <svg ref={svgRef} className="hero-tacho-svg" width="80" height="80" />
-      <div className="hero-stat-label">{label}</div>
+      <div className="hero-stat-tile-inner">
+        <svg ref={svgRef} className="hero-tacho-svg" width="80" height="80" />
+        <div className="hero-stat-label">{label}</div>
+      </div>
     </div>
   )
 }
@@ -668,15 +684,19 @@ function HeroStats({ stats }: { stats: AggregateStats }) {
       />
       {/* 4. Crypto keys managed — sparkline (classic) */}
       <div className="hero-stat-tile">
-        <MicroSparkline data={[0, 0, 0, 0, 0, 5, 30, 60, 100]} color="#10b981" />
-        <AnimatedCounter target={stats.keysManaged} suffix="K" delay={900} />
-        <div className="hero-stat-label">Crypto keys managed</div>
+        <div className="hero-stat-tile-inner">
+          <MicroSparkline data={[0, 0, 0, 0, 0, 5, 30, 60, 100]} color="#10b981" />
+          <AnimatedCounter target={stats.keysManaged} suffix="K" delay={900} />
+          <div className="hero-stat-label">Crypto keys managed</div>
+        </div>
       </div>
       {/* 5. FTEs reassigned — sparkline (classic) */}
       <div className="hero-stat-tile">
-        <MicroSparkline data={[0, 0, 0, 0, 10, 30, 50, 70, 85]} color="#f59e0b" />
-        <AnimatedCounter target={stats.ftesReassigned} suffix="" delay={1100} />
-        <div className="hero-stat-label">FTEs reassigned</div>
+        <div className="hero-stat-tile-inner">
+          <MicroSparkline data={[0, 0, 0, 0, 10, 30, 50, 70, 85]} color="#f59e0b" />
+          <AnimatedCounter target={stats.ftesReassigned} suffix="" delay={1100} />
+          <div className="hero-stat-label">FTEs reassigned</div>
+        </div>
       </div>
       {/* 6. Apps under HSM — tachometer pegged high */}
       <HeroTacho

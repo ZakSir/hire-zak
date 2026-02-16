@@ -19,6 +19,7 @@ import { SkillBars } from '../components/SkillShowcase'
 import CareerMetrics from '../components/CareerMetrics'
 import JobMetricViz from '../components/JobMetricViz'
 import ChatGptCta from '../components/ChatGptCta'
+import ExecStrengthViz from '../components/ExecStrengthViz'
 
 function Section({
   id,
@@ -48,6 +49,24 @@ function Section({
         <div className="staggerChild">{children}</div>
       </div>
     </section>
+  )
+}
+
+function ExecStrengthCard({ item, index }: { item: { title: string; body: string }; index: number }) {
+  const { ref, visible } = useInView<HTMLDivElement>(0.25)
+
+  return (
+    <div ref={ref} className="floaty-card" style={{ display: 'flex', flexDirection: 'column' }}>
+      <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16 }}>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ fontWeight: 700, marginBottom: 10, fontSize: '1.05rem' }}>{item.title}</div>
+          <div className="muted" style={{ lineHeight: 1.65 }}>{item.body}</div>
+        </div>
+        <div className="exec-viz-slot" style={{ flexShrink: 0, marginTop: -8, marginRight: -8, display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-end' }}>
+          <ExecStrengthViz cardIndex={index} visible={visible} />
+        </div>
+      </div>
+    </div>
   )
 }
 
@@ -465,13 +484,8 @@ export default function SplashPage() {
         <div className="container">
           <Section id="section-summary" eyebrow="Why" title="Executive strengths">
             <div className="grid2" style={{ gap: 24 }}>
-              {summary.map((i) => (
-                <div key={i.title} className="floaty-card">
-                  <div style={{ fontWeight: 700, marginBottom: 10, fontSize: '1.05rem' }}>{i.title}</div>
-                  <div className="muted" style={{ lineHeight: 1.65 }}>
-                    {i.body}
-                  </div>
-                </div>
+              {summary.map((i, idx) => (
+                <ExecStrengthCard key={i.title} item={i} index={idx} />
               ))}
             </div>
           </Section>
@@ -486,7 +500,8 @@ export default function SplashPage() {
               </span>
             </div>
             <h2 style={{ margin: '0 0 16px 0', fontSize: 'clamp(2.2rem, 4vw, 3.2rem)' }}>Experience</h2>
-            <div className="muted" style={{ fontSize: '1.1rem', maxWidth: 600, margin: '0 auto' }}>
+            <div className="revealLine" style={{ margin: '24px 0 36px' }} />
+            <div className="muted" style={{ fontSize: '1.1rem', maxWidth: 600 }}>
               Scroll through my career journey. Each role alternates left and right for an immersive experience.
             </div>
           </div>
@@ -532,8 +547,11 @@ export default function SplashPage() {
         <div id="lets-talk" />
         <section className="marketing-section" style={{ paddingTop: 80, paddingBottom: 80 }}>
           <div className="container">
-            <div className="marketing-inner">
-              <div className="marketing-content">
+            <div className="lets-talk-layout">
+              <div className="lets-talk-orb-bg" aria-hidden="true">
+                <div className="gradient-orb" />
+              </div>
+              <div className="lets-talk-content">
                 <div className="pill" style={{ display: 'inline-flex', marginBottom: 14 }}>
                   <span className="small" style={{ letterSpacing: 0.9, textTransform: 'uppercase' }}>
                     Next
@@ -546,7 +564,7 @@ export default function SplashPage() {
                   <div className="small" style={{ marginTop: 8, color: 'var(--muted2)' }}>
                     Seattle, WA
                   </div>
-                  <div style={{ display: 'flex', gap: 12, marginTop: 20, flexWrap: 'wrap' }}>
+                  <div className="lets-talk-actions">
                     <Link className="btn" to="/standard">
                       Open standard resume
                     </Link>
@@ -555,21 +573,17 @@ export default function SplashPage() {
                         Email {person.email}
                       </a>
                     ) : null}
-                  </div>
-                  <div style={{ marginTop: 24, display: 'flex', justifyContent: 'center' }}>
-                    <ChatGptCta variant="banner" />
+                    <div className="lets-talk-chatgpt">
+                      <ChatGptCta variant="banner" />
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div className="marketing-visual">
-                <div className="gradient-orb"></div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Terminal showcase at very bottom */}
+        {/* Terminal showcase — hidden for now
         <section className="terminal-section" style={{ padding: '40px 0 60px' }}>
           <div className="container">
             <div style={{ maxWidth: 560, margin: '0 auto' }}>
@@ -577,6 +591,7 @@ export default function SplashPage() {
             </div>
           </div>
         </section>
+        */}
 
         <footer style={{ padding: '30px 0 42px' }}>
           <div className="container" style={{ textAlign: 'center' }}>

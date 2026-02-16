@@ -71,6 +71,10 @@ function spawnConfetti(anchor: HTMLElement, tier: ConfettiTier = 'normal') {
 
   const maxLifetime = p.timeout
 
+  // Padding around the button hole so confetti doesn't clip right at the edge
+  const HOLE_PAD = 4
+  const HOLE_RADIUS = 14 // match border-radius + a bit
+
   let raf = 0
   const tick = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
@@ -92,6 +96,20 @@ function spawnConfetti(anchor: HTMLElement, tier: ConfettiTier = 'normal') {
       ctx.fillRect(-pt.w / 2, -pt.h / 2, pt.w, pt.h)
       ctx.restore()
     }
+
+    // Cut a hole where the button is so it stays visible & clickable-looking
+    const r = anchor.getBoundingClientRect()
+    const hx = r.left - HOLE_PAD
+    const hy = r.top - HOLE_PAD
+    const hw = r.width + HOLE_PAD * 2
+    const hh = r.height + HOLE_PAD * 2
+    ctx.save()
+    ctx.globalCompositeOperation = 'destination-out'
+    ctx.beginPath()
+    ctx.roundRect(hx, hy, hw, hh, HOLE_RADIUS)
+    ctx.fill()
+    ctx.restore()
+
     if (alive) {
       raf = requestAnimationFrame(tick)
     } else {
