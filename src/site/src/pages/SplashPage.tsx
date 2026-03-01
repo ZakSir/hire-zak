@@ -224,7 +224,7 @@ function TimelineItem({ exp, id, index }: { exp: ResumeExperience; id: string; i
             const { parts } = highlightMetrics(d)
             return (
               <div key={i} className="accomplishment-item">
-                <span className="accomplishment-bullet">▸</span>
+                <span className="accomplishment-bullet" aria-hidden="true">▸</span>
                 <span>
                   {parts.map((p, idx) =>
                     p.isMetric ? (
@@ -444,7 +444,7 @@ export default function SplashPage() {
           <div className="blob blobC" style={{ ['--bx' as any]: 'var(--b3x)', ['--by' as any]: 'var(--b3y)', ['--bs' as any]: 1.04 }} />
         </div>
       )}
-      <main>
+      <main id="main-content">
         <section style={{ padding: '72px 0 52px' }}>
           <div className="container">
             <div

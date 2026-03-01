@@ -104,6 +104,8 @@
 
 .standardRoleTitle {
   font-weight: 800;
+  font-size: inherit;
+  margin: 0;
 }
 
 .standardRoleTeam {

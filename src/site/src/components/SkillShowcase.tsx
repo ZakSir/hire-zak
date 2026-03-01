@@ -227,7 +227,9 @@ export function SkillWheel() {
     <div ref={containerRef} className="skill-viz-container">
       <h3 className="skill-viz-title">Skill Wheel</h3>
       <p className="skill-viz-subtitle">Radial mastery map • Highlighted = hero skills</p>
-      <svg ref={svgRef} width="100%" viewBox="0 0 500 500" style={{ maxWidth: 500 }} />
+      <svg ref={svgRef} width="100%" viewBox="0 0 500 500" style={{ maxWidth: 500 }} role="img" aria-label="Radial skill wheel showing proficiency levels across categories: AI & LLMs, Governance, Cloud, Languages, DevOps, and Leadership">
+        <title>Skill Wheel — Radial mastery map</title>
+      </svg>
     </div>
   )
 }

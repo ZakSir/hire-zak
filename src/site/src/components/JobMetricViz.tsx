@@ -196,7 +196,7 @@ function SparklineCard({ metric, index }: { metric: MetricInput; index: number }
   return (
     <div className="jmv-card jmv-sparkline-card">
       <div className="jmv-card-value">{metric.value}{metric.unit && metric.unit !== '%' ? metric.unit : ''}</div>
-      <svg ref={svgRef} className="jmv-sparkline-svg" />
+      <svg ref={svgRef} className="jmv-sparkline-svg" aria-hidden="true" />
       <div className="jmv-card-label">{metric.label}</div>
     </div>
   )
@@ -244,7 +244,7 @@ function DualSparklineCard({ metric, index }: { metric: MetricInput; index: numb
   return (
     <div className="jmv-card jmv-sparkline-card">
       <div className="jmv-card-value">{metric.value}{metric.unit && metric.unit !== '%' ? metric.unit : ''}</div>
-      <svg ref={svgRef} className="jmv-sparkline-svg" />
+      <svg ref={svgRef} className="jmv-sparkline-svg" aria-hidden="true" />
       <div className="jmv-card-label">{metric.label}</div>
     </div>
   )
@@ -280,7 +280,7 @@ function TextIconCard({ metric }: { metric: MetricInput }) {
   const iconPath = ICONS[metric.icon || 'graph'] || ICONS.graph
   return (
     <div className="jmv-card jmv-text-icon-card">
-      <svg viewBox="0 0 24 24" className="jmv-icon">
+      <svg viewBox="0 0 24 24" className="jmv-icon" aria-hidden="true">
         <path d={iconPath} fill="currentColor" />
       </svg>
       <div>
@@ -395,7 +395,7 @@ function RangeGauge({ metric, index }: { metric: MetricInput; index: number }) {
 
   return (
     <div className="jmv-card jmv-gauge-card">
-      <svg ref={svgRef} className="jmv-gauge-svg" />
+      <svg ref={svgRef} className="jmv-gauge-svg" role="img" aria-label={`${metric.label}: ${metric.value}${metric.unit || ''}`} />
       <div className="jmv-card-label">{metric.label}</div>
     </div>
   )
@@ -500,7 +500,7 @@ function TachoGauge({ metric, index }: { metric: MetricInput; index: number }) {
 
   return (
     <div className="jmv-card jmv-gauge-card">
-      <svg ref={svgRef} className="jmv-gauge-svg" />
+      <svg ref={svgRef} className="jmv-gauge-svg" role="img" aria-label={`${metric.label}: ${metric.value}${metric.unit || ''}`} />
       <div className="jmv-card-label">{metric.label}</div>
     </div>
   )
@@ -638,7 +638,7 @@ function SpeedoGauge({ metric, index }: { metric: MetricInput; index: number }) 
 
   return (
     <div className="jmv-card jmv-gauge-card">
-      <svg ref={svgRef} className="jmv-gauge-svg" />
+      <svg ref={svgRef} className="jmv-gauge-svg" role="img" aria-label={`${metric.label}: ${metric.value}${metric.unit || ''}`} />
       <div className="jmv-card-label">{metric.label}</div>
     </div>
   )

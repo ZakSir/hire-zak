@@ -150,7 +150,7 @@ export default function StandardPage() {
 
   return (
     <div>
-      <main className="standardRoot">
+      <main id="main-content" className="standardRoot">
         <div className="standardPage">
           <div className="standardNoPrint" style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 10 }}>
             <PrintButton />
@@ -200,9 +200,9 @@ export default function StandardPage() {
                 >
                   <div className="standardRoleTop">
                     <div>
-                      <div className="standardRoleTitle">
+                      <h3 className="standardRoleTitle">
                         {e.title} — {e.company.displayName}
-                      </div>
+                      </h3>
                       <div className="standardRoleTeam">
                         {e.contractorTo ? `Contractor to ${e.contractorTo} • ` : ''}
                         {e.team ?? ''}
