@@ -16,6 +16,131 @@ import { useTheme } from '../lib/useTheme'
      • dual-sparkline  – two overlapping sparklines
    ═══════════════════════════════════════════════════════════════════════════ */
 
+/**
+ * Build a segmented arc group where the gradient truly follows the arc path.
+ *
+ * Uses NON-OVERLAPPING arc slices so the colour at every point along the arc
+ * is correct.  Rounded caps at start and end are drawn as small circles that
+ * blend seamlessly with their adjacent segment (same colour).
+ *
+ * Call `updateSegments(endAngle)` to animate / update the visible portion.
+ */
+function createSegmentedArc(
+  svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
+  opts: {
+    cx: number; cy: number; innerR: number; outerR: number
+    arcStart: number; arcEnd: number; segments: number
+    colorStops: { offset: number; color: string }[]
+    filterUrl?: string
+  }
+) {
+  const { cx, cy, innerR, outerR, arcStart, arcEnd, segments, colorStops, filterUrl } = opts
+  const totalSweep = arcEnd - arcStart
+  const strokeW = outerR - innerR
+
+  // Build a d3 colour interpolator from the stops
+  const colorScale = d3.scaleLinear<string>()
+    .domain(colorStops.map(s => s.offset))
+    .range(colorStops.map(s => s.color))
+    .clamp(true)
+
+  const g = svg.append('g').attr('transform', `translate(${cx},${cy})`)
+  if (filterUrl) g.attr('filter', filterUrl)
+
+  const midR = (innerR + outerR) / 2
+  const capR = strokeW / 2
+  const segEps = 0.004          // tiny angular overlap to prevent AA seams
+
+  // ── Non-overlapping arc segments ─────────────────────────────────────
+  // Each segment covers [t0, t1] of the sweep with the gradient colour at
+  // its midpoint.  A small angular epsilon overlap between neighbours
+  // hides antialiasing seams.
+  interface SegMeta { start: number; end: number; color: string; fullPath: string }
+  const segMeta: SegMeta[] = []
+  const paths: d3.Selection<SVGPathElement, unknown, null, undefined>[] = []
+
+  for (let i = 0; i < segments; i++) {
+    const t0 = i / segments
+    const t1 = (i + 1) / segments
+    const segStart = arcStart + t0 * totalSweep
+    const segEnd   = arcStart + t1 * totalSweep
+    const drawEnd  = i < segments - 1 ? segEnd + segEps : segEnd
+    const color    = colorScale((t0 + t1) / 2)
+
+    const fullPath = (d3.arc<any>()
+      .innerRadius(innerR).outerRadius(outerR)
+      .startAngle(segStart).endAngle(drawEnd))({}) as string
+
+    const p = g.append('path')
+      .attr('d', fullPath)
+      .attr('fill', color)
+      .attr('display', 'none')
+    paths.push(p)
+    segMeta.push({ start: segStart, end: segEnd, color, fullPath })
+  }
+
+  // ── Rounded caps ─────────────────────────────────────────────────────
+  // Circles at start and end, coloured to match the gradient at that point.
+  // Because segments are non-overlapping the colours blend seamlessly.
+  const startCapAngle = arcStart - Math.PI / 2
+  const startCap = g.append('circle')
+    .attr('cx', Math.cos(startCapAngle) * midR)
+    .attr('cy', Math.sin(startCapAngle) * midR)
+    .attr('r', capR)
+    .attr('fill', colorScale(0))
+    .attr('display', 'none')
+
+  const endCap = g.append('circle')
+    .attr('r', capR)
+    .attr('fill', colorScale(1))
+    .attr('display', 'none')
+
+  // Track which segment was previously partial so we can restore its path
+  let prevTipIdx = -1
+
+  function updateSegments(currentEnd: number) {
+    const anyVisible = currentEnd > arcStart + 0.005
+    startCap.attr('display', anyVisible ? null : 'none')
+
+    let tipIdx = -1
+    for (let i = 0; i < segments; i++) {
+      const { start: segStart, end: segEnd, fullPath } = segMeta[i]
+
+      if (segEnd <= currentEnd + 0.005) {
+        // Fully visible — restore original path if it was previously partial
+        if (i === prevTipIdx) paths[i].attr('d', fullPath)
+        paths[i].attr('display', null)
+      } else if (segStart < currentEnd) {
+        // Partially visible tip segment
+        tipIdx = i
+        const partialPath = (d3.arc<any>()
+          .innerRadius(innerR).outerRadius(outerR)
+          .startAngle(segStart).endAngle(currentEnd))({}) as string
+        paths[i].attr('d', partialPath).attr('display', null)
+      } else {
+        paths[i].attr('display', 'none')
+      }
+    }
+    prevTipIdx = tipIdx
+
+    // Position the end cap at the current fill tip
+    if (anyVisible) {
+      const clampedEnd = Math.min(currentEnd, arcEnd)
+      const capAngle = clampedEnd - Math.PI / 2
+      const t = Math.min((clampedEnd - arcStart) / totalSweep, 1)
+      endCap
+        .attr('cx', Math.cos(capAngle) * midR)
+        .attr('cy', Math.sin(capAngle) * midR)
+        .attr('fill', colorScale(t))
+        .attr('display', null)
+    } else {
+      endCap.attr('display', 'none')
+    }
+  }
+
+  return { g, updateSegments }
+}
+
 export type MetricInput = {
   value: string
   label: string
@@ -207,11 +332,6 @@ function RangeGauge({ metric, index }: { metric: MetricInput; index: number }) {
     svg.attr('viewBox', `0 0 ${size} ${size}`)
 
     const defs = svg.append('defs')
-    const grad = defs.append('linearGradient').attr('id', `rg-${index}`)
-      .attr('x1', '0%').attr('y1', '0%').attr('x2', '100%').attr('y2', '0%')
-    grad.append('stop').attr('offset', '0%').attr('stop-color', '#8b5cf6')
-    grad.append('stop').attr('offset', '100%').attr('stop-color', '#ff2bd6')
-
     const glow = defs.append('filter').attr('id', `rg-glow-${index}`)
       .attr('x', '-40%').attr('y', '-40%').attr('width', '180%').attr('height', '180%')
     glow.append('feGaussianBlur').attr('stdDeviation', '2.5').attr('result', 'blur')
@@ -227,27 +347,38 @@ function RangeGauge({ metric, index }: { metric: MetricInput; index: number }) {
       .startAngle(startAngle).endAngle(startAngle + totalSweep).cornerRadius(strokeW / 2)
     svg.append('path').attr('d', bgArc({}) as string).attr('transform', `translate(${cx},${cy})`).attr('fill', isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.08)')
 
-    // Range band
+    // Range band — segmented arc gradient
     const loAngle = startAngle + (parsed.lo / 100) * totalSweep
     const hiAngle = startAngle + (parsed.hi / 100) * totalSweep
-    const rangeArc = d3.arc<any>().innerRadius(radius - strokeW / 2).outerRadius(radius + strokeW / 2).cornerRadius(strokeW / 2)
 
-    const rangePath = svg.append('path').attr('transform', `translate(${cx},${cy})`)
-      .attr('fill', `url(#rg-${index})`).attr('filter', `url(#rg-glow-${index})`)
-      .attr('d', rangeArc({ startAngle: loAngle, endAngle: loAngle }) as string)
+    const { updateSegments } = createSegmentedArc(svg, {
+      cx, cy, innerR: radius - strokeW / 2, outerR: radius + strokeW / 2,
+      arcStart: loAngle, arcEnd: hiAngle, segments: 32,
+      colorStops: [{ offset: 0, color: '#8b5cf6' }, { offset: 1, color: '#ff2bd6' }],
+      filterUrl: `url(#rg-glow-${index})`,
+    })
 
-    rangePath.transition().delay(index * 120 + 200).duration(1200).ease(d3.easeCubicOut)
-      .attrTween('d', () => {
-        const interp = d3.interpolate(loAngle, hiAngle)
-        return (t: number) => rangeArc({ startAngle: loAngle, endAngle: interp(t) }) as string
-      })
+    // Animate fill
+    const delay = index * 120 + 200
+    const duration = 1200
+    const ease = d3.easeCubicOut
+    const angleInterp = d3.interpolate(loAngle, hiAngle)
+    let startTime = 0
+
+    const timer = d3.timer((elapsed) => {
+      if (elapsed - delay < 0) return
+      if (!startTime) startTime = elapsed
+      const rawT = Math.min((elapsed - startTime) / duration, 1)
+      updateSegments(angleInterp(ease(rawT)))
+      if (rawT >= 1) timer.stop()
+    })
 
     // Center text
     svg.append('text').attr('x', cx).attr('y', cy - 2).attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
       .attr('fill', isDark ? 'rgba(255,255,255,0.9)' : 'rgba(0,0,0,0.85)').attr('font-size', '13px').attr('font-weight', 900)
       .text(`${parsed.lo}–${parsed.hi}%`)
 
-    // Randomized revving — noise seeds for organic feel
+    // Randomized revving
     const seedA = 250 + index * 73 + (parsed.lo * 7) % 150
     const seedB = 160 + index * 47 + (parsed.hi * 11) % 120
     const jitterAmp = totalSweep * (0.014 + (index % 3) * 0.003)
@@ -256,10 +387,10 @@ function RangeGauge({ metric, index }: { metric: MetricInput; index: number }) {
       const t = Date.now()
       const jitter = Math.sin(t / seedA) * jitterAmp * (0.5 + 0.5 * Math.sin(t / seedB))
         + Math.sin(t / 173) * jitterAmp * 0.25
-      rangePath.attr('d', rangeArc({ startAngle: loAngle + jitter * 0.3, endAngle: hiAngle + jitter }) as string)
+      updateSegments(hiAngle + jitter)
     }
-    const revTimer = setTimeout(() => { revInterval = setInterval(revTick, 66) }, index * 120 + 200 + 1200)
-    return () => { clearTimeout(revTimer); clearInterval(revInterval) }
+    const revTimer = setTimeout(() => { revInterval = setInterval(revTick, 66) }, delay + duration)
+    return () => { timer.stop(); clearTimeout(revTimer); clearInterval(revInterval) }
   }, [parsed, index, isDark])
 
   return (
@@ -290,12 +421,6 @@ function TachoGauge({ metric, index }: { metric: MetricInput; index: number }) {
     svg.attr('viewBox', `0 0 ${size} ${size}`)
 
     const defs = svg.append('defs')
-    const grad = defs.append('linearGradient').attr('id', `tg-${index}`)
-      .attr('x1', '0%').attr('y1', '0%').attr('x2', '100%').attr('y2', '0%')
-    grad.append('stop').attr('offset', '0%').attr('stop-color', '#22d3ee')
-    grad.append('stop').attr('offset', '50%').attr('stop-color', '#8b5cf6')
-    grad.append('stop').attr('offset', '100%').attr('stop-color', '#ff2bd6')
-
     const glow = defs.append('filter').attr('id', `tg-glow-${index}`)
       .attr('x', '-40%').attr('y', '-40%').attr('width', '180%').attr('height', '180%')
     glow.append('feGaussianBlur').attr('stdDeviation', '3').attr('result', 'blur')
@@ -323,36 +448,41 @@ function TachoGauge({ metric, index }: { metric: MetricInput; index: number }) {
 
     const percent = Math.min(value / 100, 1)
     const targetEnd = startAngle + totalSweep * percent
-    const fgArc = d3.arc<any>().innerRadius(radius - strokeW / 2).outerRadius(radius + strokeW / 2)
-      .startAngle(startAngle).cornerRadius(strokeW / 2)
 
-    const path = svg.append('path').attr('transform', `translate(${cx},${cy})`)
-      .attr('fill', `url(#tg-${index})`).attr('filter', `url(#tg-glow-${index})`)
-      .attr('d', fgArc({ endAngle: startAngle }) as string)
+    // Segmented arc gradient — cyan → purple → pink
+    const { updateSegments } = createSegmentedArc(svg, {
+      cx, cy, innerR: radius - strokeW / 2, outerR: radius + strokeW / 2,
+      arcStart: startAngle, arcEnd: startAngle + totalSweep, segments: 48,
+      colorStops: [{ offset: 0, color: '#22d3ee' }, { offset: 0.5, color: '#8b5cf6' }, { offset: 1, color: '#ff2bd6' }],
+      filterUrl: `url(#tg-glow-${index})`,
+    })
 
-    path.transition().delay(index * 120 + 200).duration(1400)
-      .ease(d3.easeElasticOut.amplitude(0.8).period(0.45))
-      .attrTween('d', () => {
-        const interp = d3.interpolate(startAngle, targetEnd)
-        return (t: number) => fgArc({ endAngle: interp(t) }) as string
-      })
+    // Custom timer drives arc animation
+    const delay = index * 120 + 200
+    const duration = 1400
+    const elasticEase = d3.easeElasticOut.amplitude(0.8).period(0.45)
+    const angleInterp = d3.interpolate(startAngle, targetEnd)
+    let startTime = 0
 
-    // Needle dot
-    const dotAngle = targetEnd - Math.PI / 2
-    svg.append('circle')
-      .attr('cx', cx + Math.cos(startAngle - Math.PI / 2) * radius)
-      .attr('cy', cy + Math.sin(startAngle - Math.PI / 2) * radius)
-      .attr('r', 4).attr('fill', '#ff2bd6').attr('opacity', 0)
-      .transition().delay(index * 120 + 200).duration(1400)
-      .ease(d3.easeElasticOut.amplitude(0.8).period(0.45))
-      .attr('cx', cx + Math.cos(dotAngle) * radius).attr('cy', cy + Math.sin(dotAngle) * radius).attr('opacity', 1)
+    const timer = d3.timer((elapsed) => {
+      const sinceDelay = elapsed - delay
+      if (sinceDelay < 0) return
+
+      if (!startTime) startTime = elapsed
+      const rawT = Math.min((elapsed - startTime) / duration, 1)
+      const t = elasticEase(rawT)
+      const curAngle = angleInterp(t)
+
+      updateSegments(curAngle)
+
+      if (rawT >= 1) timer.stop()
+    })
 
     svg.append('text').attr('x', cx).attr('y', cy + 2).attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
       .attr('fill', isDark ? 'rgba(255,255,255,0.9)' : 'rgba(0,0,0,0.85)').attr('font-size', '16px').attr('font-weight', 900).text(`${value}%`)
 
     // Randomized revving — skip for 100% (perfect scores shouldn't jitter)
     if (value >= 100) return
-    const dot = svg.select<SVGCircleElement>('circle')
     const seedA = 220 + index * 61 + (value * 3) % 130
     const seedB = 150 + index * 43 + (value * 7) % 110
     const jitterAmp = totalSweep * (0.016 + (index % 4) * 0.003)
@@ -362,12 +492,10 @@ function TachoGauge({ metric, index }: { metric: MetricInput; index: number }) {
       const jitter = Math.sin(t / seedA) * jitterAmp * (0.5 + 0.5 * Math.sin(t / seedB))
         + Math.sin(t / 149) * jitterAmp * 0.3
       const curEnd = targetEnd + jitter
-      const curDotAngle = curEnd - Math.PI / 2
-      path.attr('d', fgArc({ endAngle: curEnd }) as string)
-      dot.attr('cx', cx + Math.cos(curDotAngle) * radius).attr('cy', cy + Math.sin(curDotAngle) * radius)
+      updateSegments(curEnd)
     }
-    const revTimer = setTimeout(() => { revInterval = setInterval(revTick, 66) }, index * 120 + 200 + 1400)
-    return () => { clearTimeout(revTimer); clearInterval(revInterval) }
+    const revTimer = setTimeout(() => { revInterval = setInterval(revTick, 66) }, delay + duration)
+    return () => { timer.stop(); clearTimeout(revTimer); clearInterval(revInterval) }
   }, [value, index, isDark])
 
   return (
@@ -399,13 +527,6 @@ function SpeedoGauge({ metric, index }: { metric: MetricInput; index: number }) 
     svg.attr('viewBox', `0 0 ${size} ${size}`)
 
     const defs = svg.append('defs')
-    // Green-to-red gradient for speedo
-    const grad = defs.append('linearGradient').attr('id', `spd-${index}`)
-      .attr('x1', '0%').attr('y1', '0%').attr('x2', '100%').attr('y2', '0%')
-    grad.append('stop').attr('offset', '0%').attr('stop-color', '#22d3ee')
-    grad.append('stop').attr('offset', '40%').attr('stop-color', '#10b981')
-    grad.append('stop').attr('offset', '70%').attr('stop-color', '#f59e0b')
-    grad.append('stop').attr('offset', '100%').attr('stop-color', '#ef4444')
 
     const glow = defs.append('filter').attr('id', `spd-glow-${index}`)
       .attr('x', '-40%').attr('y', '-40%').attr('width', '180%').attr('height', '180%')
@@ -416,27 +537,29 @@ function SpeedoGauge({ metric, index }: { metric: MetricInput; index: number }) 
 
     const startAngle = -Math.PI * 0.75
     const totalSweep = Math.PI * 1.5
+    const spdStops = [
+      { offset: 0, color: '#22d3ee' }, { offset: 0.4, color: '#10b981' },
+      { offset: 0.7, color: '#f59e0b' }, { offset: 1, color: '#ef4444' },
+    ]
 
-    // Full background arc
-    const bgArc = d3.arc<any>().innerRadius(radius - strokeW / 2).outerRadius(radius + strokeW / 2)
-      .startAngle(startAngle).endAngle(startAngle + totalSweep).cornerRadius(strokeW / 2)
-    svg.append('path').attr('d', bgArc({}) as string).attr('transform', `translate(${cx},${cy})`)
-      .attr('fill', `url(#spd-${index})`).attr('opacity', 0.2)
+    // Full background arc — static segmented at low opacity
+    const bgSegs = createSegmentedArc(svg, {
+      cx, cy, innerR: radius - strokeW / 2, outerR: radius + strokeW / 2,
+      arcStart: startAngle, arcEnd: startAngle + totalSweep, segments: 48,
+      colorStops: spdStops,
+    })
+    bgSegs.g.attr('opacity', 0.2)
+    bgSegs.updateSegments(startAngle + totalSweep) // show all segments
 
-    // Colored fill arc up to needle position
-    const fillArc = d3.arc<any>().innerRadius(radius - strokeW / 2).outerRadius(radius + strokeW / 2)
-      .startAngle(startAngle).cornerRadius(strokeW / 2)
+    // Colored fill arc up to needle position — segmented gradient
     const targetEnd = startAngle + totalSweep * position
 
-    const fillPath = svg.append('path').attr('transform', `translate(${cx},${cy})`)
-      .attr('fill', `url(#spd-${index})`).attr('filter', `url(#spd-glow-${index})`)
-      .attr('d', fillArc({ endAngle: startAngle }) as string)
-
-    fillPath.transition().delay(index * 120 + 200).duration(1800).ease(d3.easeCubicOut)
-      .attrTween('d', () => {
-        const interp = d3.interpolate(startAngle, targetEnd)
-        return (t: number) => fillArc({ endAngle: interp(t) }) as string
-      })
+    const { updateSegments } = createSegmentedArc(svg, {
+      cx, cy, innerR: radius - strokeW / 2, outerR: radius + strokeW / 2,
+      arcStart: startAngle, arcEnd: startAngle + totalSweep, segments: 48,
+      colorStops: spdStops,
+      filterUrl: `url(#spd-glow-${index})`,
+    })
 
     // Tick marks
     ;[0, 25, 50, 75, 100].forEach(t => {
@@ -448,22 +571,46 @@ function SpeedoGauge({ metric, index }: { metric: MetricInput; index: number }) 
         .attr('stroke', isDark ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.2)').attr('stroke-width', 1)
     })
 
-    // Needle
+    // Needle — starts at the arc start position, sweeps in exact sync with fill arc
     const needleLen = radius - 6
-    const needleAngle = targetEnd - Math.PI / 2
+    const startNeedleA = startAngle - Math.PI / 2
     const needle = svg.append('line')
       .attr('x1', cx).attr('y1', cy)
-      .attr('x2', cx).attr('y2', cy)
+      .attr('x2', cx + Math.cos(startNeedleA) * needleLen)
+      .attr('y2', cy + Math.sin(startNeedleA) * needleLen)
       .attr('stroke', isDark ? '#fff' : '#1e293b').attr('stroke-width', 2).attr('stroke-linecap', 'round')
-      .attr('opacity', 0)
-
-    needle.transition().delay(index * 120 + 200).duration(1800).ease(d3.easeCubicOut)
-      .attr('x2', cx + Math.cos(needleAngle) * needleLen)
-      .attr('y2', cy + Math.sin(needleAngle) * needleLen)
       .attr('opacity', 0.9)
 
     // Center hub
     svg.append('circle').attr('cx', cx).attr('cy', cy).attr('r', 4).attr('fill', isDark ? 'rgba(255,255,255,0.8)' : 'rgba(0,0,0,0.7)')
+
+    // Single custom timer drives both fill arc and needle on the same frame
+    const delay = index * 120 + 200
+    const duration = 1800
+    const ease = d3.easeCubicOut
+    const angleInterp = d3.interpolate(startAngle, targetEnd)
+    let startTime = 0
+
+    const timer = d3.timer((elapsed) => {
+      const sinceDelay = elapsed - delay
+      if (sinceDelay < 0) return
+
+      if (!startTime) startTime = elapsed
+      const rawT = Math.min((elapsed - startTime) / duration, 1)
+      const t = ease(rawT)
+      const curAngle = angleInterp(t)
+
+      // Update arc fill
+      updateSegments(curAngle)
+
+      // Update needle to same angle
+      const a = curAngle - Math.PI / 2
+      needle
+        .attr('x2', cx + Math.cos(a) * needleLen)
+        .attr('y2', cy + Math.sin(a) * needleLen)
+
+      if (rawT >= 1) timer.stop()
+    })
 
     // Value text
     svg.append('text').attr('x', cx).attr('y', cy + 20).attr('text-anchor', 'middle')
@@ -481,12 +628,12 @@ function SpeedoGauge({ metric, index }: { metric: MetricInput; index: number }) 
         + Math.sin(t / 191) * jitterAmp * 0.2
       const curEnd = targetEnd + jitter
       const curAngle = curEnd - Math.PI / 2
-      fillPath.attr('d', fillArc({ endAngle: curEnd }) as string)
+      updateSegments(curEnd)
       needle.attr('x2', cx + Math.cos(curAngle) * needleLen).attr('y2', cy + Math.sin(curAngle) * needleLen)
     }
     // Start revving after initial animation finishes
-    const revTimer = setTimeout(() => { revInterval = setInterval(revTick, 66) }, index * 120 + 200 + 1800)
-    return () => { clearTimeout(revTimer); clearInterval(revInterval) }
+    const revTimer = setTimeout(() => { revInterval = setInterval(revTick, 66) }, delay + duration)
+    return () => { timer.stop(); clearTimeout(revTimer); clearInterval(revInterval) }
   }, [position, index, metric, isDark])
 
   return (

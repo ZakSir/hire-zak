@@ -10,47 +10,65 @@ export type Skill = {
 }
 
 export const SKILLS: Skill[] = [
-  // AI / LLM - Hero category
+  // AI / LLM — Hero category
   { name: 'Agentic AI', category: 'AI & LLMs', level: 'master', highlight: true },
   { name: 'LLM Engineering', category: 'AI & LLMs', level: 'master', highlight: true },
   { name: 'RAG Systems', category: 'AI & LLMs', level: 'master', highlight: true },
-  { name: 'Prompt Engineering', category: 'AI & LLMs', level: 'master' },
   { name: 'AI Automation', category: 'AI & LLMs', level: 'master', highlight: true },
-  { name: 'LangChain', category: 'AI & LLMs', level: 'master' },
-  { name: 'LangGraph', category: 'AI & LLMs', level: 'master' },
-  { name: 'Embeddings', category: 'AI & LLMs', level: 'master' },
-  { name: 'Guardrails', category: 'AI & LLMs', level: 'master' },
-  { name: 'Evaluation', category: 'AI & LLMs', level: 'advanced' },
-  
+  { name: 'Prompt Engineering', category: 'AI & LLMs', level: 'advanced' },
+  { name: 'LangChain', category: 'AI & LLMs', level: 'advanced' },
+  { name: 'LangGraph', category: 'AI & LLMs', level: 'advanced' },
+  { name: 'Embeddings', category: 'AI & LLMs', level: 'advanced' },
+  { name: 'Guardrails', category: 'AI & LLMs', level: 'advanced' },
+  { name: 'Multi-Agent Systems', category: 'AI & LLMs', level: 'master' },
+  { name: 'Evaluation', category: 'AI & LLMs', level: 'intermediate' },
+  { name: 'Vector Databases', category: 'AI & LLMs', level: 'intermediate' },
+
   // Governance & Compliance
   { name: 'AI Governance', category: 'Governance', level: 'master', highlight: true },
-  { name: 'NIST AI RMF', category: 'Governance', level: 'master' },
-  { name: 'Model Risk', category: 'Governance', level: 'master' },
-  { name: 'IT Compliance (Tech)', category: 'Governance', level: 'master' },
-  { name: 'Privacy by Design', category: 'Governance', level: 'advanced' },
-  
+  { name: 'Compliance Automation', category: 'Governance', level: 'master', highlight: true },
+  { name: 'NIST AI RMF', category: 'Governance', level: 'advanced' },
+  { name: 'Model Risk', category: 'Governance', level: 'advanced' },
+  { name: 'IT Compliance (Tech)', category: 'Governance', level: 'advanced' },
+  { name: 'Privacy by Design', category: 'Governance', level: 'intermediate' },
+  { name: 'Zero Trust', category: 'Governance', level: 'advanced' },
+  { name: 'SOC Automation', category: 'Governance', level: 'advanced' },
+
   // Azure & Cloud
   { name: 'Azure', category: 'Cloud', level: 'master', highlight: true },
   { name: 'Azure OpenAI', category: 'Cloud', level: 'master' },
-  { name: 'Azure AI Foundry', category: 'Cloud', level: 'master' },
+  { name: 'Azure AI Foundry', category: 'Cloud', level: 'advanced' },
   { name: 'Azure Policy', category: 'Cloud', level: 'master' },
   { name: 'Azure DevOps', category: 'Cloud', level: 'master' },
-  { name: 'Azure Deployments', category: 'Cloud', level: 'master' },
+  { name: 'Azure Functions', category: 'Cloud', level: 'advanced' },
   { name: 'Cosmos DB', category: 'Cloud', level: 'advanced' },
   { name: 'Azure Networking', category: 'Cloud', level: 'intermediate' },
-  
+  { name: 'Infrastructure as Code', category: 'Cloud', level: 'advanced' },
+
   // Languages & Frameworks
-  { name: 'Python', category: 'Languages', level: 'advanced', highlight: true },
+  { name: 'C#', category: 'Languages', level: 'master', highlight: true },
   { name: 'TypeScript', category: 'Languages', level: 'master' },
-  { name: 'C#', category: 'Languages', level: 'master' },
-  { name: 'React', category: 'Languages', level: 'advanced' },
+  { name: 'Python', category: 'Languages', level: 'advanced', highlight: true },
   { name: 'ASP.NET', category: 'Languages', level: 'master' },
-  
+  { name: 'React', category: 'Languages', level: 'advanced' },
+  { name: 'PowerShell', category: 'Languages', level: 'advanced' },
+  { name: 'HTML / CSS', category: 'Languages', level: 'master' },
+  { name: 'Node.js', category: 'Languages', level: 'advanced' },
+
+  // DevOps & Infra
+  { name: 'CI/CD Pipelines', category: 'DevOps', level: 'master', highlight: true },
+  { name: 'Docker', category: 'DevOps', level: 'advanced' },
+  { name: 'Kubernetes', category: 'DevOps', level: 'intermediate' },
+  { name: 'GitHub Actions', category: 'DevOps', level: 'advanced' },
+  { name: 'Pipeline Optimization', category: 'DevOps', level: 'advanced' },
+
   // Leadership
   { name: 'Engineering Leadership', category: 'Leadership', level: 'master', highlight: true },
   { name: 'AI Strategy', category: 'Leadership', level: 'master', highlight: true },
-  { name: 'Team Building', category: 'Leadership', level: 'master' },
-  { name: 'Executive Communication', category: 'Leadership', level: 'master' },
+  { name: 'Team Building', category: 'Leadership', level: 'advanced' },
+  { name: 'Executive Communication', category: 'Leadership', level: 'advanced' },
+  { name: 'Platform Architecture', category: 'Leadership', level: 'master' },
+  { name: 'Thought Leadership', category: 'Leadership', level: 'advanced' },
 ]
 
 const CATEGORY_COLORS: Record<string, string> = {
@@ -58,6 +76,7 @@ const CATEGORY_COLORS: Record<string, string> = {
   'Governance': '#8b5cf6',
   'Cloud': '#3b82f6',
   'Languages': '#10b981',
+  'DevOps': '#f59e0b',
   'Leadership': '#ff2bd6',
 }
 
@@ -276,7 +295,7 @@ export function SkillBars() {
       {/* Glowing title reveal */}
       <div className={`skill-title-reveal ${isVisible ? 'visible' : ''}`}>
         <h3 className="skill-viz-title skill-title-glow">Skill Proficiency</h3>
-        <p className="skill-viz-subtitle">Animated mastery levels by category</p>
+
       </div>
       
       {/* Staggered category cards with swoosh */}
@@ -291,7 +310,7 @@ export function SkillBars() {
               <span className="category-icon-glow" style={{ '--glow-color': CATEGORY_COLORS[cat] } as React.CSSProperties} />
               {cat}
             </div>
-            {SKILLS.filter(s => s.category === cat).slice(0, 6).map((skill, i) => (
+            {SKILLS.filter(s => s.category === cat).map((skill, i) => (
               <div 
                 key={skill.name} 
                 className="skill-bar-row skill-bar-fly-in"

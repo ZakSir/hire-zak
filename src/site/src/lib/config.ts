@@ -3,10 +3,10 @@
  */
 export const siteConfig = {
   /** Enable the floating blob background */
-  enableBlobBackground: true,
+  enableBlobBackground: false,
   
   /** Enable parallax swoosh effects */
-  enableSwooshField: true,
+  enableSwooshField: false,
   
   /** Maximum number of tags to show per job */
   maxTagsPerJob: 12,

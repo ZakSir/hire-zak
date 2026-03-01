@@ -172,6 +172,10 @@
 }
 
 @media print {
+  @page {
+    margin: 0;
+  }
+
   :root {
     color-scheme: light;
   }
@@ -191,7 +195,7 @@
     height: auto !important;
     width: auto !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 48px 48px !important;
   }
 
   /* Hide everything that isn't the document */
@@ -229,6 +233,11 @@
 
   .standardSection h2 {
     color: #000 !important;
+  }
+
+  .standardExperienceSection {
+    break-before: page;
+    page-break-before: always;
   }
 
   .standardRole {

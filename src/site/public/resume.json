@@ -47,119 +47,154 @@
     "title": "Executive Summary",
     "items": [
       {
-        "title": "AI Strategy → Delivery",
-        "body": "Hands-on AI engineering executive who owns strategy-to-delivery: set roadmaps, design platforms, and ship production LLM/agent systems that move measurable outcomes (cost, cycle time, quality, and adoption)."
+        "title": "AI Strategy → Revenue",
+        "body": "Shipped two production AI platforms (conversational AI for regulated environments + AIETL batch processing) that drove $50M+ first-year revenue with $100M+ in pipeline. Coined the AIETL paradigm, now adopted across 3 additional divisions. Turns AI strategy into shipped products that generate measurable business growth."
       },
       {
-        "title": "Agentic Systems at Scale",
-        "body": "Builds agentic automation across complex workflows (triage, investigation, orchestration, reporting). Deep in the stack: retrieval (RAG), evaluation, guardrails, observability, and enterprise integration (APIs, CI/CD, data)."
+        "title": "Agentic AI Pioneer",
+        "body": "Built agentic systems before the industry had a name for them: early agent protocols predating MCP, tiered agentic microservices, and an authentication paradigm independently paralleling what became Agent365. Pioneered multi-agent conversations and multi-model processing to eliminate hallucinations from unstructured data at scale."
       },
       {
-        "title": "Enterprise Governance & Trust",
-        "body": "Leads enterprise adoption with trust: governance aligned to NIST AI RMF, privacy-by-design, model risk management, and compliance mappings (e.g., NIST CSF, ISO 27001) so AI can ship safely without slowing delivery."
+        "title": "Enterprise Trust at Scale",
+        "body": "Automated compliance end-to-end — framework selection through report generation — across all major frameworks. Governs AI deployments aligned to NIST AI RMF with privacy-by-design and model risk management. Previously built an Azure Policy accelerator ($200M+ engagement reach) deployed in air-gapped, zero-dependency environments."
       },
       {
         "title": "Engineering Leadership",
-        "body": "Leads globally distributed engineering teams (100+) delivering AI-first solutions. Partners with executives and clients, sets delivery standards, and drives human-first adoption that upgrades work from repetitive tasks to higher-leverage engineering." 
+        "body": "Leads 13 engineering teams (300 engineers) with overlapping dependencies. Delivered 64 production assets, 10 client demos, and 200+ technical enablers. Track record of building platforms adopted beyond the originating org. Represented at 21 industry events as speaker, panelist, or workshop leader."
       }
     ]
   },
   "proficiencies": [
     {
-      "skillCategoryName": "Software Engineering",
+      "skillCategoryName": "AI & LLM Engineering",
       "skillNames": [
-        "csharp",
-        "javascript",
-        "html5",
-        "css",
-        "less",
-        "typescript",
-        "asp.net",
-        "powershell",
-        "yaml",
-        "json"
+        "Agentic AI",
+        "LLM Engineering",
+        "RAG Systems",
+        "Prompt Engineering",
+        "Multi-Agent Systems",
+        "LangChain",
+        "LangGraph",
+        "Embeddings",
+        "Guardrails",
+        "AI Evaluation"
       ],
       "level": "master",
-      "yearsOfExperience": 10,
-      "favoriteActivities": [
-        "framework development",
-        "refactoring",
-        "automation",
-        "deployment",
-        "open source"
-      ]
-    },
-    {
-      "skillCategoryName": "Modern Application Infrastructure",
-      "skillNames": [
-        "CI/CD Deployment",
-        "Kubernetes",
-        "Docker",
-        "Containerization"
-      ],
-      "level": "journeyman",
-      "yearsOfExperience": 4,
-      "favoriteActivities": [
-        "Automated Deployments"
-      ]
-    },
-    {
-      "skillCategoryName": "Microsoft Administration",
-      "skillNames": [
-        "Windows",
-        "Windows Server",
-        "PowerShell",
-        "Windows Network Administration",
-        "Active Directory",
-        "Exchange"
-      ],
-      "level": "journeyman",
-      "yearsOfExperience": 10,
-      "favoriteActivities": [
-        "Environment Design",
-        "Active Directory"
-      ]
-    },
-    {
-      "skillNames": [
-        "UX : XAML / WPF"
-      ],
-      "level": "journeyman",
-      "yearsOfExperience": 3,
-      "favoriteActivities": [
-        "Ergonomic Design",
-        "Delight moments",
-        "Consistency"
-      ]
-    },
-    {
-      "skillNames": [
-        "Html5",
-        "CSS3",
-        "Javascript",
-        "TypeScript"
-      ],
-      "level": "journeyman",
       "yearsOfExperience": 5,
       "favoriteActivities": [
-        "Single Page Applications",
-        "Api Design",
-        "Performance"
+        "agentic workflows",
+        "multi-model orchestration",
+        "hallucination elimination",
+        "production AI platforms"
       ]
     },
     {
+      "skillCategoryName": "Software Engineering",
+      "skillNames": [
+        "C#",
+        "TypeScript",
+        "Python",
+        "JavaScript",
+        "ASP.NET",
+        "React",
+        "HTML5",
+        "CSS",
+        "PowerShell"
+      ],
+      "level": "master",
+      "yearsOfExperience": 16,
+      "favoriteActivities": [
+        "framework development",
+        "platform engineering",
+        "refactoring",
+        "automation"
+      ]
+    },
+    {
+      "skillCategoryName": "Cloud & Azure",
       "skillNames": [
         "Azure",
-        "Windows Azure"
+        "Azure OpenAI",
+        "Azure AI Foundry",
+        "Azure Policy",
+        "Azure DevOps",
+        "Azure Functions",
+        "Cosmos DB"
       ],
-      "level": "journeyman",
+      "level": "master",
+      "yearsOfExperience": 12,
+      "favoriteActivities": [
+        "platform architecture",
+        "governance automation",
+        "cloud-native design"
+      ]
+    },
+    {
+      "skillCategoryName": "Cybersecurity & AI Governance",
+      "skillNames": [
+        "AI Governance",
+        "NIST AI RMF",
+        "Model Risk Management",
+        "Compliance Automation",
+        "Privacy by Design",
+        "SOC Automation",
+        "Zero Trust"
+      ],
+      "level": "advanced",
+      "yearsOfExperience": 8,
+      "favoriteActivities": [
+        "compliance framework automation",
+        "AI risk management",
+        "security architecture"
+      ]
+    },
+    {
+      "skillCategoryName": "Engineering Leadership",
+      "skillNames": [
+        "Team Leadership",
+        "AI Strategy",
+        "Platform Architecture",
+        "Executive Communication",
+        "Thought Leadership"
+      ],
+      "level": "advanced",
+      "yearsOfExperience": 8,
+      "favoriteActivities": [
+        "cross-functional team leadership",
+        "strategy-to-execution",
+        "stakeholder alignment"
+      ]
+    },
+    {
+      "skillCategoryName": "DevOps & Infrastructure",
+      "skillNames": [
+        "CI/CD Pipelines",
+        "Docker",
+        "Kubernetes",
+        "Infrastructure as Code",
+        "Azure DevOps Pipelines"
+      ],
+      "level": "advanced",
+      "yearsOfExperience": 10,
+      "favoriteActivities": [
+        "automated deployments",
+        "containerization",
+        "pipeline optimization"
+      ]
+    },
+    {
+      "skillCategoryName": "Data & AI Processing",
+      "skillNames": [
+        "Vector Databases",
+        "Data Pipeline Design",
+        "ETL / AIETL",
+        "Unstructured Data Processing"
+      ],
+      "level": "intermediate",
       "yearsOfExperience": 4,
       "favoriteActivities": [
-        "ApplicationInsights",
-        "Storage",
-        "HyperScale",
-        "Analytics",
-        "Service Design"
+        "AI data pipeline architecture",
+        "batch processing at scale"
       ]
     }
   ],
@@ -180,11 +215,13 @@
         "month": 3
       },
       "endDate": null,
-      "tagline": "Own strategy-to-delivery for production AI that automates security operations and accelerates enterprise response.",
+      "tagline": "Own AI Engineering for Cybersecurity — shipped two production platforms (conversational AI and AIETL batch processing), drove $50M+ first-year revenue with $100M+ pipeline, and lead 13 engineering teams delivering AI at enterprise scale.",
       "themes": [
         "Agentic AI",
         "AI Governance",
-        "Engineering Leadership"
+        "Engineering Leadership",
+        "Platform Engineering",
+        "Thought Leadership"
       ],
       "signals": {
         "cost": 0.95,
@@ -195,154 +232,698 @@
       },
       "impactMetrics": [
         {
-          "label": "Production agents shipped",
-          "value": "100+",
+          "label": "First-year revenue growth",
+          "value": "$50M+",
           "unit": "",
-          "context": "Across 4 solutions, 5 clients",
-          "viz": "sparkline",
-          "sparkData": [1, 3, 5, 8, 14, 25, 45, 70, 100]
-        },
-        {
-          "label": "Internal agents in development",
-          "value": "100s",
-          "unit": "",
-          "context": "Hundreds of internal agents in active development",
+          "context": "With $100M+ in qualified pipeline",
           "viz": "text"
         },
         {
-          "label": "Engineering team (fully staffed)",
-          "value": "300",
-          "unit": " engineers",
-          "context": "Globally distributed across 13+ squads",
+          "label": "Production platforms shipped",
+          "value": "2",
+          "unit": "",
+          "context": "Conversational AI platform (regulated environments) + AIETL batch processing platform",
+          "viz": "text"
+        },
+        {
+          "label": "Engineering teams led",
+          "value": "13",
+          "unit": "",
+          "context": "Cross-functional squads with overlapping dependencies",
+          "viz": "text"
+        },
+        {
+          "label": "Full-featured assets delivered",
+          "value": "64",
+          "unit": "",
+          "context": "Plus 10 client-ready demos and 200+ technical enablers",
+          "viz": "sparkline",
+          "sparkData": [
+            2,
+            8,
+            16,
+            24,
+            35,
+            44,
+            52,
+            58,
+            64
+          ]
+        },
+        {
+          "label": "Cross-division platform adoption",
+          "value": "3",
+          "unit": " divisions",
+          "context": "AIETL batch platform adopted beyond Cybersecurity",
+          "viz": "text"
+        },
+        {
+          "label": "Industry speaking events",
+          "value": "21",
+          "unit": "",
+          "context": "Speaker, panelist, or workshop leader on AI engineering and cybersecurity",
           "viz": "text"
         },
         {
           "label": "Cost reduction range",
           "value": "40-95",
           "unit": "%",
-          "context": "Client outcomes in real engagements",
+          "context": "Client outcomes across AI-automated workflows",
           "viz": "range-gauge"
+        },
+        {
+          "label": "Engineering team (fully staffed)",
+          "value": "300",
+          "unit": " engineers",
+          "context": "Globally distributed across 13 squads",
+          "viz": "text"
         }
       ],
       "highlights": [
-        "Own strategy-to-delivery for client-facing production AI; shipped 100 agents across 4 solutions for 5 clients, with hundreds more internal agents in active development.",
-        "Deliver SOC automation (LLM-powered triage, investigation, orchestration) integrated with SOAR/case management; achieving 40-95% cost reduction depending on the task.",
-        "Build reusable accelerators adopted across offerings; standardize RAG, evaluation, guardrails, and observability as an engineering operating model.",
-        "Co-lead deployment governance aligned to NIST AI RMF (model risk, privacy-by-design, and compliance mappings) enabling safe, fast adoption.",
-        "Lead 300 engineers (fully staffed) across 13+ AI-first squads delivering solutions across identity, TVM, compliance, appsec, policy, and governance."
+        "Own AI Engineering within the Cybersecurity practice: shipped two production platforms — a chat/event-driven AI platform for regulated and high-security environments, and an AI batch processing platform ('AIETL') enabling developers to build AI processing pipelines at scale.",
+        "Drove $50M+ in first-year revenue growth with $100M+ in qualified pipeline, establishing AI Engineering as a flagship growth engine within Cybersecurity.",
+        "Lead 13 engineering teams with overlapping dependencies, coordinating delivery across identity, TVM, compliance, appsec, policy, and governance domains.",
+        "Architected a fully automated compliance assessment framework — from framework selection/creation through questionnaire generation, answer extraction, assessment processing, and report generation — covering all major compliance frameworks.",
+        "Pioneered novel AI processing techniques combining agentic workflows, multi-agent conversations, and multi-model processing to extract relevant information from unstructured data and eliminate hallucinations.",
+        "AIETL batch processing platform adopted by 3 additional EY divisions, validating the platform's scalability and cross-practice applicability.",
+        "Delivered 64 full-featured assets, 10 client-ready demos for sales teams, and 200+ technical enablers for internal and client-facing scenarios.",
+        "Participated in 21 industry events as speaker, panelist, or workshop leader, sharing insights on AI engineering and cybersecurity.",
+        "Deliver SOC automation (LLM-powered triage, investigation, orchestration) integrated with SOAR/case management; achieving 40–95% cost reduction depending on task complexity."
       ],
       "initiatives": [
         {
+          "name": "Conversational AI Platform (Regulated Environments)",
+          "problem": "Regulated and high-security environments lacked a purpose-built platform for secure chat and event-driven AI interactions.",
+          "approach": "Designed and shipped a production conversational AI platform architected for deployment into regulated environments, with governance, auditability, and security built in from day one.",
+          "outcome": "Deployed across client engagements; became a core offering within the Cybersecurity AI portfolio."
+        },
+        {
+          "name": "AIETL Batch Processing Platform",
+          "problem": "Developers needed a scalable way to build AI processing pipelines without reinventing data flow orchestration for every project.",
+          "approach": "Coined and built the 'AIETL' paradigm — an ETL-inspired platform for AI batch processing, enabling developers to compose AI processing pipelines with standardized patterns.",
+          "outcome": "Adopted by 3 additional EY divisions beyond Cybersecurity; became a reusable enterprise asset."
+        },
+        {
+          "name": "Automated Compliance Assessment Framework",
+          "problem": "Compliance assessments across multiple frameworks were manual, slow, and inconsistent.",
+          "approach": "Built a fully automated pipeline: framework selection/creation → questionnaire generation → answer extraction from unstructured data → assessment processing → report generation.",
+          "outcome": "End-to-end automation covering all major compliance frameworks; dramatically reduced assessment cycle time."
+        },
+        {
           "name": "SOC Agentic Automation",
           "problem": "Manual L1/L2 triage and investigation slows response and increases cost.",
-          "approach": "Agentic workflows for triage, investigation, and orchestration; deeply integrated with enterprise tooling.",
-          "outcome": "Reduced targeted operational costs (70-95%) and accelerated response in client engagements."
+          "approach": "Agentic workflows for triage, investigation, and orchestration using novel multi-agent and multi-model processing techniques to eliminate hallucinations; deeply integrated with enterprise tooling.",
+          "outcome": "40–95% cost reduction depending on task complexity; accelerated response in client engagements."
         },
         {
           "name": "Reusable AI Accelerator Library",
           "problem": "Teams reinvent prompting, retrieval, and safety patterns across solutions.",
-          "approach": "Standardize RAG, evaluation, guardrails, and observability; publish reusable components.",
-          "outcome": "Accelerated delivery across squads and improved quality/consistency of AI solutions."
-        },
-        {
-          "name": "Dynamic Reporting",
-          "problem": "Static reporting pipelines struggle to produce context-aware narratives from arbitrary data sources.",
-          "approach": "LLM-driven report generation over governed data with contextual accuracy.",
-          "outcome": "Enabled high-signal reporting workflows that adapt to the questions stakeholders ask."
+          "approach": "Standardize RAG, evaluation, guardrails, and observability; publish 64 full-featured assets and 200+ technical enablers.",
+          "outcome": "Accelerated delivery across 13 squads; 10 client-ready demos deployed for sales teams."
         }
       ],
       "stack": {
-        "methods": ["Agentic AI", "LLMs", "RAG"],
-        "libraries": ["LangChain", "LangGraph"],
-        "cloud": ["Azure OpenAI", "Azure AI Foundry"],
+        "methods": [
+          "Agentic AI",
+          "LLMs",
+          "RAG"
+        ],
+        "libraries": [
+          "LangChain",
+          "LangGraph"
+        ],
+        "cloud": [
+          "Azure OpenAI",
+          "Azure AI Foundry"
+        ],
         "data": [],
-        "integrations": ["Microsoft Sentinel", "ServiceNow"]
+        "integrations": [
+          "Microsoft Sentinel",
+          "ServiceNow"
+        ]
       },
       "technologies": [
-        { "name": "OpenAI", "icon": { "dark": "/assets/icons/dark-mode/openai.svg", "light": "/assets/icons/light-mode/openai.svg" } },
-        { "name": "Microsoft Copilot", "icon": { "agnostic": "/assets/icons/agnostic/copilot.png" } },
-        { "name": "GitHub Copilot", "icon": { "dark": "/assets/icons/dark-mode/Copilot_Icon_White.svg", "light": "/assets/icons/light-mode/Copilot_Icon_Black.svg" } },
-        { "name": "Python", "icon": { "agnostic": "/assets/icons/agnostic/python.svg" } },
-        { "name": "TypeScript", "icon": { "agnostic": "/assets/icons/agnostic/typescript.svg" } },
-        { "name": "JavaScript", "icon": { "agnostic": "/assets/icons/agnostic/javascript.svg" } },
-        { "name": "React", "icon": { "agnostic": "/assets/icons/agnostic/react.svg" } },
-        { "name": "Angular", "icon": { "agnostic": "/assets/icons/agnostic/angular_gradient.png" } },
-        { "name": "Node.js", "icon": { "dark": "/assets/icons/dark-mode/nodejs.svg", "light": "/assets/icons/light-mode/nodejs.svg" } },
-        { "name": "FastAPI", "icon": { "dark": "/assets/icons/dark-mode/fastapi.svg", "light": "/assets/icons/light-mode/fastapi.svg" } },
-        { "name": "Flask", "icon": { "dark": "/assets/icons/dark-mode/Flask.svg", "light": "/assets/icons/light-mode/Flask.svg" } },
-        { "name": "Pydantic", "icon": { "agnostic": "/assets/icons/agnostic/pydantic.svg" } },
-        { "name": "GraphQL", "icon": { "agnostic": "/assets/icons/agnostic/graphql.svg" } },
-        { "name": "KnockoutJS", "icon": { "dark": "/assets/icons/dark-mode/KnockoutJS.svg", "light": "/assets/icons/light-mode/KnockoutJS.svg" } },
-        { "name": "D3.js", "icon": { "agnostic": "/assets/icons/agnostic/Logo_D3.svg" } },
-        { "name": "HTML5", "icon": { "agnostic": "/assets/icons/agnostic/html5.svg" } },
-        { "name": "CSS3", "icon": { "agnostic": "/assets/icons/agnostic/css3.svg" } },
-        { "name": "Webpack", "icon": { "agnostic": "/assets/icons/agnostic/webpack.svg" } },
-        { "name": "npm", "icon": { "agnostic": "/assets/icons/agnostic/npm.svg" } },
-        { "name": "Azure", "icon": { "agnostic": "/assets/icons/agnostic/azure.svg" } },
-        { "name": "Azure OpenAI", "icon": { "agnostic": "/assets/icons/agnostic/03438-icon-service-Azure-OpenAI.svg" } },
-        { "name": "Azure AI Foundry", "icon": { "agnostic": "/assets/icons/agnostic/03513-icon-service-AI-Studio.svg" } },
-        { "name": "Azure AI Search", "icon": { "agnostic": "/assets/icons/agnostic/10044-icon-service-Cognitive-Search.svg" } },
-        { "name": "Azure Cosmos DB", "icon": { "agnostic": "/assets/icons/agnostic/10121-icon-service-Azure-Cosmos-DB.svg" } },
-        { "name": "PostgreSQL", "icon": { "agnostic": "/assets/icons/agnostic/postgresql.svg" } },
-        { "name": "Neo4j", "icon": { "agnostic": "/assets/icons/agnostic/neo4j.svg" } },
-        { "name": "MySQL", "icon": { "agnostic": "/assets/icons/agnostic/mysql.svg" } },
-        { "name": "Redis", "icon": { "agnostic": "/assets/icons/agnostic/redis.svg" } },
-        { "name": "Elasticsearch", "icon": { "agnostic": "/assets/icons/agnostic/elasticsearch.svg" } },
-        { "name": "Azure Storage", "icon": { "agnostic": "/assets/icons/agnostic/10086-icon-service-Storage-Accounts.svg" } },
-        { "name": "Azure Event Hubs", "icon": { "agnostic": "/assets/icons/agnostic/00039-icon-service-Event-Hubs.svg" } },
-        { "name": "Azure Event Grid", "icon": { "agnostic": "/assets/icons/agnostic/10206-icon-service-Event-Grid-Topics.svg" } },
-        { "name": "Azure Key Vault", "icon": { "agnostic": "/assets/icons/agnostic/10245-icon-service-Key-Vaults.svg" } },
-        { "name": "Azure APIM", "icon": { "agnostic": "/assets/icons/agnostic/10042-icon-service-API-Management-Services.svg" } },
-        { "name": "Azure Container Apps", "icon": { "agnostic": "/assets/icons/agnostic/02884-icon-service-Worker-Container-App.svg" } },
-        { "name": "Azure Container Registry", "icon": { "agnostic": "/assets/icons/agnostic/10105-icon-service-Container-Registries.svg" } },
-        { "name": "Azure Functions", "icon": { "agnostic": "/assets/icons/agnostic/10029-icon-service-Function-Apps.svg" } },
-        { "name": "Azure Resource Graph", "icon": { "agnostic": "/assets/icons/agnostic/10318-icon-service-Resource-Graph-Explorer.svg" } },
-        { "name": "Application Insights", "icon": { "agnostic": "/assets/icons/agnostic/00012-icon-service-Application-Insights.svg" } },
-        { "name": "Bicep", "icon": { "agnostic": "/assets/icons/agnostic/bicep.svg" } },
-        { "name": "Microsoft Purview", "icon": { "agnostic": "/assets/icons/agnostic/icon-purview.webp" } },
-        { "name": "Microsoft Sentinel", "icon": { "agnostic": "/assets/icons/agnostic/10248-icon-service-Azure-Sentinel.svg" } },
-        { "name": "Microsoft Teams", "icon": { "agnostic": "/assets/icons/agnostic/microsoft-teams.svg" } },
-        { "name": "Microsoft 365", "icon": { "agnostic": "/assets/icons/agnostic/microsoft365.svg" } },
-        { "name": "Entra ID Protection", "icon": { "agnostic": "/assets/icons/agnostic/10231-icon-service-Entra-ID-Protection.svg" } },
-        { "name": "Entra Managed Identities", "icon": { "agnostic": "/assets/icons/agnostic/10227-icon-service-Entra-Managed-Identities.svg" } },
-        { "name": "Entra PIM", "icon": { "agnostic": "/assets/icons/agnostic/02251-icon-service-Entra-Privleged-Identity-Management.svg" } },
-        { "name": "Entra Global Secure Access", "icon": { "agnostic": "/assets/icons/agnostic/03309-icon-service-Entra-Global-Secure-Access.svg" } },
-        { "name": "Entra Verified ID", "icon": { "agnostic": "/assets/icons/agnostic/03143-icon-service-Entra-Verified-ID.svg" } },
-        { "name": "Entra Domain Services", "icon": { "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg" } },
-        { "name": "Azure DevOps", "icon": { "agnostic": "/assets/icons/agnostic/azure-devops.svg" } },
-        { "name": "Jira", "icon": { "agnostic": "/assets/icons/agnostic/jira.svg" } },
-        { "name": "GitHub", "icon": { "dark": "/assets/icons/dark-mode/GitHub_Invertocat_White.svg", "light": "/assets/icons/light-mode/GitHub_Invertocat_Black.svg" } },
-        { "name": "Git", "icon": { "agnostic": "/assets/icons/agnostic/git.svg" } },
-        { "name": "Docker", "icon": { "agnostic": "/assets/icons/agnostic/docker.svg" } },
-        { "name": "Kubernetes", "icon": { "agnostic": "/assets/icons/agnostic/kubernetes.svg" } },
-        { "name": "Linux", "icon": { "dark": "/assets/icons/dark-mode/linux-logo-light-mode.svg", "light": "/assets/icons/light-mode/linux-logo-light-mode.svg" } },
-        { "name": "NVIDIA", "icon": { "dark": "/assets/icons/dark-mode/nvidia.svg", "light": "/assets/icons/light-mode/nvidia.svg" } },
-        { "name": "Figma", "icon": { "agnostic": "/assets/icons/agnostic/figma.svg" } },
-        { "name": "VS Code", "icon": { "agnostic": "/assets/icons/agnostic/vscode.svg" } },
-        { "name": "Grafana", "icon": { "agnostic": "/assets/icons/agnostic/grafana.svg" } },
-        { "name": "LangChain", "icon": { "dark": "/assets/icons/dark-mode/LangChain_Logo.svg", "light": "/assets/icons/light-mode/LangChain_Logo.svg" } },
-        { "name": "LangGraph", "icon": { "dark": "/assets/icons/dark-mode/langgraph-color.svg", "light": "/assets/icons/light-mode/langgraph-color.svg" } },
-        { "name": "MCP", "icon": { "dark": "/assets/icons/dark-mode/mcp.svg", "light": "/assets/icons/light-mode/mcp.svg" } },
-        { "name": "A2A", "icon": { "dark": "/assets/icons/dark-mode/a2a-logo-white.svg", "light": "/assets/icons/light-mode/a2a-logo-black.svg" } },
-        { "name": "ServiceNow", "icon": { "dark": "/assets/icons/dark-mode/ServiceNow_logo.svg", "light": "/assets/icons/light-mode/ServiceNow_logo.svg" } },
-        { "name": "CrowdStrike", "icon": { "agnostic": "/assets/icons/agnostic/CrowdStrike_logo.svg" } },
-        { "name": "Palo Alto Networks", "icon": { "agnostic": "/assets/icons/agnostic/palo-alto-panw.svg" } },
-        { "name": "Splunk", "icon": { "dark": "/assets/icons/dark-mode/splunk.svg", "light": "/assets/icons/light-mode/splunk.svg" } },
-        { "name": "Qualys", "icon": { "agnostic": "/assets/icons/agnostic/qualys.svg" } },
-        { "name": "Okta", "icon": { "agnostic": "/assets/icons/agnostic/okta.svg" } },
-        { "name": "Saviynt", "icon": { "dark": "/assets/icons/dark-mode/saviynt.svg", "light": "/assets/icons/light-mode/saviynt.svg" } },
-        { "name": "n8n", "icon": { "agnostic": "/assets/icons/agnostic/n8n.svg" } },
-        { "name": "Azure Artifacts", "icon": { "agnostic": "/assets/icons/agnostic/azure-artifacts.svg" } },
-        { "name": "NIST", "icon": { "dark": "/assets/icons/dark-mode/nist.svg", "light": "/assets/icons/light-mode/nist.svg" } },
-        { "name": "ISO 27001", "icon": { "agnostic": "/assets/icons/agnostic/iso.svg" } }
+        {
+          "name": "OpenAI",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/openai.svg",
+            "light": "/assets/icons/light-mode/openai.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/OpenAI"
+        },
+        {
+          "name": "Microsoft Copilot",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/copilot.png"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Copilot"
+        },
+        {
+          "name": "GitHub Copilot",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/Copilot_Icon_White.svg",
+            "light": "/assets/icons/light-mode/Copilot_Icon_Black.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/GitHub_Copilot"
+        },
+        {
+          "name": "Python",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/python.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+        },
+        {
+          "name": "TypeScript",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/typescript.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/TypeScript"
+        },
+        {
+          "name": "JavaScript",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/javascript.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/JavaScript"
+        },
+        {
+          "name": "React",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/react.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/React_(software)"
+        },
+        {
+          "name": "Angular",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/angular_gradient.png"
+          },
+          "url": "https://en.wikipedia.org/wiki/Angular_(web_framework)"
+        },
+        {
+          "name": "Node.js",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/nodejs.svg",
+            "light": "/assets/icons/light-mode/nodejs.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Node.js"
+        },
+        {
+          "name": "FastAPI",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/fastapi.svg",
+            "light": "/assets/icons/light-mode/fastapi.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/FastAPI"
+        },
+        {
+          "name": "Flask",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/Flask.svg",
+            "light": "/assets/icons/light-mode/Flask.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Flask_(web_framework)"
+        },
+        {
+          "name": "Pydantic",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/pydantic.svg"
+          },
+          "url": "https://docs.pydantic.dev/latest/"
+        },
+        {
+          "name": "GraphQL",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/graphql.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/GraphQL"
+        },
+        {
+          "name": "KnockoutJS",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/KnockoutJS.svg",
+            "light": "/assets/icons/light-mode/KnockoutJS.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Knockout_(web_framework)"
+        },
+        {
+          "name": "D3.js",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/Logo_D3.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/D3.js"
+        },
+        {
+          "name": "HTML5",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/html5.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/HTML5"
+        },
+        {
+          "name": "CSS3",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/css3.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/CSS"
+        },
+        {
+          "name": "Webpack",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/webpack.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Webpack"
+        },
+        {
+          "name": "npm",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/npm.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Npm"
+        },
+        {
+          "name": "Azure",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/azure.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure OpenAI",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/03438-icon-service-Azure-OpenAI.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/OpenAI"
+        },
+        {
+          "name": "Azure AI Foundry",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/03513-icon-service-AI-Studio.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure AI Search",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10044-icon-service-Cognitive-Search.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Azure_Cognitive_Search"
+        },
+        {
+          "name": "Azure Cosmos DB",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10121-icon-service-Azure-Cosmos-DB.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Cosmos_DB"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/postgresql.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+        },
+        {
+          "name": "Neo4j",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/neo4j.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Neo4j"
+        },
+        {
+          "name": "MySQL",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/mysql.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/MySQL"
+        },
+        {
+          "name": "Redis",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/redis.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Redis"
+        },
+        {
+          "name": "Elasticsearch",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/elasticsearch.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Elasticsearch"
+        },
+        {
+          "name": "Azure Storage",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10086-icon-service-Storage-Accounts.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Event Hubs",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/00039-icon-service-Event-Hubs.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Event Grid",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10206-icon-service-Event-Grid-Topics.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Key Vault",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10245-icon-service-Key-Vaults.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure APIM",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10042-icon-service-API-Management-Services.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Container Apps",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/02884-icon-service-Worker-Container-App.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Container Registry",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10105-icon-service-Container-Registries.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Functions",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10029-icon-service-Function-Apps.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Resource Graph",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10318-icon-service-Resource-Graph-Explorer.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Application Insights",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/00012-icon-service-Application-Insights.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Bicep",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/bicep.svg"
+          },
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
+        },
+        {
+          "name": "Microsoft Purview",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/icon-purview.webp"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Microsoft Sentinel",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10248-icon-service-Azure-Sentinel.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Microsoft Teams",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/microsoft-teams.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Teams"
+        },
+        {
+          "name": "Microsoft 365",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/microsoft365.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_365"
+        },
+        {
+          "name": "Entra ID Protection",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10231-icon-service-Entra-ID-Protection.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Entra_ID"
+        },
+        {
+          "name": "Entra Managed Identities",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10227-icon-service-Entra-Managed-Identities.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Entra_ID"
+        },
+        {
+          "name": "Entra PIM",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/02251-icon-service-Entra-Privleged-Identity-Management.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Entra_ID"
+        },
+        {
+          "name": "Entra Global Secure Access",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/03309-icon-service-Entra-Global-Secure-Access.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Entra_ID"
+        },
+        {
+          "name": "Entra Verified ID",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/03143-icon-service-Entra-Verified-ID.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Entra_ID"
+        },
+        {
+          "name": "Entra Domain Services",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Entra_ID"
+        },
+        {
+          "name": "Azure DevOps",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/azure-devops.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Azure_DevOps_Server"
+        },
+        {
+          "name": "Jira",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/jira.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Jira_(software)"
+        },
+        {
+          "name": "GitHub",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/GitHub_Invertocat_White.svg",
+            "light": "/assets/icons/light-mode/GitHub_Invertocat_Black.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/GitHub"
+        },
+        {
+          "name": "Git",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/git.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Git"
+        },
+        {
+          "name": "Docker",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/docker.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Docker_(software)"
+        },
+        {
+          "name": "Kubernetes",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/kubernetes.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Kubernetes"
+        },
+        {
+          "name": "Linux",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/linux-logo-light-mode.svg",
+            "light": "/assets/icons/light-mode/linux-logo-light-mode.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Linux"
+        },
+        {
+          "name": "NVIDIA",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/nvidia.svg",
+            "light": "/assets/icons/light-mode/nvidia.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Nvidia"
+        },
+        {
+          "name": "Figma",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/figma.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Figma"
+        },
+        {
+          "name": "VS Code",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/vscode.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Visual_Studio_Code"
+        },
+        {
+          "name": "Grafana",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/grafana.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Grafana"
+        },
+        {
+          "name": "LangChain",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/LangChain_Logo.svg",
+            "light": "/assets/icons/light-mode/LangChain_Logo.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/LangChain"
+        },
+        {
+          "name": "LangGraph",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/langgraph-color.svg",
+            "light": "/assets/icons/light-mode/langgraph-color.svg"
+          },
+          "url": "https://www.langchain.com/langgraph"
+        },
+        {
+          "name": "MCP",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/mcp.svg",
+            "light": "/assets/icons/light-mode/mcp.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol"
+        },
+        {
+          "name": "A2A",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/a2a-logo-white.svg",
+            "light": "/assets/icons/light-mode/a2a-logo-black.svg"
+          },
+          "url": "https://github.com/a2aproject/A2A"
+        },
+        {
+          "name": "ServiceNow",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/ServiceNow_logo.svg",
+            "light": "/assets/icons/light-mode/ServiceNow_logo.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/ServiceNow"
+        },
+        {
+          "name": "CrowdStrike",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/CrowdStrike_logo.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/CrowdStrike"
+        },
+        {
+          "name": "Palo Alto Networks",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/palo-alto-panw.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Palo_Alto_Networks"
+        },
+        {
+          "name": "Splunk",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/splunk.svg",
+            "light": "/assets/icons/light-mode/splunk.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Splunk"
+        },
+        {
+          "name": "Qualys",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/qualys.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Qualys"
+        },
+        {
+          "name": "Okta",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/okta.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Okta"
+        },
+        {
+          "name": "Saviynt",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/saviynt.svg",
+            "light": "/assets/icons/light-mode/saviynt.svg"
+          },
+          "url": "https://saviynt.com/"
+        },
+        {
+          "name": "n8n",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/n8n.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/N8n"
+        },
+        {
+          "name": "Azure Artifacts",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/azure-artifacts.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Azure_DevOps_Server"
+        },
+        {
+          "name": "NIST",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/nist.svg",
+            "light": "/assets/icons/light-mode/nist.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology"
+        },
+        {
+          "name": "ISO 27001",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/iso.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/ISO/IEC_27001"
+        }
       ],
       "dutiesAndAccomplishments": [
-        "Own strategy-to-delivery for AI in the Cybersecurity portfolio: roadmap, architecture, delivery standards, and production execution across 5 client engagements.",
-        "Shipped 100 production agents across 4 solutions; hundreds more internal agents in active development.",
-        "Drive SOC automation (LLM-powered triage, investigation, and orchestration) integrated with SOAR/case management; achieving 40-95% cost reduction depending on task complexity.",
-        "Build reusable accelerators adopted across offerings; standardize RAG, evaluation, guardrails, and observability to increase delivery speed and consistency.",
-        "Co-lead governance for deployments aligned to NIST AI RMF (model risk, privacy, compliance mapping) to enable scaled adoption.",
-        "Lead 300 engineers (fully staffed) across 13+ squads; teams build AI systems end-to-end (with supporting API, integration, and CI/CD work).",
+        "Own AI Engineering within the Cybersecurity practice: set strategy, architecture, and delivery standards for production AI across the portfolio, driving $50M+ in first-year revenue growth with $100M+ in qualified pipeline.",
+        "Shipped two flagship production platforms — a conversational AI platform for regulated/high-security environments (chat and event-driven interactions) and an AI batch processing platform ('AIETL'), a coined paradigm enabling developers to build AI processing pipelines at enterprise scale.",
+        "Lead 13 engineering teams (300 engineers fully staffed) with overlapping dependencies, coordinating cross-squad delivery across identity, TVM, compliance, appsec, policy, and governance domains.",
+        "Architected a fully automated compliance assessment framework — from framework selection/creation through questionnaire generation, answer extraction, assessment processing, and report generation — covering all major compliance frameworks with zero manual intervention.",
+        "Implemented novel AI processing techniques combining agentic workflows, multi-agent conversations, and multi-model processing to extract relevant information from unstructured data and eliminate hallucinations.",
+        "Drove cross-organizational impact: AIETL batch processing platform adopted by 3 additional EY divisions beyond Cybersecurity.",
+        "Delivered 64 full-featured assets, 10 client-ready demos for sales teams, and 200+ technical enablers for internal and client-facing scenarios.",
+        "Participated in 21 industry events as speaker, panelist, or workshop leader on AI engineering and cybersecurity.",
+        "Deliver SOC automation (LLM-powered triage, investigation, orchestration) integrated with SOAR/case management; achieving 40–95% cost reduction depending on task complexity.",
+        "Co-lead deployment governance aligned to NIST AI RMF (model risk, privacy, compliance mapping) enabling safe, scaled adoption across clients.",
         "Implemented identity automation workflows using n8n for orchestration across identity governance platforms (Saviynt, Okta), reducing manual provisioning and access review cycles."
       ]
     },
@@ -364,8 +945,9 @@
         "year": 2025,
         "month": 3
       },
-      "tagline": "Scaled engineering delivery and internal platforms that reduced cycle time and upgraded teams’ automation maturity.",
+      "tagline": "Pioneered agentic AI systems before the industry had a name for them — built early agent protocols, tiered agentic microservices, and an authentication paradigm independently paralleling what the industry later standardized as Agent365.",
       "themes": [
+        "Agentic AI Pioneer",
         "Engineering Leadership",
         "Platform Engineering",
         "Cloud Governance"
@@ -393,10 +975,10 @@
           "viz": "text"
         },
         {
-          "label": "Generative AI early adopter",
-          "value": "Early Adopter",
+          "label": "Agentic AI pioneer",
+          "value": "First to Market",
           "unit": "",
-          "context": "Pioneered AI adoption before mainstream enterprise readiness",
+          "context": "Early agentic protocols, tiered microservices, auth paradigm paralleling Agent365",
           "viz": "text"
         },
         {
@@ -424,6 +1006,12 @@
       ],
       "initiatives": [
         {
+          "name": "Agentic AI Pioneering",
+          "problem": "AI systems lacked autonomous decision-making capabilities and inter-agent communication standards; no industry terminology or patterns existed.",
+          "approach": "Developed early prototypes of agentic architectures with inter-agent communication protocols predating MCP, built a tiered agentic microservices framework, and independently designed an agentic authentication model using the same paradigm later standardized industry-wide as Agent365.",
+          "outcome": "Positioned Accenture as one of the first firms to market with truly agentic AI systems; authentication approach independently validated by industry convergence on the same pattern."
+        },
+        {
           "name": "Knowledge Management System (Graph)",
           "problem": "Critical knowledge was fragmented across tools and tribal memory, slowing delivery and increasing rework.",
           "approach": "Built a graph of assets and relationships plus automation for discovery and consistency; integrated into delivery workflows.",
@@ -437,80 +1025,479 @@
         }
       ],
       "stack": {
-        "methods": ["Platform Engineering", "Governance-as-Code"],
-        "cloud": ["Azure"],
+        "methods": [
+          "Platform Engineering",
+          "Governance-as-Code"
+        ],
+        "cloud": [
+          "Azure"
+        ],
         "data": [],
-        "integrations": ["Azure DevOps"]
+        "integrations": [
+          "Azure DevOps"
+        ]
       },
       "technologies": [
-        { "name": "OpenAI", "icon": { "dark": "/assets/icons/dark-mode/openai.svg", "light": "/assets/icons/light-mode/openai.svg" } },
-        { "name": "Google Gemini", "icon": { "dark": "/assets/icons/dark-mode/gemini.svg", "light": "/assets/icons/light-mode/gemini.svg" } },
-        { "name": "Semantic Kernel", "icon": { "agnostic": "/assets/icons/agnostic/semantic-kernel.png" } },
-        { "name": "LangChain", "icon": { "dark": "/assets/icons/dark-mode/LangChain_Logo.svg", "light": "/assets/icons/light-mode/LangChain_Logo.svg" } },
-        { "name": "LangGraph", "icon": { "dark": "/assets/icons/dark-mode/langgraph-color.svg", "light": "/assets/icons/light-mode/langgraph-color.svg" } },
-        { "name": "MCP", "icon": { "dark": "/assets/icons/dark-mode/mcp.svg", "light": "/assets/icons/light-mode/mcp.svg" } },
-        { "name": "Google Cloud", "icon": { "agnostic": "/assets/icons/agnostic/gcp.svg" } },
-        { "name": "AWS", "icon": { "dark": "/assets/icons/dark-mode/aws.svg", "light": "/assets/icons/light-mode/aws.svg" } },
-        { "name": "C#", "icon": { "agnostic": "/assets/icons/agnostic/c-sharp.svg" } },
-        { "name": "Python", "icon": { "agnostic": "/assets/icons/agnostic/python.svg" } },
-        { "name": ".NET", "icon": { "agnostic": "/assets/icons/agnostic/dotnet.svg" } },
-        { "name": "TypeScript", "icon": { "agnostic": "/assets/icons/agnostic/typescript.svg" } },
-        { "name": "JavaScript", "icon": { "agnostic": "/assets/icons/agnostic/javascript.svg" } },
-        { "name": "React", "icon": { "agnostic": "/assets/icons/agnostic/react.svg" } },
-        { "name": "Node.js", "icon": { "dark": "/assets/icons/dark-mode/nodejs.svg", "light": "/assets/icons/light-mode/nodejs.svg" } },
-        { "name": "FastAPI", "icon": { "dark": "/assets/icons/dark-mode/fastapi.svg", "light": "/assets/icons/light-mode/fastapi.svg" } },
-        { "name": "Flask", "icon": { "dark": "/assets/icons/dark-mode/Flask.svg", "light": "/assets/icons/light-mode/Flask.svg" } },
-        { "name": "Pydantic", "icon": { "agnostic": "/assets/icons/agnostic/pydantic.svg" } },
-        { "name": "ASP.NET", "icon": { "dark": "/assets/icons/dark-mode/asp-dot-net.svg", "light": "/assets/icons/light-mode/asp-dot-net.svg" } },
-        { "name": "LESS", "icon": { "agnostic": "/assets/icons/agnostic/LESS_Logo.svg" } },
-        { "name": "KnockoutJS", "icon": { "dark": "/assets/icons/dark-mode/KnockoutJS.svg", "light": "/assets/icons/light-mode/KnockoutJS.svg" } },
-        { "name": "HTML5", "icon": { "agnostic": "/assets/icons/agnostic/html5.svg" } },
-        { "name": "CSS3", "icon": { "agnostic": "/assets/icons/agnostic/css3.svg" } },
-        { "name": "Webpack", "icon": { "agnostic": "/assets/icons/agnostic/webpack.svg" } },
-        { "name": "Windows", "icon": { "agnostic": "/assets/icons/agnostic/windows.svg" } },
-        { "name": "Thales", "icon": { "dark": "/assets/icons/dark-mode/thales.svg", "light": "/assets/icons/light-mode/thales.svg" } },
-        { "name": "Azure", "icon": { "agnostic": "/assets/icons/agnostic/azure.svg" } },
-        { "name": "Azure OpenAI", "icon": { "agnostic": "/assets/icons/agnostic/03438-icon-service-Azure-OpenAI.svg" } },
-        { "name": "Azure AI Search", "icon": { "agnostic": "/assets/icons/agnostic/10044-icon-service-Cognitive-Search.svg" } },
-        { "name": "Azure Policy", "icon": { "agnostic": "/assets/icons/agnostic/10316-icon-service-Policy.svg" } },
-        { "name": "Azure Log Analytics", "icon": { "agnostic": "/assets/icons/agnostic/00009-icon-service-Log-Analytics-Workspaces.svg" } },
-        { "name": "Application Insights", "icon": { "agnostic": "/assets/icons/agnostic/00012-icon-service-Application-Insights.svg" } },
-        { "name": "Azure Sentinel", "icon": { "agnostic": "/assets/icons/agnostic/10248-icon-service-Azure-Sentinel.svg" } },
-        { "name": "Azure Logic Apps", "icon": { "agnostic": "/assets/icons/agnostic/02631-icon-service-Logic-Apps.svg" } },
-        { "name": "Azure Functions", "icon": { "agnostic": "/assets/icons/agnostic/10029-icon-service-Function-Apps.svg" } },
-        { "name": "Azure APIM", "icon": { "agnostic": "/assets/icons/agnostic/10042-icon-service-API-Management-Services.svg" } },
-        { "name": "Azure Container Apps", "icon": { "agnostic": "/assets/icons/agnostic/02884-icon-service-Worker-Container-App.svg" } },
-        { "name": "Azure Container Registry", "icon": { "agnostic": "/assets/icons/agnostic/10105-icon-service-Container-Registries.svg" } },
-        { "name": "Azure Cosmos DB", "icon": { "agnostic": "/assets/icons/agnostic/10121-icon-service-Azure-Cosmos-DB.svg" } },
-        { "name": "PostgreSQL", "icon": { "agnostic": "/assets/icons/agnostic/postgresql.svg" } },
-        { "name": "MySQL", "icon": { "agnostic": "/assets/icons/agnostic/mysql.svg" } },
-        { "name": "Redis", "icon": { "agnostic": "/assets/icons/agnostic/redis.svg" } },
-        { "name": "Elasticsearch", "icon": { "agnostic": "/assets/icons/agnostic/elasticsearch.svg" } },
-        { "name": "Azure Service Bus", "icon": { "agnostic": "/assets/icons/agnostic/10836-icon-service-Azure-Service-Bus.svg" } },
-        { "name": "Azure Event Hubs", "icon": { "agnostic": "/assets/icons/agnostic/00039-icon-service-Event-Hubs.svg" } },
-        { "name": "Azure Event Grid", "icon": { "agnostic": "/assets/icons/agnostic/10206-icon-service-Event-Grid-Topics.svg" } },
-        { "name": "Kafka", "icon": { "dark": "/assets/icons/dark-mode/kafka.svg", "light": "/assets/icons/light-mode/kafka.svg" } },
-        { "name": "Azure Resource Graph", "icon": { "agnostic": "/assets/icons/agnostic/10318-icon-service-Resource-Graph-Explorer.svg" } },
-        { "name": "Bicep", "icon": { "agnostic": "/assets/icons/agnostic/bicep.svg" } },
-        { "name": "Azure DevOps", "icon": { "agnostic": "/assets/icons/agnostic/azure-devops.svg" } },
-        { "name": "Jira", "icon": { "agnostic": "/assets/icons/agnostic/jira.svg" } },
-        { "name": "GitHub", "icon": { "dark": "/assets/icons/dark-mode/GitHub_Invertocat_White.svg", "light": "/assets/icons/light-mode/GitHub_Invertocat_Black.svg" } },
-        { "name": "Git", "icon": { "agnostic": "/assets/icons/agnostic/git.svg" } },
-        { "name": "Docker", "icon": { "agnostic": "/assets/icons/agnostic/docker.svg" } },
-        { "name": "Kubernetes", "icon": { "agnostic": "/assets/icons/agnostic/kubernetes.svg" } },
-        { "name": "Azure Local", "icon": { "agnostic": "/assets/icons/agnostic/033745116-icon-service-Azure-Local.svg" } },
-        { "name": "Entra Connect", "icon": { "agnostic": "/assets/icons/agnostic/02854-icon-service-Entra-Connect.svg" } },
-        { "name": "Entra Domain Services", "icon": { "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg" } },
-        { "name": "Terraform", "icon": { "agnostic": "/assets/icons/agnostic/Terraform_Logo.svg" } },
-        { "name": "Ansible", "icon": { "dark": "/assets/icons/dark-mode/ansible.svg", "light": "/assets/icons/light-mode/ansible.svg" } },
-        { "name": "NIST", "icon": { "dark": "/assets/icons/dark-mode/nist.svg", "light": "/assets/icons/light-mode/nist.svg" } },
-        { "name": "ISO 27001", "icon": { "agnostic": "/assets/icons/agnostic/iso.svg" } }
+        {
+          "name": "OpenAI",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/openai.svg",
+            "light": "/assets/icons/light-mode/openai.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/OpenAI"
+        },
+        {
+          "name": "Google Gemini",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/gemini.svg",
+            "light": "/assets/icons/light-mode/gemini.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Gemini_(language_model)"
+        },
+        {
+          "name": "Semantic Kernel",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/semantic-kernel.png"
+          },
+          "url": "https://learn.microsoft.com/en-us/semantic-kernel/overview/"
+        },
+        {
+          "name": "LangChain",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/LangChain_Logo.svg",
+            "light": "/assets/icons/light-mode/LangChain_Logo.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/LangChain"
+        },
+        {
+          "name": "LangGraph",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/langgraph-color.svg",
+            "light": "/assets/icons/light-mode/langgraph-color.svg"
+          },
+          "url": "https://www.langchain.com/langgraph"
+        },
+        {
+          "name": "MCP",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/mcp.svg",
+            "light": "/assets/icons/light-mode/mcp.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol"
+        },
+        {
+          "name": "Google Cloud",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/gcp.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Google_Cloud_Platform"
+        },
+        {
+          "name": "AWS",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/aws.svg",
+            "light": "/assets/icons/light-mode/aws.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Amazon_Web_Services"
+        },
+        {
+          "name": "C#",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/c-sharp.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+        },
+        {
+          "name": "Python",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/python.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+        },
+        {
+          "name": ".NET",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/dotnet.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/.NET"
+        },
+        {
+          "name": "TypeScript",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/typescript.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/TypeScript"
+        },
+        {
+          "name": "JavaScript",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/javascript.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/JavaScript"
+        },
+        {
+          "name": "React",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/react.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/React_(software)"
+        },
+        {
+          "name": "Node.js",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/nodejs.svg",
+            "light": "/assets/icons/light-mode/nodejs.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Node.js"
+        },
+        {
+          "name": "FastAPI",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/fastapi.svg",
+            "light": "/assets/icons/light-mode/fastapi.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/FastAPI"
+        },
+        {
+          "name": "Flask",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/Flask.svg",
+            "light": "/assets/icons/light-mode/Flask.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Flask_(web_framework)"
+        },
+        {
+          "name": "Pydantic",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/pydantic.svg"
+          },
+          "url": "https://docs.pydantic.dev/latest/"
+        },
+        {
+          "name": "ASP.NET",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/asp-dot-net.svg",
+            "light": "/assets/icons/light-mode/asp-dot-net.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/ASP.NET"
+        },
+        {
+          "name": "LESS",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/LESS_Logo.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Less_(style_sheet_language)"
+        },
+        {
+          "name": "KnockoutJS",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/KnockoutJS.svg",
+            "light": "/assets/icons/light-mode/KnockoutJS.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Knockout_(web_framework)"
+        },
+        {
+          "name": "HTML5",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/html5.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/HTML5"
+        },
+        {
+          "name": "CSS3",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/css3.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/CSS"
+        },
+        {
+          "name": "Webpack",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/webpack.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Webpack"
+        },
+        {
+          "name": "Windows",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/windows.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Windows"
+        },
+        {
+          "name": "Thales",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/thales.svg",
+            "light": "/assets/icons/light-mode/thales.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Thales_Group"
+        },
+        {
+          "name": "Azure",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/azure.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure OpenAI",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/03438-icon-service-Azure-OpenAI.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/OpenAI"
+        },
+        {
+          "name": "Azure AI Search",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10044-icon-service-Cognitive-Search.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Azure_Cognitive_Search"
+        },
+        {
+          "name": "Azure Policy",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10316-icon-service-Policy.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Log Analytics",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/00009-icon-service-Log-Analytics-Workspaces.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Application Insights",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/00012-icon-service-Application-Insights.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Sentinel",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10248-icon-service-Azure-Sentinel.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Logic Apps",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/02631-icon-service-Logic-Apps.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Functions",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10029-icon-service-Function-Apps.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure APIM",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10042-icon-service-API-Management-Services.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Container Apps",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/02884-icon-service-Worker-Container-App.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Container Registry",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10105-icon-service-Container-Registries.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Cosmos DB",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10121-icon-service-Azure-Cosmos-DB.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Cosmos_DB"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/postgresql.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+        },
+        {
+          "name": "MySQL",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/mysql.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/MySQL"
+        },
+        {
+          "name": "Redis",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/redis.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Redis"
+        },
+        {
+          "name": "Elasticsearch",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/elasticsearch.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Elasticsearch"
+        },
+        {
+          "name": "Azure Service Bus",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10836-icon-service-Azure-Service-Bus.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Event Hubs",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/00039-icon-service-Event-Hubs.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Event Grid",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10206-icon-service-Event-Grid-Topics.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Kafka",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/kafka.svg",
+            "light": "/assets/icons/light-mode/kafka.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Apache_Kafka"
+        },
+        {
+          "name": "Azure Resource Graph",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10318-icon-service-Resource-Graph-Explorer.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Bicep",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/bicep.svg"
+          },
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
+        },
+        {
+          "name": "Azure DevOps",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/azure-devops.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Azure_DevOps_Server"
+        },
+        {
+          "name": "Jira",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/jira.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Jira_(software)"
+        },
+        {
+          "name": "GitHub",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/GitHub_Invertocat_White.svg",
+            "light": "/assets/icons/light-mode/GitHub_Invertocat_Black.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/GitHub"
+        },
+        {
+          "name": "Git",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/git.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Git"
+        },
+        {
+          "name": "Docker",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/docker.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Docker_(software)"
+        },
+        {
+          "name": "Kubernetes",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/kubernetes.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Kubernetes"
+        },
+        {
+          "name": "Azure Local",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/033745116-icon-service-Azure-Local.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Entra Connect",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/02854-icon-service-Entra-Connect.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Entra_ID"
+        },
+        {
+          "name": "Entra Domain Services",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Entra_ID"
+        },
+        {
+          "name": "Terraform",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/Terraform_Logo.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Terraform_(software)"
+        },
+        {
+          "name": "Ansible",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/ansible.svg",
+            "light": "/assets/icons/light-mode/ansible.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Ansible_(software)"
+        },
+        {
+          "name": "NIST",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/nist.svg",
+            "light": "/assets/icons/light-mode/nist.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology"
+        },
+        {
+          "name": "ISO 27001",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/iso.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/ISO/IEC_27001"
+        }
       ],
       "dutiesAndAccomplishments": [
+        "Pioneered early agentic AI systems before the industry had terminology for them — developed prototypes of agentic architectures and inter-agent communication protocols predating and conceptually parallel to MCP (Model Context Protocol).",
+        "Designed and built a framework for tiered agentic microservices, enabling composable AI agent hierarchies with clear responsibility boundaries and orchestration patterns.",
+        "Developed an early model of agentic authentication — independently arriving at the same paradigm later standardized industry-wide as Agent365 — establishing a security-first approach to agent identity and authorization.",
+        "Singlehandedly drove Accenture's entry into the agentic AI domain with these early innovations, positioning the firm as one of the first to market with truly agentic systems.",
         "Partnered with leadership to define operating practices and reduce attrition while scaling delivery.",
-        "Led development of a Knowledge Management System: a large graph of 1,000 assets with countless relationships linked to policies, engagements, opportunities, and other entities; reduced discovery time by ~40%.",
+        "Led development of a Knowledge Management System: a rich graph of assets and relationships linked to policies, engagements, opportunities, and other entities; reduced discovery time by ~40%.",
         "Built an API-driven single-page application (ASP.NET + TypeScript) and cloud services (Azure DevOps pipelines, App Services/Functions, Service Bus, Cosmos DB) with hardened governance.",
-        "Created and ran an internal engineering upskilling program ('Code Camp') — weekly sessions touching thousands of employees, raising scripting and automation competency across the practice.",
+        "Created and ran 'Code Camp' — an internal engineering upskilling program with weekly sessions reaching thousands of employees, raising scripting and automation competency across the security practice.",
         "Drove infrastructure governance using ARM/Terraform/Ansible patterns and Azure Policy to improve compliance and reduce manual effort."
       ]
     },
@@ -532,7 +1519,7 @@
         "year": 2021,
         "month": 6
       },
-      "tagline": "Built governance-as-code and cloud security delivery systems that scaled adoption and reduced manual effort.",
+      "tagline": "Designed and delivered an Azure Policy governance accelerator generating $200M+ in total engagement reach — the core delivery driver for security engagements, built in pure Python for air-gapped environments.",
       "themes": [
         "Cloud Security",
         "Governance",
@@ -547,13 +1534,40 @@
       },
       "impactMetrics": [
         {
+          "label": "Total engagement reach",
+          "value": "$200M+",
+          "unit": "",
+          "context": "Azure Policy accelerator as core delivery driver for security engagements",
+          "viz": "text"
+        },
+        {
           "label": "Azure resources governed",
           "value": "100M+",
           "unit": "",
           "context": "Two overlapping scales: 100M (world's largest bank) + 10M",
           "viz": "dual-sparkline",
-          "sparkData": [0, 5, 12, 25, 40, 55, 70, 85, 100],
-          "sparkData2": [0, 0, 1, 2, 3, 5, 7, 9, 10]
+          "sparkData": [
+            0,
+            5,
+            12,
+            25,
+            40,
+            55,
+            70,
+            85,
+            100
+          ],
+          "sparkData2": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            5,
+            7,
+            9,
+            10
+          ]
         },
         {
           "label": "HSM-managed applications",
@@ -580,64 +1594,321 @@
       ],
       "initiatives": [
         {
-          "name": "Azure Policy Governance Solution",
-          "problem": "Large Azure environments needed consistent governance and auditability without manual enforcement.",
-          "approach": "Designed, built, and delivered an Azure Policy-based governance solution with orchestration scripts and automated change reporting.",
-          "outcome": "Accelerated governance rollout and improved compliance visibility at scale."
+          "name": "Azure Policy Governance Accelerator",
+          "problem": "Large Azure environments needed consistent governance and auditability without manual enforcement, including in air-gapped and highly restricted environments.",
+          "approach": "Built a pure-Python Azure Policy accelerator with zero external dependencies for deployment in secure/air-gapped environments. Enabled rapid deployment of highly complex policy environments with automated change reporting and documentation management.",
+          "outcome": "Generated $200M+ in total engagement reach; governed 100M+ Azure resources at the world's largest bank; initial delivery excellence catalyzed several nine-figure outsourcing engagements."
+        },
+        {
+          "name": "Enterprise Cryptographic Posture",
+          "problem": "Enterprise-wide data encryption lacked centralized management and consistent policy enforcement across thousands of applications.",
+          "approach": "Designed and operationalized encryption strategy across 5,000 applications and 100,000 keys using Azure KeyVault, Thales nCipher HSM, Azure Dedicated/Managed HSM, and Thales CCKM.",
+          "outcome": "Established enterprise-wide cryptographic posture with centralized key management and consistent policy enforcement."
         }
       ],
       "stack": {
-        "methods": ["Governance-as-Code", "Secure SDLC", "Automation"],
-        "cloud": ["Azure"],
-        "integrations": ["Azure Policy", "Azure Key Vault", "Thales nCipher HSM"]
+        "methods": [
+          "Governance-as-Code",
+          "Secure SDLC",
+          "Automation"
+        ],
+        "cloud": [
+          "Azure"
+        ],
+        "integrations": [
+          "Azure Policy",
+          "Azure Key Vault",
+          "Thales nCipher HSM"
+        ]
       },
       "technologies": [
-        { "name": "C#", "icon": { "agnostic": "/assets/icons/agnostic/c-sharp.svg" } },
-        { "name": ".NET", "icon": { "agnostic": "/assets/icons/agnostic/dotnet.svg" } },
-        { "name": "PowerShell", "icon": { "agnostic": "/assets/icons/agnostic/powershell.svg" } },
-        { "name": "JavaScript", "icon": { "agnostic": "/assets/icons/agnostic/javascript.svg" } },
-        { "name": "TypeScript", "icon": { "agnostic": "/assets/icons/agnostic/typescript.svg" } },
-        { "name": "HTML5", "icon": { "agnostic": "/assets/icons/agnostic/html5.svg" } },
-        { "name": "CSS3", "icon": { "agnostic": "/assets/icons/agnostic/css3.svg" } },
-        { "name": "Webpack", "icon": { "agnostic": "/assets/icons/agnostic/webpack.svg" } },
-        { "name": "Azure", "icon": { "agnostic": "/assets/icons/agnostic/azure.svg" } },
-        { "name": "Azure Policy", "icon": { "agnostic": "/assets/icons/agnostic/10316-icon-service-Policy.svg" } },
-        { "name": "Azure Key Vault", "icon": { "agnostic": "/assets/icons/agnostic/10245-icon-service-Key-Vaults.svg" } },
-        { "name": "Azure Dedicated HSM", "icon": { "agnostic": "/assets/icons/agnostic/02322-icon-service-Dedicated-HSM.svg" } },
-        { "name": "Azure Functions", "icon": { "agnostic": "/assets/icons/agnostic/10029-icon-service-Function-Apps.svg" } },
-        { "name": "Azure APIM", "icon": { "agnostic": "/assets/icons/agnostic/10042-icon-service-API-Management-Services.svg" } },
-        { "name": "Azure Container Registry", "icon": { "agnostic": "/assets/icons/agnostic/10105-icon-service-Container-Registries.svg" } },
-        { "name": "Azure Data Factory", "icon": { "agnostic": "/assets/icons/agnostic/10126-icon-service-Data-Factories.svg" } },
-        { "name": "Azure Data Lake", "icon": { "agnostic": "/assets/icons/agnostic/10086-icon-service-Storage-Accounts.svg" } },
-        { "name": "Azure Resource Graph", "icon": { "agnostic": "/assets/icons/agnostic/10318-icon-service-Resource-Graph-Explorer.svg" } },
-        { "name": "Azure Event Hubs", "icon": { "agnostic": "/assets/icons/agnostic/00039-icon-service-Event-Hubs.svg" } },
-        { "name": "Azure Event Grid", "icon": { "agnostic": "/assets/icons/agnostic/10206-icon-service-Event-Grid-Topics.svg" } },
-        { "name": "Kafka", "icon": { "dark": "/assets/icons/dark-mode/kafka.svg", "light": "/assets/icons/light-mode/kafka.svg" } },
-        { "name": "Application Insights", "icon": { "agnostic": "/assets/icons/agnostic/00012-icon-service-Application-Insights.svg" } },
-        { "name": "PostgreSQL", "icon": { "agnostic": "/assets/icons/agnostic/postgresql.svg" } },
-        { "name": "MySQL", "icon": { "agnostic": "/assets/icons/agnostic/mysql.svg" } },
-        { "name": "Redis", "icon": { "agnostic": "/assets/icons/agnostic/redis.svg" } },
-        { "name": "Elasticsearch", "icon": { "agnostic": "/assets/icons/agnostic/elasticsearch.svg" } },
-        { "name": "Thales", "icon": { "dark": "/assets/icons/dark-mode/thales.svg", "light": "/assets/icons/light-mode/thales.svg" } },
-        { "name": "Bicep", "icon": { "agnostic": "/assets/icons/agnostic/bicep.svg" } },
-        { "name": "ARM Templates", "icon": { "agnostic": "/assets/icons/agnostic/10007-icon-service-Resource-Groups.svg" } },
-        { "name": "Terraform", "icon": { "agnostic": "/assets/icons/agnostic/Terraform_Logo.svg" } },
-        { "name": "Ansible", "icon": { "dark": "/assets/icons/dark-mode/ansible.svg", "light": "/assets/icons/light-mode/ansible.svg" } },
-        { "name": "Azure DevOps", "icon": { "agnostic": "/assets/icons/agnostic/azure-devops.svg" } },
-        { "name": "Jira", "icon": { "agnostic": "/assets/icons/agnostic/jira.svg" } },
-        { "name": "Git", "icon": { "agnostic": "/assets/icons/agnostic/git.svg" } },
-        { "name": "Entra Connect", "icon": { "agnostic": "/assets/icons/agnostic/02854-icon-service-Entra-Connect.svg" } },
-        { "name": "Entra Domain Services", "icon": { "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg" } },
-        { "name": "Windows", "icon": { "agnostic": "/assets/icons/agnostic/windows.svg" } },
-        { "name": "NIST", "icon": { "dark": "/assets/icons/dark-mode/nist.svg", "light": "/assets/icons/light-mode/nist.svg" } },
-        { "name": "ISO 27001", "icon": { "agnostic": "/assets/icons/agnostic/iso.svg" } }
+        {
+          "name": "C#",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/c-sharp.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+        },
+        {
+          "name": ".NET",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/dotnet.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/.NET"
+        },
+        {
+          "name": "PowerShell",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/powershell.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/PowerShell"
+        },
+        {
+          "name": "JavaScript",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/javascript.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/JavaScript"
+        },
+        {
+          "name": "TypeScript",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/typescript.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/TypeScript"
+        },
+        {
+          "name": "HTML5",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/html5.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/HTML5"
+        },
+        {
+          "name": "CSS3",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/css3.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/CSS"
+        },
+        {
+          "name": "Webpack",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/webpack.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Webpack"
+        },
+        {
+          "name": "Azure",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/azure.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Policy",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10316-icon-service-Policy.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Key Vault",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10245-icon-service-Key-Vaults.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Dedicated HSM",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/02322-icon-service-Dedicated-HSM.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Functions",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10029-icon-service-Function-Apps.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure APIM",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10042-icon-service-API-Management-Services.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Container Registry",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10105-icon-service-Container-Registries.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Data Factory",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10126-icon-service-Data-Factories.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Data Lake",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10086-icon-service-Storage-Accounts.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Azure_Data_Lake"
+        },
+        {
+          "name": "Azure Resource Graph",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10318-icon-service-Resource-Graph-Explorer.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Event Hubs",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/00039-icon-service-Event-Hubs.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Event Grid",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10206-icon-service-Event-Grid-Topics.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Kafka",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/kafka.svg",
+            "light": "/assets/icons/light-mode/kafka.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Apache_Kafka"
+        },
+        {
+          "name": "Application Insights",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/00012-icon-service-Application-Insights.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/postgresql.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+        },
+        {
+          "name": "MySQL",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/mysql.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/MySQL"
+        },
+        {
+          "name": "Redis",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/redis.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Redis"
+        },
+        {
+          "name": "Elasticsearch",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/elasticsearch.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Elasticsearch"
+        },
+        {
+          "name": "Thales",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/thales.svg",
+            "light": "/assets/icons/light-mode/thales.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Thales_Group"
+        },
+        {
+          "name": "Bicep",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/bicep.svg"
+          },
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
+        },
+        {
+          "name": "ARM Templates",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10007-icon-service-Resource-Groups.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Terraform",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/Terraform_Logo.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Terraform_(software)"
+        },
+        {
+          "name": "Ansible",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/ansible.svg",
+            "light": "/assets/icons/light-mode/ansible.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Ansible_(software)"
+        },
+        {
+          "name": "Azure DevOps",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/azure-devops.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Azure_DevOps_Server"
+        },
+        {
+          "name": "Jira",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/jira.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Jira_(software)"
+        },
+        {
+          "name": "Git",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/git.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Git"
+        },
+        {
+          "name": "Entra Connect",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/02854-icon-service-Entra-Connect.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Entra_ID"
+        },
+        {
+          "name": "Entra Domain Services",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Entra_ID"
+        },
+        {
+          "name": "Windows",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/windows.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Windows"
+        },
+        {
+          "name": "NIST",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/nist.svg",
+            "light": "/assets/icons/light-mode/nist.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology"
+        },
+        {
+          "name": "ISO 27001",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/iso.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/ISO/IEC_27001"
+        }
       ],
       "dutiesAndAccomplishments": [
-        "Cryptographic Posture Delivery. Design, implementation, and operationalization of enterprise-wide data encryption across 5,000 applications and 100,000 keys. Strategy leveraged Azure KeyVault, Thales nCipher HSM, Azure Dedicated HSM, Azure Managed HSM, and Thales CCKM.",
-        "Software and Service Development Security Lifecycle and Posture. Developed comprehensive posture of application development and service delivery prioritizing corporate governance and automatic-healing. Partnered enterprise wide across Business Units and IT Teams to integrate security posture via Procedure, Application Code, and Deployment Pipelines, as well as standalone security services.",
-        "Designed, Developed, brought to market, and Sold an Azure Policy based governance solution managing up to 100M Azure resources (world’s largest bank) across all sub-tenants; second-largest client at 10M resources. Accomplished detailed change reporting via automated documentation management. Supervised a team of 8.",
-        "Oversaw the development of new training programs contributing to the dissimenation of cloud knowlege and skills to over 1000 internal employees.",
-        "Designed and Developed custom Big Data reports for Azure utilization and policy compliance using Azure DataFactory, Azure Graph, PowerShell, and Azure DataLake."
+        "Designed, developed, brought to market, and sold an Azure Policy governance accelerator that became the core delivery driver for security engagements — generating $200M+ in total engagement reach across the practice.",
+        "Built the accelerator in pure Python with zero external dependencies, enabling deployment in highly secure, highly restricted, and air-gapped (no-internet) environments — a critical differentiator for regulated clients.",
+        "Managed Azure Policy deployments governing up to 100M resources (world's largest bank) across all sub-tenants; second-largest client at 10M resources. Orchestrated rapid deployment of highly complex policy environments with automated change reporting and documentation management. Supervised a team of 8.",
+        "Initial delivery excellence and relationship management on Azure Policy engagements enabled account teams to build on early success, contributing to several nine-figure outsourcing deals (details NDA).",
+        "Cryptographic Posture Delivery: design, implementation, and operationalization of enterprise-wide data encryption across 5,000 applications and 100,000 keys. Leveraged Azure KeyVault, Thales nCipher HSM, Azure Dedicated HSM, Azure Managed HSM, and Thales CCKM.",
+        "Developed comprehensive application development and service delivery security posture prioritizing governance and automatic-healing. Partnered enterprise-wide across Business Units and IT Teams to integrate security via procedure, code, and deployment pipelines.",
+        "Oversaw development of training programs disseminating cloud knowledge and skills to 1,000+ internal employees.",
+        "Designed and developed custom Big Data reports for Azure utilization and policy compliance using Azure DataFactory, Azure Resource Graph, PowerShell, and Azure DataLake."
       ]
     },
     {
@@ -650,7 +1921,7 @@
       },
       "title": "Software Engineer II",
       "team": "Enterprise Cloud / Enterprise Analytics and Tools",
-      "startDate": { 
+      "startDate": {
         "year": 2014,
         "month": 4
       },
@@ -658,7 +1929,7 @@
         "year": 2018,
         "month": 4
       },
-      "tagline": "Built business automation platforms that eliminated manual work, consolidated 10,000+ documents, and drove a 56% headcount reduction.",
+      "tagline": "Built automation platforms saving $5M annually, eliminated 12 FTEs through drive automation alone, and drove a 56% headcount reduction — while delivering 10+ major tools that cut ticket processing time by 50%+.",
       "themes": [
         "Automation",
         "DevOps",
@@ -672,6 +1943,27 @@
         "engineering": 0.85
       },
       "impactMetrics": [
+        {
+          "label": "Annual cost savings (drive automation)",
+          "value": "$5M",
+          "unit": "",
+          "context": "80% reduction in drive destruction via automated replacement/restore workflow",
+          "viz": "text"
+        },
+        {
+          "label": "FTEs eliminated (drive automation)",
+          "value": "12",
+          "unit": " FTEs",
+          "context": "2 FTEs per shift × 6 shifts through full process automation",
+          "viz": "text"
+        },
+        {
+          "label": "Major internal tools delivered",
+          "value": "10+",
+          "unit": "",
+          "context": "Reducing ticket processing time and TTX metrics by 50%+",
+          "viz": "text"
+        },
         {
           "label": "Team size transformation",
           "value": "125→40",
@@ -706,6 +1998,18 @@
       ],
       "initiatives": [
         {
+          "name": "Automated Drive Replacement & Restore",
+          "problem": "Manual drive replacement and destruction processes were costly ($5M+ annually) and consumed significant operator time across 6 shifts.",
+          "approach": "Implemented a fully automated drive replacement and restore processing workflow eliminating manual intervention entirely.",
+          "outcome": "80% reduction in drive destruction, $5M annual cost savings, 100% reduction in operator time, and 12 FTE reduction (2 per shift × 6 shifts)."
+        },
+        {
+          "name": "Private Scripting Runtime",
+          "problem": "Ticket automation required secure, self-service scripting capabilities in resource-constrained environments before container adoption at Microsoft.",
+          "approach": "Built a private event-driven scripting environment using PowerShell and advanced language server functionality for secure, self-service workflow creation by end users.",
+          "outcome": "Enabled end users to create self-service workflows; delivered 10+ major internal tools reducing ticket processing time and TTX by 50%+."
+        },
+        {
           "name": "MediaWiki Knowledge Platform",
           "problem": "Legacy documentation scattered across systems, difficult to maintain and search.",
           "approach": "Custom MediaWiki deployment with high automation and minimal maintenance overhead.",
@@ -719,40 +2023,210 @@
         }
       ],
       "stack": {
-        "methods": ["DevOps", "Automation", "Self-Service"],
-        "cloud": ["Azure"],
-        "integrations": ["MediaWiki", "Azure Web Apps"]
+        "methods": [
+          "DevOps",
+          "Automation",
+          "Self-Service"
+        ],
+        "cloud": [
+          "Azure"
+        ],
+        "integrations": [
+          "MediaWiki",
+          "Azure Web Apps"
+        ]
       },
       "technologies": [
-        { "name": "C#", "icon": { "agnostic": "/assets/icons/agnostic/c-sharp.svg" } },
-        { "name": ".NET", "icon": { "agnostic": "/assets/icons/agnostic/dotnet.svg" } },
-        { "name": "JavaScript", "icon": { "agnostic": "/assets/icons/agnostic/javascript.svg" } },
-        { "name": "TypeScript", "icon": { "agnostic": "/assets/icons/agnostic/typescript.svg" } },
-        { "name": "Node.js", "icon": { "dark": "/assets/icons/dark-mode/nodejs.svg", "light": "/assets/icons/light-mode/nodejs.svg" } },
-        { "name": "HTML5", "icon": { "agnostic": "/assets/icons/agnostic/html5.svg" } },
-        { "name": "CSS3", "icon": { "agnostic": "/assets/icons/agnostic/css3.svg" } },
-        { "name": "PowerShell", "icon": { "agnostic": "/assets/icons/agnostic/powershell.svg" } },
-        { "name": "ASP.NET", "icon": { "dark": "/assets/icons/dark-mode/asp-dot-net.svg", "light": "/assets/icons/light-mode/asp-dot-net.svg" } },
-        { "name": "Webpack", "icon": { "agnostic": "/assets/icons/agnostic/webpack.svg" } },
-        { "name": "Azure", "icon": { "agnostic": "/assets/icons/agnostic/azure.svg" } },
-        { "name": "Azure Web Apps", "icon": { "agnostic": "/assets/icons/agnostic/10035-icon-service-App-Services.svg" } },
-        { "name": "Azure Functions", "icon": { "agnostic": "/assets/icons/agnostic/10029-icon-service-Function-Apps.svg" } },
-        { "name": "Azure Event Hubs", "icon": { "agnostic": "/assets/icons/agnostic/00039-icon-service-Event-Hubs.svg" } },
-        { "name": "Kafka", "icon": { "dark": "/assets/icons/dark-mode/kafka.svg", "light": "/assets/icons/light-mode/kafka.svg" } },
-        { "name": "Azure Resource Graph", "icon": { "agnostic": "/assets/icons/agnostic/10318-icon-service-Resource-Graph-Explorer.svg" } },
-        { "name": "Application Insights", "icon": { "agnostic": "/assets/icons/agnostic/00012-icon-service-Application-Insights.svg" } },
-        { "name": "Redis", "icon": { "agnostic": "/assets/icons/agnostic/redis.svg" } },
-        { "name": "Elasticsearch", "icon": { "agnostic": "/assets/icons/agnostic/elasticsearch.svg" } },
-        { "name": "Docker", "icon": { "agnostic": "/assets/icons/agnostic/docker.svg" } },
-        { "name": "Git", "icon": { "agnostic": "/assets/icons/agnostic/git.svg" } },
-        { "name": "SharePoint", "icon": { "agnostic": "/assets/icons/agnostic/sharepoint.svg" } },
-        { "name": "MediaWiki", "icon": { "agnostic": "/assets/icons/agnostic/mediawiki.svg" } },
-        { "name": "Entra Domain Services", "icon": { "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg" } },
-        { "name": "Exchange", "icon": { "agnostic": "/assets/icons/agnostic/exchange.svg" } },
-        { "name": "Windows", "icon": { "agnostic": "/assets/icons/agnostic/windows.svg" } }
+        {
+          "name": "C#",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/c-sharp.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+        },
+        {
+          "name": ".NET",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/dotnet.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/.NET"
+        },
+        {
+          "name": "JavaScript",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/javascript.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/JavaScript"
+        },
+        {
+          "name": "TypeScript",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/typescript.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/TypeScript"
+        },
+        {
+          "name": "Node.js",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/nodejs.svg",
+            "light": "/assets/icons/light-mode/nodejs.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Node.js"
+        },
+        {
+          "name": "HTML5",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/html5.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/HTML5"
+        },
+        {
+          "name": "CSS3",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/css3.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/CSS"
+        },
+        {
+          "name": "PowerShell",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/powershell.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/PowerShell"
+        },
+        {
+          "name": "ASP.NET",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/asp-dot-net.svg",
+            "light": "/assets/icons/light-mode/asp-dot-net.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/ASP.NET"
+        },
+        {
+          "name": "Webpack",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/webpack.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Webpack"
+        },
+        {
+          "name": "Azure",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/azure.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Web Apps",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10035-icon-service-App-Services.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Functions",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10029-icon-service-Function-Apps.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Azure Event Hubs",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/00039-icon-service-Event-Hubs.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Kafka",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/kafka.svg",
+            "light": "/assets/icons/light-mode/kafka.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Apache_Kafka"
+        },
+        {
+          "name": "Azure Resource Graph",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10318-icon-service-Resource-Graph-Explorer.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Application Insights",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/00012-icon-service-Application-Insights.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Redis",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/redis.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Redis"
+        },
+        {
+          "name": "Elasticsearch",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/elasticsearch.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Elasticsearch"
+        },
+        {
+          "name": "Docker",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/docker.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Docker_(software)"
+        },
+        {
+          "name": "Git",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/git.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Git"
+        },
+        {
+          "name": "SharePoint",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/sharepoint.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/SharePoint"
+        },
+        {
+          "name": "MediaWiki",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/mediawiki.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/MediaWiki"
+        },
+        {
+          "name": "Entra Domain Services",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Entra_ID"
+        },
+        {
+          "name": "Exchange",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/exchange.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Exchange_Server"
+        },
+        {
+          "name": "Windows",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/windows.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Windows"
+        }
       ],
       "dutiesAndAccomplishments": [
-        "Designed end to end business automation solutions.",
+        "Built a private event-driven scripting environment for ticket automation and self-service workflow creation, leveraging PowerShell and advanced language server functionality to enable secure scripting in resource-constrained environments — implemented before the adoption of containers within Microsoft.",
+        "Delivered 10+ major internal tools reducing ticket processing time and TTX metrics by over 50%.",
+        "Implemented a fully automated drive replacement and restore processing workflow: 80% reduction in drive destruction ($5M annual cost savings on replacements), 100% reduction in operator time, and 12 FTE reduction (2 FTEs per shift × 6 shifts).",
         "Created custom MediaWiki private deployment consolidating 10,000+ documents and supporting 2,000+ people, eliminating legacy documentation systems.",
         "Drove 56% headcount reduction (85 of original 125-person team) with self-service automation engine, enabling FTEs to be reassigned to higher-value work.",
         "Drove DevOps culture across organization; hundreds of automated deployments per day, reducing incident response time by 80% and time to resolution by 13%.",
@@ -825,24 +2299,112 @@
         }
       ],
       "stack": {
-        "methods": ["CI/CD", "SEO", "Test Automation"],
-        "cloud": ["Azure"],
-        "integrations": ["Bing Search", "Team Foundation Server"]
+        "methods": [
+          "CI/CD",
+          "SEO",
+          "Test Automation"
+        ],
+        "cloud": [
+          "Azure"
+        ],
+        "integrations": [
+          "Bing Search",
+          "Team Foundation Server"
+        ]
       },
       "technologies": [
-        { "name": "Bing", "icon": { "agnostic": "/assets/icons/agnostic/bing.svg" } },
-        { "name": "C#", "icon": { "agnostic": "/assets/icons/agnostic/c-sharp.svg" } },
-        { "name": ".NET", "icon": { "agnostic": "/assets/icons/agnostic/dotnet.svg" } },
-        { "name": "JavaScript", "icon": { "agnostic": "/assets/icons/agnostic/javascript.svg" } },
-        { "name": "HTML5", "icon": { "agnostic": "/assets/icons/agnostic/html5.svg" } },
-        { "name": "CSS3", "icon": { "agnostic": "/assets/icons/agnostic/css3.svg" } },
-        { "name": "ASP.NET", "icon": { "dark": "/assets/icons/dark-mode/asp-dot-net.svg", "light": "/assets/icons/light-mode/asp-dot-net.svg" } },
-        { "name": "Webpack", "icon": { "agnostic": "/assets/icons/agnostic/webpack.svg" } },
-        { "name": "Azure", "icon": { "agnostic": "/assets/icons/agnostic/azure.svg" } },
-        { "name": "Redis", "icon": { "agnostic": "/assets/icons/agnostic/redis.svg" } },
-        { "name": "Elasticsearch", "icon": { "agnostic": "/assets/icons/agnostic/elasticsearch.svg" } },
-        { "name": "Entra Domain Services", "icon": { "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg" } },
-        { "name": "Windows", "icon": { "agnostic": "/assets/icons/agnostic/windows.svg" } }
+        {
+          "name": "Bing",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/bing.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Bing"
+        },
+        {
+          "name": "C#",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/c-sharp.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+        },
+        {
+          "name": ".NET",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/dotnet.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/.NET"
+        },
+        {
+          "name": "JavaScript",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/javascript.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/JavaScript"
+        },
+        {
+          "name": "HTML5",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/html5.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/HTML5"
+        },
+        {
+          "name": "CSS3",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/css3.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/CSS"
+        },
+        {
+          "name": "ASP.NET",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/asp-dot-net.svg",
+            "light": "/assets/icons/light-mode/asp-dot-net.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/ASP.NET"
+        },
+        {
+          "name": "Webpack",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/webpack.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Webpack"
+        },
+        {
+          "name": "Azure",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/azure.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure"
+        },
+        {
+          "name": "Redis",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/redis.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Redis"
+        },
+        {
+          "name": "Elasticsearch",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/elasticsearch.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Elasticsearch"
+        },
+        {
+          "name": "Entra Domain Services",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Entra_ID"
+        },
+        {
+          "name": "Windows",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/windows.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Windows"
+        }
       ],
       "dutiesAndAccomplishments": [
         "Implemented RSS feed SEO system for massive offers database.",
@@ -911,21 +2473,87 @@
         }
       ],
       "stack": {
-        "methods": ["Automation", "Tier 3 Support"],
-        "libraries": ["WCF", "XAML/WPF"],
-        "data": ["SQL Server"],
-        "integrations": ["Exchange", "ASP.NET"]
+        "methods": [
+          "Automation",
+          "Tier 3 Support"
+        ],
+        "libraries": [
+          "WCF",
+          "XAML/WPF"
+        ],
+        "data": [
+          "SQL Server"
+        ],
+        "integrations": [
+          "Exchange",
+          "ASP.NET"
+        ]
       },
       "technologies": [
-        { "name": "C#", "icon": { "agnostic": "/assets/icons/agnostic/c-sharp.svg" } },
-        { "name": ".NET", "icon": { "agnostic": "/assets/icons/agnostic/dotnet.svg" } },
-        { "name": "ASP.NET", "icon": { "dark": "/assets/icons/dark-mode/asp-dot-net.svg", "light": "/assets/icons/light-mode/asp-dot-net.svg" } },
-        { "name": "SQL Server", "icon": { "agnostic": "/assets/icons/agnostic/10132-icon-service-SQL-Server.svg" } },
-        { "name": "PowerShell", "icon": { "agnostic": "/assets/icons/agnostic/powershell.svg" } },
-        { "name": "Exchange", "icon": { "agnostic": "/assets/icons/agnostic/exchange.svg" } },
-        { "name": "SharePoint", "icon": { "agnostic": "/assets/icons/agnostic/sharepoint.svg" } },
-        { "name": "Entra Domain Services", "icon": { "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg" } },
-        { "name": "Windows", "icon": { "agnostic": "/assets/icons/agnostic/windows.svg" } }
+        {
+          "name": "C#",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/c-sharp.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+        },
+        {
+          "name": ".NET",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/dotnet.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/.NET"
+        },
+        {
+          "name": "ASP.NET",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/asp-dot-net.svg",
+            "light": "/assets/icons/light-mode/asp-dot-net.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/ASP.NET"
+        },
+        {
+          "name": "SQL Server",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10132-icon-service-SQL-Server.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_SQL_Server"
+        },
+        {
+          "name": "PowerShell",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/powershell.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/PowerShell"
+        },
+        {
+          "name": "Exchange",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/exchange.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Exchange_Server"
+        },
+        {
+          "name": "SharePoint",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/sharepoint.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/SharePoint"
+        },
+        {
+          "name": "Entra Domain Services",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Entra_ID"
+        },
+        {
+          "name": "Windows",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/windows.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Windows"
+        }
       ],
       "dutiesAndAccomplishments": [
         "Provided Tier 3 break-fix support for Enterprise Exchange Deployments.",
@@ -994,15 +2622,53 @@
         }
       ],
       "stack": {
-        "methods": ["Incident Management", "Problem Management"],
-        "integrations": ["Exchange", "SharePoint", "Lync (Teams)", "Live Meeting"]
+        "methods": [
+          "Incident Management",
+          "Problem Management"
+        ],
+        "integrations": [
+          "Exchange",
+          "SharePoint",
+          "Lync (Teams)",
+          "Live Meeting"
+        ]
       },
       "technologies": [
-        { "name": "Exchange", "icon": { "agnostic": "/assets/icons/agnostic/exchange.svg" } },
-        { "name": "SharePoint", "icon": { "agnostic": "/assets/icons/agnostic/sharepoint.svg" } },
-        { "name": "Microsoft Teams", "icon": { "agnostic": "/assets/icons/agnostic/microsoft-teams.svg" } },
-        { "name": "Entra Domain Services", "icon": { "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg" } },
-        { "name": "Windows", "icon": { "agnostic": "/assets/icons/agnostic/windows.svg" } }
+        {
+          "name": "Exchange",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/exchange.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Exchange_Server"
+        },
+        {
+          "name": "SharePoint",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/sharepoint.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/SharePoint"
+        },
+        {
+          "name": "Microsoft Teams",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/microsoft-teams.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Teams"
+        },
+        {
+          "name": "Entra Domain Services",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/10222-icon-service-Entra-Domain-Services.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Entra_ID"
+        },
+        {
+          "name": "Windows",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/windows.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Windows"
+        }
       ],
       "dutiesAndAccomplishments": [
         "Managed Major Incidents across the Microsoft Office 365 Environment serving 10M+ customer seats.",
@@ -1058,7 +2724,17 @@
           "unit": " hrs/wk",
           "context": "~10 hrs/engineer × 300 engineers",
           "viz": "sparkline",
-          "sparkData": [100, 400, 900, 1400, 1800, 2200, 2600, 2900, 3000]
+          "sparkData": [
+            100,
+            400,
+            900,
+            1400,
+            1800,
+            2200,
+            2600,
+            2900,
+            3000
+          ]
         }
       ],
       "initiatives": [
@@ -1070,14 +2746,46 @@
         }
       ],
       "stack": {
-        "methods": ["Support Engineering", "Automation"],
-        "integrations": ["Exchange Online", "SharePoint Online", "Blackberry Enterprise"]
+        "methods": [
+          "Support Engineering",
+          "Automation"
+        ],
+        "integrations": [
+          "Exchange Online",
+          "SharePoint Online",
+          "Blackberry Enterprise"
+        ]
       },
       "technologies": [
-        { "name": "Exchange", "icon": { "agnostic": "/assets/icons/agnostic/exchange.svg" } },
-        { "name": "SharePoint", "icon": { "agnostic": "/assets/icons/agnostic/sharepoint.svg" } },
-        { "name": "PowerShell", "icon": { "agnostic": "/assets/icons/agnostic/powershell.svg" } },
-        { "name": "BlackBerry", "icon": { "dark": "/assets/icons/dark-mode/blackberry.svg", "light": "/assets/icons/light-mode/blackberry.svg" } }
+        {
+          "name": "Exchange",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/exchange.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Exchange_Server"
+        },
+        {
+          "name": "SharePoint",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/sharepoint.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/SharePoint"
+        },
+        {
+          "name": "PowerShell",
+          "icon": {
+            "agnostic": "/assets/icons/agnostic/powershell.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/PowerShell"
+        },
+        {
+          "name": "BlackBerry",
+          "icon": {
+            "dark": "/assets/icons/dark-mode/blackberry.svg",
+            "light": "/assets/icons/light-mode/blackberry.svg"
+          },
+          "url": "https://en.wikipedia.org/wiki/BlackBerry"
+        }
       ],
       "dutiesAndAccomplishments": [
         "Collaborated with a team of 70+ agents providing product support for Microsoft Online Services.",

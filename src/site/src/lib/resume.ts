@@ -35,6 +35,7 @@ export type TechnologyIcon = {
 export type Technology = {
   name: string
   icon: TechnologyIcon
+  url?: string
 }
 
 export type ResumeExperience = {
@@ -167,6 +168,7 @@ const ResumeExperienceSchema = z
             light: z.string().optional(),
             dark: z.string().optional(),
           }),
+          url: z.string().min(1).optional(),
         })
       )
       .optional(),

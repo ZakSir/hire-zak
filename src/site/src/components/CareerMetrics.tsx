@@ -204,7 +204,7 @@ function CareerTimeline({ roles, isDark }: { roles: CareerRole[]; isDark: boolea
           const logoSrc = (!isDark && role.logoUrlLight) ? role.logoUrlLight : role.logoUrl
           const left = pct(role.startYear)
           const width = pct(role.endYear) - left
-          const top = lane * stepPx
+          const top = (N - 1 - lane) * stepPx
 
           return (
             <div
@@ -215,7 +215,7 @@ function CareerTimeline({ roles, isDark }: { roles: CareerRole[]; isDark: boolea
                 width: `${width}%`,
                 top: `${top}px`,
                 height: `${barH}px`,
-                zIndex: lane + 1,
+                zIndex: N - lane,
                 animationDelay: `${0.1 + i * 0.07}s`,
               }}
             >

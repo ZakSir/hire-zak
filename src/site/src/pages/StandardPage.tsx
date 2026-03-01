@@ -45,6 +45,14 @@ export default function StandardPage() {
   }, [])
 
   const name = useMemo(() => (resume ? fullName(resume) : ''), [resume])
+  const personTitle = resume?.personalInfo?.person?.title ?? ''
+
+  // Keep document.title in sync with resume data at runtime
+  // (must be before any early returns to satisfy Rules of Hooks)
+  useEffect(() => {
+    if (!resume) return
+    document.title = `${name} – resume.json – ${personTitle}`
+  }, [resume, name, personTitle])
 
   if (error) {
     return (
@@ -180,7 +188,7 @@ export default function StandardPage() {
             </section>
           ) : null}
 
-          <section className="standardSection">
+          <section className="standardSection standardExperienceSection">
             <h2>Experience</h2>
             {experience.map((e) => {
               const from = formatMonthYear(e.startDate)

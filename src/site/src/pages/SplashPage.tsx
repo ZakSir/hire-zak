@@ -186,16 +186,34 @@ function TimelineItem({ exp, id, index }: { exp: ResumeExperience; id: string; i
                 ?? (theme === 'dark' ? tech.icon.dark : tech.icon.light)
                 ?? tech.icon.light
                 ?? tech.icon.dark
-              return src ? (
+              if (!src) return null
+              const iconContent = (
                 <div
                   key={tech.name}
-                  className="tech-icon-item"
+                  className={`tech-icon-item${tech.url ? ' tech-icon-link' : ''}`}
                   title={tech.name}
                   style={{ transitionDelay: `${400 + i * 30}ms` }}
                 >
                   <img src={src} alt={tech.name} loading="lazy" />
                 </div>
-              ) : null
+              )
+              return tech.url ? (
+                <a
+                  key={tech.name}
+                  href={tech.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    const w = window.open(tech.url, '_blank', 'noopener,noreferrer')
+                    if (w) w.blur()
+                    window.focus()
+                  }}
+                  style={{ textDecoration: 'none' }}
+                >
+                  {iconContent}
+                </a>
+              ) : iconContent
             })}
           </div>
         )}
@@ -238,6 +256,15 @@ export default function SplashPage() {
   const { theme } = useTheme()
   const [resume, setResume] = useState<ResumeJson | null>(null)
   const [validation, setValidation] = useState<ResumeValidationResult | null>(null)
+
+  // Keep document.title in sync with resume data at runtime
+  // (must be before any early returns to satisfy Rules of Hooks)
+  const name = resume ? fullName(resume) : ''
+  const personTitle = resume?.personalInfo?.person?.title ?? ''
+  useEffect(() => {
+    if (!resume) return
+    document.title = `${name} – resume.json – ${personTitle}`
+  }, [resume, name, personTitle])
   const [error, setError] = useState<string | null>(null)
   const [parseError, setParseError] = useState<ResumeJsonParseErrorDetails | null>(null)
   const blobFieldRef = useRef<HTMLDivElement>(null)
@@ -402,7 +429,6 @@ export default function SplashPage() {
     )
   }
 
-  const name = fullName(resume)
   const person = resume.personalInfo.person
   const profileSrc = resolveLogoUri(person.picture, theme)
   const profileAlt = resolveLogoAlt(person.picture, 'Profile photo')
@@ -481,7 +507,7 @@ export default function SplashPage() {
 
         {/* Executive Summary - contained */}
         <div className="container">
-          <Section id="section-summary" eyebrow="Why" title="Executive strengths">
+          <Section id="section-summary" title="Executive strengths">
             <div className="grid2" style={{ gap: 24 }}>
               {summary.map((i, idx) => (
                 <ExecStrengthCard key={i.title} item={i} index={idx} />
@@ -493,11 +519,6 @@ export default function SplashPage() {
         {/* IMMERSIVE EXPERIENCE - Full width, no constraints */}
         <section id="section-experience" className="experience-intro">
           <div className="container">
-            <div className="pill" style={{ display: 'inline-flex', marginBottom: 16 }}>
-              <span className="small" style={{ letterSpacing: 0.9, textTransform: 'uppercase' }}>
-                Work
-              </span>
-            </div>
             <h2 style={{ margin: '0 0 16px 0', fontSize: 'clamp(2.2rem, 4vw, 3.2rem)' }}>Experience</h2>
             <div className="revealLine" style={{ margin: '24px 0 36px' }} />
             <div className="muted" style={{ fontSize: '1.1rem', maxWidth: 600 }}>
@@ -519,7 +540,7 @@ export default function SplashPage() {
 
         {/* Skills - contained */}
         <div className="container">
-          <Section id="section-skills" eyebrow="Skills" title="Tools & proficiencies">
+          <Section id="section-skills" title="Skills & proficiencies">
             <SkillBars />
 
             {person.hobbies?.length ? (
@@ -536,7 +557,7 @@ export default function SplashPage() {
         {/* Career metrics — D3 visualizations */}
         {siteConfig.showCareerMetrics && (
           <div className="container">
-            <Section id="section-metrics" eyebrow="Impact" title="Career by the numbers">
+            <Section id="section-metrics" title="Impact by the numbers">
               <CareerMetrics />
             </Section>
           </div>
@@ -547,15 +568,7 @@ export default function SplashPage() {
         <section className="marketing-section" style={{ paddingTop: 80, paddingBottom: 80 }}>
           <div className="container">
             <div className="lets-talk-layout">
-              <div className="lets-talk-orb-bg" aria-hidden="true">
-                <div className="gradient-orb" />
-              </div>
               <div className="lets-talk-content">
-                <div className="pill" style={{ display: 'inline-flex', marginBottom: 14 }}>
-                  <span className="small" style={{ letterSpacing: 0.9, textTransform: 'uppercase' }}>
-                    Next
-                  </span>
-                </div>
                 <h2 style={{ margin: '0 0 16px 0', fontSize: 'clamp(1.8rem, 3vw, 2.6rem)' }}>Let's talk</h2>
                 <div className="floaty-card" style={{ marginTop: 24 }}>
                   <div style={{ fontWeight: 800, fontSize: '1.2rem' }}>{name}</div>
